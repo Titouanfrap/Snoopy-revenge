@@ -30,26 +30,26 @@ int menu() {
            "\n\n\nSelectionnez votre choix grace a touche allant de 1 a 6");
 }
 
-void handleDir(char *direction);
+void handleDir(char *key);
 int choix()
 {
+    char key = ' ';
 
-    char direction = ' ';
-
-    while (1) // Game Loop
+    while (1)
     {
-        if (kbhit()) // Key is pressed
+        if (kbhit())
         {
-            direction = getch();
+            key = getch();
         }
-        handleDir(&direction);
+        handleDir(&key);
     }
+
 
     return 0;
 }
 
-void handleDir(char *direction) {
-    switch (*direction)
+void handleDir(char *key) {
+    switch (*key)
     {
         case '1':
             printf(""
@@ -68,8 +68,6 @@ void handleDir(char *direction) {
                    "\t\t\t\t||\t       ~~Leave~~\t\t||\n"
                    "\t\t\t\t||\t\t\t\t\t||\n"
                    "\t\t\t\t\\\\======================================//");
-            if (choix() == 0x10) {
-                printf("Vous avez sélectionné l'option : Games Rules"); }
             break;
         case '2':
             printf(""
@@ -157,7 +155,7 @@ void handleDir(char *direction) {
                    "\t\t\t\t||\t\t\t\t\t||\n"
                    "\t\t\t\t||\t       ~~Score~~\t\t||\n"
                    "\t\t\t\t||\t\t \t\t\t||\n"
-                   "\t\t\t\t||\t     ->  ~~Leave~~\t\t||\n"
+                   " \t\t\t\t||\t     ->  ~~Leave~~\t\t||\n"
                    "\t\t\t\t||\t\t\t\t\t||\n"
                    "\t\t\t\t\\\\======================================//");
             break;
@@ -165,5 +163,8 @@ void handleDir(char *direction) {
             break;
     }
 
-    *direction = ' '; // Reset direction
+    *key = ' '; // Reset direction
+
 }
+
+
