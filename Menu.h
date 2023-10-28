@@ -37,128 +37,59 @@ int choix()
 
     while (1)
     {
-        if (kbhit())
-        {
+        if (kbhit()) {
             key = getch();
         }
         handleDir(&key);
     }
 
-
     return 0;
 }
 
 void handleDir(char *key) {
-    switch (*key)
-    {
+    switch (*key) {
         case '1':
-            printf(""
-                   "\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t//======================================\\\\\n"
-                   "\t\t\t\t||      \t\t\t\t||\n"
-                   "\t\t\t\t||\t    -> ~~Game Rules~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t||            ~~New Game~~\t\t||\n"
-                   "\t\t\t\t||\t \t\t\t\t||\n"
-                   "\t\t\t\t||\t      ~~Load Game~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t||\t      ~~Password~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t||\t       ~~Score~~\t\t||\n"
-                   "\t\t\t\t||\t\t \t\t\t||\n"
-                   "\t\t\t\t||\t       ~~Leave~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t\\\\======================================//");
+            printf("\n\n\n\n Voulez vous lire les regles du jeu ?"
+                   "\n\t       Oui : y               Non : n");
+            if (key == ) {
+                printf(""
+                       "\t\t\t\t//======================================\\\\\n"
+                       "\t\t\t\t||      \t\t\t\t||\n"
+                       "\t\t\t\t||\t    -> ~~Game Rules~~\t\t||\n"
+                       "\t\t\t\t||\t\t\t\t\t||\n"
+                       "\t\t\t\t||            ~~New Game~~\t\t||\n"
+                       "\t\t\t\t||\t \t\t\t\t||\n"
+                       "\t\t\t\t||\t      ~~Load Game~~\t\t||\n"
+                       "\t\t\t\t||\t\t\t\t\t||\n"
+                       "\t\t\t\t||\t      ~~Password~~\t\t||\n"
+                       "\t\t\t\t||\t\t\t\t\t||\n"
+                       "\t\t\t\t||\t       ~~Score~~\t\t||\n"
+                       "\t\t\t\t||\t\t \t\t\t||\n"
+                       "\t\t\t\t||\t       ~~Leave~~\t\t||\n"
+                       "\t\t\t\t||\t\t\t\t\t||\n"
+                       "\t\t\t\t\\\\======================================//"
+                       "\n\n\nSelectionnez votre choix grace a touche allant de 1 a 6");
+            }
             break;
         case '2':
-            printf(""
-                   "\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t//======================================\\\\\n"
-                   "\t\t\t\t||      \t\t\t\t||\n"
-                   "\t\t\t\t||\t     ~~Game Rules~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t||          ->  ~~New Game~~\t\t||\n"
-                   "\t\t\t\t||\t \t\t\t\t||\n"
-                   "\t\t\t\t||\t      ~~Load Game~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t||\t      ~~Password~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t||\t       ~~Score~~\t\t||\n"
-                   "\t\t\t\t||\t\t \t\t\t||\n"
-                   "\t\t\t\t||\t       ~~Leave~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t\\\\======================================//");
+            printf("\n\n\n\n Voulez vous commencer une nouvelle partie ?"
+                   "\n\t       Oui : 1               Non : 2");
             break;
         case '3':
-            printf(""
-                   "\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t//======================================\\\\\n"
-                   "\t\t\t\t||      \t\t\t\t||\n"
-                   "\t\t\t\t||\t     ~~Game Rules~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t||            ~~New Game~~\t\t||\n"
-                   "\t\t\t\t||\t \t\t\t\t||\n"
-                   "\t\t\t\t||\t     -> ~~Load Game~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t||\t      ~~Password~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t||\t       ~~Score~~\t\t||\n"
-                   "\t\t\t\t||\t\t \t\t\t||\n"
-                   "\t\t\t\t||\t       ~~Leave~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t\\\\======================================//");
+            printf("\n\n\n\n Voulez vous charger une partie ?"
+                   "\n\t       Oui : 1               Non : 2");
             break;
         case '4':
-            printf(""
-                   "\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t//======================================\\\\\n"
-                   "\t\t\t\t||      \t\t\t\t||\n"
-                   "\t\t\t\t||\t     ~~Game Rules~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t||            ~~New Game~~\t\t||\n"
-                   "\t\t\t\t||\t \t\t\t\t||\n"
-                   "\t\t\t\t||\t      ~~Load Game~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t||\t    ->  ~~Password~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t||\t       ~~Score~~\t\t||\n"
-                   "\t\t\t\t||\t\t \t\t\t||\n"
-                   "\t\t\t\t||\t       ~~Leave~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t\\\\======================================//");
+            printf("\n\n\n\n Voulez vous rejoindre un niveau a l'aide d'un mot de passe ?"
+                   "\n\t       Oui : 1               Non : 2");
             break;
         case '5':
-            printf(""
-                   "\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t//======================================\\\\\n"
-                   "\t\t\t\t||      \t\t\t\t||\n"
-                   "\t\t\t\t||\t     ~~Game Rules~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t||            ~~New Game~~\t\t||\n"
-                   "\t\t\t\t||\t \t\t\t\t||\n"
-                   "\t\t\t\t||\t      ~~Load Game~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t||\t      ~~Password~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t||\t     ->  ~~Score~~\t\t||\n"
-                   "\t\t\t\t||\t\t \t\t\t||\n"
-                   "\t\t\t\t||\t       ~~Leave~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t\\\\======================================//");
+            printf("\n\n\n\n Voulez vous afficher les scores ?"
+                   "\n\t       Oui : 1               Non : 2");
             break;
         case '6':
-            printf(""
-                   "\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t//======================================\\\\\n"
-                   "\t\t\t\t||      \t\t\t\t||\n"
-                   "\t\t\t\t||\t     ~~Game Rules~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t||            ~~New Game~~\t\t||\n"
-                   "\t\t\t\t||\t \t\t\t\t||\n"
-                   "\t\t\t\t||\t      ~~Load Game~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t||\t      ~~Password~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t||\t       ~~Score~~\t\t||\n"
-                   "\t\t\t\t||\t\t \t\t\t||\n"
-                   " \t\t\t\t||\t     ->  ~~Leave~~\t\t||\n"
-                   "\t\t\t\t||\t\t\t\t\t||\n"
-                   "\t\t\t\t\\\\======================================//");
-            break;
+            printf("\n\n\n\n Voulez vous quitter le jeu ?"
+                   "\n\t       Oui : 1               Non : 2");
         default:
             break;
     }
@@ -166,5 +97,4 @@ void handleDir(char *key) {
     *key = ' '; // Reset direction
 
 }
-
 
