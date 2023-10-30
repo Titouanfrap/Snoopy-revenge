@@ -50,27 +50,7 @@ void handleDir(char *key) {
     switch (*key) {
         case '1':
             printf("\n\n\n\n Voulez vous lire les regles du jeu ?"
-                   "\n\t       Oui : y               Non : n");
-            if (key == ) {
-                printf(""
-                       "\t\t\t\t//======================================\\\\\n"
-                       "\t\t\t\t||      \t\t\t\t||\n"
-                       "\t\t\t\t||\t    -> ~~Game Rules~~\t\t||\n"
-                       "\t\t\t\t||\t\t\t\t\t||\n"
-                       "\t\t\t\t||            ~~New Game~~\t\t||\n"
-                       "\t\t\t\t||\t \t\t\t\t||\n"
-                       "\t\t\t\t||\t      ~~Load Game~~\t\t||\n"
-                       "\t\t\t\t||\t\t\t\t\t||\n"
-                       "\t\t\t\t||\t      ~~Password~~\t\t||\n"
-                       "\t\t\t\t||\t\t\t\t\t||\n"
-                       "\t\t\t\t||\t       ~~Score~~\t\t||\n"
-                       "\t\t\t\t||\t\t \t\t\t||\n"
-                       "\t\t\t\t||\t       ~~Leave~~\t\t||\n"
-                       "\t\t\t\t||\t\t\t\t\t||\n"
-                       "\t\t\t\t\\\\======================================//"
-                       "\n\n\nSelectionnez votre choix grace a touche allant de 1 a 6");
-            }
-            break;
+                   "\n\t       Oui : y               Non : 8");
         case '2':
             printf("\n\n\n\n Voulez vous commencer une nouvelle partie ?"
                    "\n\t       Oui : 1               Non : 2");
