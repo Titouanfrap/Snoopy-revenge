@@ -5,7 +5,7 @@
 int menu() {
 
     system("cls");
-    printf(""
+    printf("\n\n\n"
            "Balthazar.B        Titouan.F                                  Marc.V              Mathieu.E\n\t"
            "                                      PRESENTENT...\n\t"
 
@@ -50,26 +50,30 @@ void handleDir(char *key) {
     switch (*key) {
         case '1':
             printf("\n\n\n\n Voulez vous lire les regles du jeu ?"
-                   "\n\t       Oui : y               Non : 8");
+                   "\n\t       Oui : y               Non : n");
+            break;
         case '2':
             printf("\n\n\n\n Voulez vous commencer une nouvelle partie ?"
-                   "\n\t       Oui : 1               Non : 2");
+                   "\n\t       Oui : y               Non : n");
             break;
         case '3':
             printf("\n\n\n\n Voulez vous charger une partie ?"
-                   "\n\t       Oui : 1               Non : 2");
+                   "\n\t       Oui : y               Non : n");
             break;
         case '4':
             printf("\n\n\n\n Voulez vous rejoindre un niveau a l'aide d'un mot de passe ?"
-                   "\n\t       Oui : 1               Non : 2");
+                   "\n\t       Oui : y               Non : n");
             break;
         case '5':
             printf("\n\n\n\n Voulez vous afficher les scores ?"
-                   "\n\t       Oui : 1               Non : 2");
+                   "\n\t       Oui : y               Non : n");
             break;
         case '6':
             printf("\n\n\n\n Voulez vous quitter le jeu ?"
-                   "\n\t       Oui : 1               Non : 2");
+                   "\n\t       Oui : y               Non : n");
+        case 'n' :
+            menu();
+            break;
         default:
             break;
     }
@@ -77,4 +81,3 @@ void handleDir(char *key) {
     *key = ' '; // Reset direction
 
 }
-
