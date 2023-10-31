@@ -20,7 +20,27 @@ void regles() {
            "Si vous n'arrivez reussir votre objectif dans le temps imparti vous perdez une vie et le temps repart.\n"
            "Bien, je pense vous avoir tout dit, il me reste plus qu'a vous souhaiter bonne chance...");
 }
-
+void leave() {
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+           "          ---------============THE REVENGE OF SNOOPY============---------\n\n\n\n"
+           "\t\t\t********** DECONNEXION **********\n"
+           "\t\t\t*                                *\n"
+           "\t\t\t*   Merci d'avoir joue a notre   *\n"
+           "\t\t\t*       super jeu video !        *\n"
+           "\t\t\t*                                *\n"
+           "\t\t\t********** A bientot ! ***********\n");
+}
+void password() {
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  "
+           "           ---------============THE REVENGE OF SNOOPY============---------\n\n\n\n"
+           "Pour rappel, les differents mots de passe s'obtiennent en reussissant\n"
+           "les niveaux de \" La revanche de Snoopy \".\n"
+           "Par exemple, si vous parvenez a reussir le niveau 2, a la fin de celui-ci vous\n"
+           "obtiendrez un mot de passe afin de le rejoindre sans passer par les niveaux inferieurs.\n"
+           "Tout se merite dans ce jeux, bon courage !"
+           "\n\n----------------------------------------------------------------------------------"
+           "\n\n\n Veuillez entrer le mot de passe correspondant au niveau que vous voulez rejoindre :");
+}
 int menu() {
 
     system("cls");
@@ -92,14 +112,26 @@ void handleDir(char *key) {
         case '4':
             printf("\n\n\n\n Voulez vous rejoindre un niveau a l'aide d'un mot de passe ?"
                    "\n\t       Oui : y               Non : n");
+            char confirmKey2 = getch();
+            if (confirmKey2 == 'y') {
+                password();
+            } else if (confirmKey2 == 'n') {
+                menu();
+            }
             break;
         case '5':
             printf("\n\n\n\n Voulez vous afficher les scores ?"
                    "\n\t       Oui : y               Non : n");
             break;
         case '6':
-            printf("\n\n\n\n Voulez vous quitter le jeu ?"
+            printf("\n\n\n\n Voulez vous vraiment quitter le jeu ?"
                    "\n\t       Oui : y               Non : n");
+            char confirmKey1 = getch();
+            if (confirmKey1 == 'y') {
+                leave();
+            } else if (confirmKey1 == 'n') {
+                menu();
+            }
         default:
             break;
     }
