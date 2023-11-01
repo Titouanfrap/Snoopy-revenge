@@ -45,7 +45,7 @@ int menu() {
 
     system("cls");
     printf("\n\n\n"
-           "Balthazar.B        Titouan.F                                  Marc.V              Mathieu.E\n\t"
+           "Balthazar.B        Titouan.F                                                 Marc.V         Mathieu.E\n\t"
            "                                      PRESENTENT...\n\t"
 
            "             ---------============THE REVENGE OF SNOOPY============---------\n\n\n\n");

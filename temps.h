@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 #define wall 0xFE
-#define Void 0x00
 #define time 0xB1
 
 
@@ -21,7 +20,7 @@ void tableau(char matrice[10][20]){
             if (i==0 || i==9 || j==0 || j==19){
                 matrice[i][j]=wall;
             }else {
-                matrice[i][j]=Void;
+                matrice[i][j]=' ';
             }
         }
     }
@@ -75,6 +74,6 @@ void comptearebours(){
     comptearebours();
     return 0;
 }
- comptearebours permet d'executer tout le programme. Mais pour le moment il y'a une erreur
- que je vais corriger demain ou dans la soirée si j'ai la motivation.
+ comptearebours permet d'executer tout le programme. Des modifications vont être apportées
+ dans les prochains jours
  */
