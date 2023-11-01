@@ -3,22 +3,36 @@
 #include <unistd.h>
 #define wall 0xFE
 #define time 0xB1
+#define Mure 0x850BA
+#define plafond 0x850CD
+#define cotehg 0x850C9
+#define  cotehd 0x850BB
+#define cotebd 0x850BC
+#define cotebg 0x850C8
 
 
-void affichagmatrice (char matrice[10][20]){
-    for (int i=0; i<10; i++){
-        for (int j=0; j<20; j++){
+void affichagmatrice (char matrice[14][24]){
+    for (int i=0; i<14; i++){
+        for (int j=0; j<24; j++){
             printf("%c",matrice[i][j]);
         }
         printf("\n");
     }
 }
 
-void tableau(char matrice[10][20]){
-    for (int i=0; i<10; i++){
-        for(int j=0;j<20; j++){
-            if (i==0 || i==9 || j==0 || j==19){
-                matrice[i][j]=wall;
+void tableau(char matrice[14][24]){
+    for (int i=0; i<14; i++){
+        for(int j=0;j<24; j++){
+            if (i==0 || i==13 || j==0 || j==23) {
+                matrice[i][j] = wall;
+            } else if ( i == 1 || i == 12 ) {
+                matrice[i][j] = plafond;
+                matrice[12][1]= cotebg;
+                matrice[12][22]= cotebd;
+            }else if ( j == 1 || j == 22) {
+                matrice[i][j] = Mure;
+                matrice[1][1] = cotehg;
+                matrice[1][22]= cotehd;
             }else {
                 matrice[i][j]=' ';
             }
@@ -33,19 +47,19 @@ struct Time{
 };
 
 void comptearebours(){
-    char matrice[10][20];
+    char matrice[14][24];
     tableau(matrice);
     struct Time t;
     t.valeur=120;
     t.x=0;
-    t.y=0;
+    t.y=10;
     t.directx=0;
     t.directy=1;
 
     while (t.valeur>=0){
         matrice[t.x][t.y]= time;
         affichagmatrice(matrice);
-        sleep(2);
+        usleep(1570000);
         system("cls");
 
         t.x +=t.directx;
@@ -54,26 +68,23 @@ void comptearebours(){
         if (t.x==0 && t.y==0){
             t.directx=0;
             t.directy=1;
-        }else if (t.x==0 && t.y==19){
+        }else if (t.x==0 && t.y==23){
             t.directx=1;
             t.directy=0;
-        }else if (t.x==9 && t.y==19){
+        }else if (t.x==13 && t.y==23){
             t.directx=0;
             t.directy=-1;
-        }else if (t.x==9 && t.y==0){
+        }else if (t.x==13&& t.y==0){
             t.directx=-1;
             t.directy=0;
-        }else if (t.x==1 && t.y==0){
+        }else if (t.x==0 && t.y==10){
             break;
         }
     }
 }
-
-
-/*int main(){
+/*
+ int main(){
     comptearebours();
+
     return 0;
-}
- comptearebours permet d'executer tout le programme. Des modifications vont être apportées
- dans les prochains jours
- */
+}*/
