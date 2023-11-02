@@ -10,5 +10,4 @@ int main() {
     choix();
 
     //Il faut utiliser des thread pour faire fonctionner le temps
-
 }

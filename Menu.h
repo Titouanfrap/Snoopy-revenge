@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
+#include <unistd.h>
 
 void regles() {
     system("cls");
@@ -29,6 +30,8 @@ void leave() {
            "\t\t\t*       super jeu video !        *\n"
            "\t\t\t*                                *\n"
            "\t\t\t********** A bientot ! ***********\n");
+    sleep(5);
+    system("cls");
 }
 void password() {
     printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  "
