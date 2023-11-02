@@ -5,21 +5,25 @@
 void Dir(char *dir, int *x, int *y) {//On modifie la place en fonction de la touche
     switch (*dir) {
         case 'z':
-            (*x)--;
+            if (*x>0)
+                (*x)--;
             break;
         case 'q':
-            (*y)--;
+            if (*y>0)
+                (*y)--;
             break;
         case 's':
-            (*x)++;
+            if (*x<9)
+                (*x)++;
             break;
         case 'd':
-            (*y)++;
+            if(*y<19)
+                (*y)++;
             break;
     }
 }
 
-int deplacement() {//La c'est les valeurs de base du tableau
+int main() {//La c'est les valeurs de base du tableau
     char tableau[10][20];
     int x = 0, y = 0;
     char dir = ' ';
