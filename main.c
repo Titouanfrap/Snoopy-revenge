@@ -6,6 +6,7 @@
 #include <conio.h>
 
 int main() {
+    comptearebours();
     menu();
     choix();
 

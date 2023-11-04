@@ -8,5 +8,6 @@ add_executable(Snoopy_revenge
         Menu.h
         Menu.h
         temps.h
-        temps.h)
+        temps.h
+        terrain.h)
 

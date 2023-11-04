@@ -85,6 +85,9 @@
 		<Unit filename="C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/temps.h">
 			<Option target="Snoopy_revenge"/>
 		</Unit>
+		<Unit filename="C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/terrain.h">
+			<Option target="Snoopy_revenge"/>
+		</Unit>
 		<Unit filename="C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
