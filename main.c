@@ -6,9 +6,7 @@
 #include <conio.h>
 
 int main() {
-    comptearebours();
-    menu();
-    choix();
+    deplacement();
 
     //Il faut utiliser des thread pour faire fonctionner le temps
 }

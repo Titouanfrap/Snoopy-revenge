@@ -6,23 +6,23 @@
 void Dir(char *dir, int *x, int *y) {//On modifie la place en fonction de la touche
     switch (*dir) {
         case 'z':
-            if (*x > 3) {
-                (*x)--;
-            }
-            break;
-        case 'q':
             if (*y > 3) {
                 (*y)--;
             }
             break;
+        case 'q':
+            if (*x > 3) {
+                (*x)--;
+            }
+            break;
         case 's':
-            if (*x < 9) {
-                (*x)++;
+            if (*y < 9) {
+                (*y)++;
             }
             break;
         case 'd':
-            if (*y < 21) {
-                (*y)++;
+            if (*x < 21) {
+                (*x)++;
             }
             break;
     }
@@ -30,13 +30,13 @@ void Dir(char *dir, int *x, int *y) {//On modifie la place en fonction de la tou
 
 int deplacement() {//La c'est les valeurs de base du tableau
     char tableau[12][24];
-    int x = 2, y = 2;
+    int y = 2, x = 2;
     char dir = ' ';
 
     while (1) {//la on lit la touche
         if (kbhit()) {
             dir = getch();
-            Dir(&dir, &x, &y);
+            Dir(&dir, &y, &x);
         }
 
 
