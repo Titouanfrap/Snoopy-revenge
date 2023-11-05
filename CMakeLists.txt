@@ -6,8 +6,7 @@ set(CMAKE_C_STANDARD 11)
 add_executable(Snoopy_revenge
         main.c
         Menu.h
-        Menu.h
         temps.h
-        temps.h
+        Deplacement.h
         terrain.h)
 

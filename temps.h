@@ -82,9 +82,3 @@ void comptearebours(){
         }
     }
 }
-/*
- int main(){
-    comptearebours();
-
-    return 0;
-}*/
