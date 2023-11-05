@@ -52,7 +52,7 @@ void comptearebours(){
     struct Time t;
     t.valeur=120;
     t.x=0;
-    t.y=10;
+    t.y=11;
     t.directx=0;
     t.directy=1;
 
@@ -77,7 +77,7 @@ void comptearebours(){
         }else if (t.x==13&& t.y==0){
             t.directx=-1;
             t.directy=0;
-        }else if (t.x==0 && t.y==10){
+        }else if (t.x==0 && t.y==11){
             break;
         }
     }
