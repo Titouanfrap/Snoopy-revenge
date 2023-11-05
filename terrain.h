@@ -12,9 +12,6 @@ void terrain (char ter[14][24]){
             }
             printf("\n");
         }
-    }
-
-
 }
 
 // il faudra changer nos programmes temps et deplacements pour qu'ils return avec la matrice ter

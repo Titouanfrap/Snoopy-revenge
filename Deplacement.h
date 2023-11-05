@@ -1,27 +1,36 @@
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 void Dir(char *dir, int *x, int *y) {//On modifie la place en fonction de la touche
     switch (*dir) {
         case 'z':
-            (*x)--;
+            if (*x > 3) {
+                (*x)--;
+            }
             break;
         case 'q':
-            (*y)--;
+            if (*y > 3) {
+                (*y)--;
+            }
             break;
         case 's':
-            (*x)++;
+            if (*x < 9) {
+                (*x)++;
+            }
             break;
         case 'd':
-            (*y)++;
+            if (*y < 21) {
+                (*y)++;
+            }
             break;
     }
 }
 
 int deplacement() {//La c'est les valeurs de base du tableau
-    char tableau[10][20];
-    int x = 0, y = 0;
+    char tableau[12][24];
+    int x = 2, y = 2;
     char dir = ' ';
 
     while (1) {//la on lit la touche
@@ -31,8 +40,8 @@ int deplacement() {//La c'est les valeurs de base du tableau
         }
 
 
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 20; j++) {
+        for (int i = 0; i < 12; i++) {
+            for (int j = 0; j < 24; j++) {
                 tableau[i][j] = 0x01;
             }
         }
@@ -44,12 +53,13 @@ int deplacement() {//La c'est les valeurs de base du tableau
         system("cls");
 
         printf("Tableau 10x20 :\n");// et la on print
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 20; j++) {
+        for (int i = 0; i < 12; i++) {
+            for (int j = 0; j < 24; j++) {
                 printf("%c ", tableau[i][j]);
             }
             printf("\n");
         }
+    sleep(1);
     }
 
     return 0;
