@@ -1,48 +1,58 @@
 #include <stdio.h>
-#include <unistd.h>  // Utilisé pour créer une petite pause entre les étapes du mouvement
+#include <stdlib.h>
+#include <windows.h>
+#include <conio.h>
 
 int main() {
-    int matrice[10][10] = {0};  // Matrice 10x10, initialement remplie de zéros
-    int posX = 0;  // Position initiale de l'objet (colonne)
-    int posY = 0;  // Position initiale de l'objet (ligne)
-    int directionX = 1;  // Direction de déplacement en X (+1 pour droite, -1 pour gauche)
-    int directionY = 1;  // Direction de déplacement en Y (+1 pour bas, -1 pour haut)
+    // Définir les dimensions de la console
+    int consoleWidth = 20;
+    int consoleHeight = 10;
 
-    while (1) {  // Boucle infinie pour le mouvement de l'objet
-        // Effacer la position précédente de l'objet
-        matrice[posY][posX] = 0;
+    // Position initiale de la balle
+    int ballX = consoleWidth / 5;
+    int ballY = consoleHeight / 15;
 
-        // Mettre à jour la position de l'objet en diagonale
-        posX += directionX;
-        posY += directionY;
+    // Direction initiale de la balle (aléatoire)
+    int ballDirX = rand() % 2 ? 1 : -1;
+    int ballDirY = rand() % 2 ? 1 : -1;
 
-        // Rebondir sur les bords de la matrice
-        if (posX >= 10 || posX < 0) {
-            directionX *= -1;  // Inverser la direction en X en cas de collision
-            posX += directionX;  // Revenir à l'intérieur de la matrice
+    // Effacer l'écran
+    system("cls");
+
+    while (1) {
+        // Dessiner la balle à sa position actuelle
+        COORD coord;
+        coord.X = ballX;
+        coord.Y = ballY;
+        SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+        printf("o");
+
+        // Attendre un court instant
+        Sleep(100);
+
+        // Effacer la balle à sa position actuelle
+        coord.X = ballX;
+        coord.Y = ballY;
+        SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+        printf(" ");
+
+        // Mettre à jour la position de la balle
+        ballX += ballDirX;
+        ballY += ballDirY;
+
+        // Vérifier les collisions avec les bords de la console
+        if (ballX <= 0 || ballX >= consoleWidth - 1) {
+            ballDirX *= -1; // Inverser la direction horizontale
         }
-        if (posY >= 10 || posY < 0) {
-            directionY *= -1;  // Inverser la direction en Y en cas de collision
-            posY += directionY;  // Revenir à l'intérieur de la matrice
+
+        if (ballY <= 0 || ballY >= consoleHeight - 1) {
+            ballDirY *= -1; // Inverser la direction verticale
         }
 
-        // Mettre à jour la nouvelle position de l'objet
-        matrice[posY][posX] = 1;
-
-        // Afficher la matrice mise à jour
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 10; j++) {
-                if (matrice[i][j] == 1) {
-                    printf("O ");  // Afficher l'objet
-                } else {
-                    printf(". ");  // Afficher un espace vide
-                }
-            }
-            printf("\n");
+        // Lire une touche (si une touche est appuyée, le programme se termine)
+        if (_kbhit()) {
+            break;
         }
-
-        usleep(500000);  // Faire une pause de 500 millisecondes (0.5 seconde) entre les étapes du mouvement
-        system("clear");  // Effacer la console (Linux/Unix, pour Windows, utilisez "cls")
     }
 
     return 0;
