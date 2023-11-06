@@ -7,5 +7,6 @@
 #include <conio.h>
 
 int main() {
+    menu();
     //Il faut utiliser des thread pour faire fonctionner le temps
 }

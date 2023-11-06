@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#define wall 0xFE
-#define time 0xB1
+#define wall 0x850FE
+#define time 0x850B1
 #define Mure 0x850BA
 #define plafond 0x850CD
 #define cotehg 0x850C9
