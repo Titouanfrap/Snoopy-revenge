@@ -55,6 +55,12 @@ build CMakeFiles/Snoopy_revenge.dir/main.c.obj: C_COMPILER__Snoopy_revenge_unsca
   OBJECT_DIR = CMakeFiles\Snoopy_revenge.dir
   OBJECT_FILE_DIR = CMakeFiles\Snoopy_revenge.dir
 
+build CMakeFiles/Snoopy_revenge.dir/temps.c.obj: C_COMPILER__Snoopy_revenge_unscanned_Debug C$:/Users/titou/OneDrive/Bureau/Titouan/Travail/Snoopy-revenge/temps.c || cmake_object_order_depends_target_Snoopy_revenge
+  DEP_FILE = CMakeFiles\Snoopy_revenge.dir\temps.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Snoopy_revenge.dir
+  OBJECT_FILE_DIR = CMakeFiles\Snoopy_revenge.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Snoopy_revenge
@@ -63,7 +69,7 @@ build CMakeFiles/Snoopy_revenge.dir/main.c.obj: C_COMPILER__Snoopy_revenge_unsca
 #############################################
 # Link the executable Snoopy_revenge.exe
 
-build Snoopy_revenge.exe: C_EXECUTABLE_LINKER__Snoopy_revenge_Debug CMakeFiles/Snoopy_revenge.dir/main.c.obj
+build Snoopy_revenge.exe: C_EXECUTABLE_LINKER__Snoopy_revenge_Debug CMakeFiles/Snoopy_revenge.dir/main.c.obj CMakeFiles/Snoopy_revenge.dir/temps.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Snoopy_revenge.dir
