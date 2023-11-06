@@ -10,5 +10,6 @@ add_executable(Snoopy_revenge
         Deplacement.h
         terrain.h
         balle.h
-        temps.c)
+        temps.c
+        Terrain.c)
 

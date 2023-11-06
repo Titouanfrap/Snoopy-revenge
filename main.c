@@ -1,12 +1,28 @@
 #include <stdio.h>
-#include "Deplacement.h"
-#include "Menu.h"
+#include "menu.h"
 #include "temps.h"
+#include "deplacement.h"
 #include "terrain.h"
-#include <stdlib.h>
-#include <conio.h>
+
+Time t = {120, 0, 0, 10, 1};
 
 int main() {
-    comptearebours();
-    //Il faut utiliser des thread pour faire fonctionner le temps
+    for(int i=0; i<256;i++){
+
+    }
+    int key;
+    if (kbhit()){//récupération de la touche
+        key = getch();
+    }
+    char matrice[14][24];
+
+    tableau(matrice);
+
+    while (1){
+        terrain(matrice);
+        timed(matrice, &t);
+        usleep(1000000);
+        system("cls");
+    }
+
 }
