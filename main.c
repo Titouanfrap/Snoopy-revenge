@@ -18,10 +18,11 @@ int main() {
         timed(matrice, &t);
 
         if (kbhit()){//récupération de la touche
+            matrice[x][y]=0;
             printf("touche presse");
             key = getch();
             deplacement(&key, &x, &y);
-            matrice[x][y]=' ';
+
             matrice[x][y] = 9;
         }
 //regler le point de départ et effacer les précédant snoopy derriere
