@@ -7,7 +7,7 @@
 Time t = {120, 0, 0, 10, 1};
 
 int main() {
-    int x, y;
+    int x=7, y=10;
     char key;
     char matrice[14][24];
 

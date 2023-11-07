@@ -55,17 +55,17 @@ void terrain(char tab[14][24]){
 void deplacement(char *key, int *x, int *y) {//On modifie la place en fonction de la touche
     switch (*key) {
         case 'z':
-            if (*x > 3) {
+            if (*x > 2) {
                 (*x)--;
             }
             break;
         case 'q':
-            if (*y > 3) {
+            if (*y > 2) {
                 (*y)--;
             }
             break;
         case 's':
-            if (*x < 9) {
+            if (*x < 11) {
                 (*x)++;
             }
             break;

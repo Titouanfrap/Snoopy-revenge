@@ -19,7 +19,6 @@ void tableau(char tab[14][24]) {
                 tab[i][j] = 0;
             }
         }
-        tab[5][5] = 9;
     }
 }
 
