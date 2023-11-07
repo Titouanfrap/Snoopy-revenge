@@ -11,5 +11,6 @@ add_executable(Snoopy_revenge
         balle.h
         temps.c
         Terrain.c
+        balle.c
 )
 

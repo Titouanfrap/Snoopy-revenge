@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/Terrain.c" "CMakeFiles/Snoopy_revenge.dir/Terrain.c.obj" "gcc" "CMakeFiles/Snoopy_revenge.dir/Terrain.c.obj.d"
+  "C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/balle.c" "CMakeFiles/Snoopy_revenge.dir/balle.c.obj" "gcc" "CMakeFiles/Snoopy_revenge.dir/balle.c.obj.d"
   "C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/main.c" "CMakeFiles/Snoopy_revenge.dir/main.c.obj" "gcc" "CMakeFiles/Snoopy_revenge.dir/main.c.obj.d"
   "C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/temps.c" "CMakeFiles/Snoopy_revenge.dir/temps.c.obj" "gcc" "CMakeFiles/Snoopy_revenge.dir/temps.c.obj.d"
   )

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Snoopy_revenge.dir/Terrain.c.obj"
   "CMakeFiles/Snoopy_revenge.dir/Terrain.c.obj.d"
+  "CMakeFiles/Snoopy_revenge.dir/balle.c.obj"
+  "CMakeFiles/Snoopy_revenge.dir/balle.c.obj.d"
   "CMakeFiles/Snoopy_revenge.dir/main.c.obj"
   "CMakeFiles/Snoopy_revenge.dir/main.c.obj.d"
   "CMakeFiles/Snoopy_revenge.dir/temps.c.obj"

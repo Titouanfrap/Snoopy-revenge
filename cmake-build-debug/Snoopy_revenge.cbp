@@ -85,6 +85,9 @@
 		<Unit filename="C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/Terrain.h">
 			<Option target="Snoopy_revenge"/>
 		</Unit>
+		<Unit filename="C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/balle.c">
+			<Option target="Snoopy_revenge"/>
+		</Unit>
 		<Unit filename="C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/balle.h">
 			<Option target="Snoopy_revenge"/>
 		</Unit>

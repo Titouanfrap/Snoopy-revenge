@@ -152,6 +152,30 @@ Terrain.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Terrain.c.s
 .PHONY : Terrain.c.s
 
+balle.obj: balle.c.obj
+.PHONY : balle.obj
+
+# target to build an object file
+balle.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/balle.c.obj
+.PHONY : balle.c.obj
+
+balle.i: balle.c.i
+.PHONY : balle.i
+
+# target to preprocess a source file
+balle.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/balle.c.i
+.PHONY : balle.c.i
+
+balle.s: balle.c.s
+.PHONY : balle.s
+
+# target to generate assembly for a file
+balle.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/balle.c.s
+.PHONY : balle.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -212,6 +236,9 @@ help:
 	@echo ... Terrain.obj
 	@echo ... Terrain.i
 	@echo ... Terrain.s
+	@echo ... balle.obj
+	@echo ... balle.i
+	@echo ... balle.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
