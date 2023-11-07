@@ -9,11 +9,11 @@
 #define cotebg 0x850C8 //3
 #define vide ' ' //0
 #define snoopy 0x850E8 //Snoopy 9
-
+// on assigne des blocs a des valeurs pour faire un switch case afin d'aller plus vite et d'éviter les erreurs
 
 void terrain(char tab[14][24]){
     for (int i=0; i<14; i++){
-        for (int j=0; j<24; j++){
+        for (int j=0; j<24; j++){                   //boucle classique pour couvrir toutes les valeurs du tableau
             switch (tab[i][j]) {
                 case 0 :
                     printf("%c", vide);
@@ -45,14 +45,14 @@ void terrain(char tab[14][24]){
                 case 9 :
                     printf("%c", snoopy);
                     break;
-            }
+            }  //Pour chaque case on cherche le cas correspondant puis on le print, en revenant a la ligne a chaque itération de i pour l'aspect tableau
         }
         printf("\n");
     }
 }
 
 
-void deplacement(char *key, int *x, int *y) {//On modifie la place en fonction de la touche
+void deplacement(char *key, int *x, int *y) {//On modifie les valeurs de x et y en fonction de la touche recue, les valeurs sont ensuites renvoyées dans le main
     switch (*key) {
         case 'z':
             if (*x > 2) {

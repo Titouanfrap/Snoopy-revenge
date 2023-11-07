@@ -18,7 +18,8 @@ void tableau(char tab[14][24]) {
             } else {
                 tab[i][j] = 0;
             }
-        }
+        } // fait apparaitre toutes les cases or plateau pour le défilement du temps
+         // c'est un set de départ et ne s'éxecute qu'une seule fois
     }
 }
 
