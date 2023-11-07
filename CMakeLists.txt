@@ -7,9 +7,9 @@ add_executable(Snoopy_revenge
         main.c
         Menu.h
         temps.h
-        Deplacement.h
         terrain.h
         balle.h
         temps.c
-        Terrain.c)
+        Terrain.c
+)
 

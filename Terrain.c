@@ -1,4 +1,3 @@
-#include "deplacement.h"
 #include <stdio.h>
 #define wall 0xFE //1
 #define time 0xB1 //8
@@ -51,3 +50,34 @@ void terrain(char tab[14][24]){
         printf("\n");
     }
 }
+
+
+void deplacement(char *key, int *x, int *y) {//On modifie la place en fonction de la touche
+    switch (*key) {
+        case 'z':
+            if (*x > 3) {
+                (*x)--;
+            }
+            break;
+        case 'q':
+            if (*y > 3) {
+                (*y)--;
+            }
+            break;
+        case 's':
+            if (*x < 9) {
+                (*x)++;
+            }
+            break;
+        case 'd':
+            if (*y < 21) {
+                (*y)++;
+            }
+            break;
+    }
+}
+
+
+
+
+

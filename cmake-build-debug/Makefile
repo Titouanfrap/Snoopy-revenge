@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge
+CMAKE_SOURCE_DIR = C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,30 @@ Snoopy_revenge/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/build
 .PHONY : Snoopy_revenge/fast
 
+Terrain.obj: Terrain.c.obj
+.PHONY : Terrain.obj
+
+# target to build an object file
+Terrain.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Terrain.c.obj
+.PHONY : Terrain.c.obj
+
+Terrain.i: Terrain.c.i
+.PHONY : Terrain.i
+
+# target to preprocess a source file
+Terrain.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Terrain.c.i
+.PHONY : Terrain.c.i
+
+Terrain.s: Terrain.c.s
+.PHONY : Terrain.s
+
+# target to generate assembly for a file
+Terrain.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Terrain.c.s
+.PHONY : Terrain.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -152,6 +176,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/main.c.s
 .PHONY : main.c.s
 
+temps.obj: temps.c.obj
+.PHONY : temps.obj
+
+# target to build an object file
+temps.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/temps.c.obj
+.PHONY : temps.c.obj
+
+temps.i: temps.c.i
+.PHONY : temps.i
+
+# target to preprocess a source file
+temps.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/temps.c.i
+.PHONY : temps.c.i
+
+temps.s: temps.c.s
+.PHONY : temps.s
+
+# target to generate assembly for a file
+temps.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/temps.c.s
+.PHONY : temps.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -161,9 +209,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Snoopy_revenge
+	@echo ... Terrain.obj
+	@echo ... Terrain.i
+	@echo ... Terrain.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... temps.obj
+	@echo ... temps.i
+	@echo ... temps.s
 .PHONY : help
 
 
