@@ -30,23 +30,29 @@ typedef struct Time{
 } Time;
 
 
-void timed(char tab[14][24], Time *t){
-    tab[t->x][t->y]= 8;
+void timed(char tab[14][24], Time *t) {
+    int dix;
+    if (dix > 9) {
+        tab[t->x][t->y] = 8;
+        t->x += t->directx;
+        t->y += t->directy;
 
-    t->x +=t->directx;
-    t->y +=t->directy;
-
-    if (t->x==0 && t->y==0){
-        t->directx=0;
-        t->directy=1;
-    }else if (t->x==0 && t->y==23){
-        t->directx=1;
-        t->directy=0;
-    }else if (t->x==13 && t->y==23){
-        t->directx=0;
-        t->directy=-1;
-    }else if (t->x==13&& t->y==0){
-        t->directx=-1;
-        t->directy=0;
+        if (t->x == 0 && t->y == 0) {
+            t->directx = 0;
+            t->directy = 1;
+        } else if (t->x == 0 && t->y == 23) {
+            t->directx = 1;
+            t->directy = 0;
+        } else if (t->x == 13 && t->y == 23) {
+            t->directx = 0;
+            t->directy = -1;
+        } else if (t->x == 13 && t->y == 0) {
+            t->directx = -1;
+            t->directy = 0;
+        }
+        dix = 0;
+    }
+    else {
+        dix++;
     }
 }
