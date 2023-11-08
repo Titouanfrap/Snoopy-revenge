@@ -32,7 +32,7 @@ int main() {
             matrice[x][y] = 9;               // place Snoopy sur sa nouvelle place renvoyée par de SP déplacement
         }
 
-        usleep(60000);                 // on attend 1,57 sec , produit en croix avec le nombre de cases pour avoir 2 minutes
+        usleep(140000);                 // on attend 1,57 sec , produit en croix avec le nombre de cases pour avoir 2 minutes
         system("cls");         //clear de l'écran pour préparer l'affichage de la matrice actualisée
     }
 
