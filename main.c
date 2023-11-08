@@ -4,10 +4,11 @@
 #include "terrain.h"
 #define snoopy 0x850E8 //9                   //raccourcit avec le code hexa associé a Snoopy
 
-Time t = {120, 0, 0, 10, 1};                    // raccourcit vers la structure du timer
+Time t = {120, 0, 0, 10, 1};        // raccourcit vers la structure du timer
 
 int main() {
     int x=7, y=10;
+    int dix=0;
     char key;
     char matrice[14][24];
 
@@ -15,7 +16,14 @@ int main() {
     matrice[x][y] = 9;
     while (1){
         terrain(matrice);
+        if (dix>=9){
         timed(matrice, &t);
+        dix=0;
+        }
+        else {
+            dix++;
+        }
+
         if (kbhit()){               //permet de lancer la boucle ssi une touche est pressée
             matrice[x][y]=0;              // l'ancienne place de Snoopy va etre remplacé par du void, on l'efface
             key = getch();                // la touche pressée est récupérée et assignée a key
@@ -24,7 +32,7 @@ int main() {
             matrice[x][y] = 9;               // place Snoopy sur sa nouvelle place renvoyée par de SP déplacement
         }
 
-        usleep(1570000);                 // on attend 1,57 sec , produit en croix avec le nombre de cases pour avoir 2 minutes
+        usleep(60000);                 // on attend 1,57 sec , produit en croix avec le nombre de cases pour avoir 2 minutes
         system("cls");         //clear de l'écran pour préparer l'affichage de la matrice actualisée
     }
 

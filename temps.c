@@ -31,8 +31,7 @@ typedef struct Time{
 
 
 void timed(char tab[14][24], Time *t) {
-    int dix;
-    if (dix > 9) {
+
         tab[t->x][t->y] = 8;
         t->x += t->directx;
         t->y += t->directy;
@@ -50,9 +49,5 @@ void timed(char tab[14][24], Time *t) {
             t->directx = -1;
             t->directy = 0;
         }
-        dix = 0;
+
     }
-    else {
-        dix++;
-    }
-}
