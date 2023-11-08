@@ -1,0 +1,3 @@
+"C:\Users\marcv\AppData\Local\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\Snoopy_revenge.dir/objects.a
+C:\Users\marcv\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\ar.exe qc CMakeFiles\Snoopy_revenge.dir/objects.a @CMakeFiles\Snoopy_revenge.dir\objects1.rsp
+C:\Users\marcv\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\Snoopy_revenge.dir/objects.a -Wl,--no-whole-archive -o Snoopy_revenge.exe -Wl,--out-implib,libSnoopy_revenge.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Snoopy_revenge.dir\linkLibs.rsp
