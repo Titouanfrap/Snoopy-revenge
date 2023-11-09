@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "terrain.h"
 #define wall 0xFE //1
 #define time 0xB1 //8
 #define Mure 0x850BA //5
@@ -8,7 +9,7 @@
 #define cotebd 0x850BC //4
 #define cotebg 0x850C8 //3
 #define vide ' ' //0
-#define snoopy 0x850E8 //Snoopy 9
+#define player 0x850E8 //Snoopy 9
 // on assigne des blocs a des valeurs pour faire un switch case afin d'aller plus vite et d'éviter les erreurs
 
 void terrain(char tab[14][24]){
@@ -43,7 +44,10 @@ void terrain(char tab[14][24]){
                     printf("%c", time);
                     break;
                 case 9 :
-                    printf("%c", snoopy);
+                    printf("%c", player);
+                    break;
+                case 10 :
+                    printf("o");
                     break;
             }  //Pour chaque case on cherche le cas correspondant puis on le print, en revenant a la ligne a chaque itération de i pour l'aspect tableau
         }
@@ -52,30 +56,33 @@ void terrain(char tab[14][24]){
 }
 
 
-void deplacement(char *key, int *x, int *y) {//On modifie les valeurs de x et y en fonction de la touche recue, les valeurs sont ensuites renvoyées dans le main
-    switch (*key) {
-        case 'z':
-            if (*x > 2) {
-                (*x)--;
+void tableau(char tab[14][24], Balle *balle, Snoopy *snoopy) {
+    for (int i = 0; i < 14; i++) {
+        for (int j = 0; j < 24; j++) {
+            if (i == 0 || i == 13 || j == 0 || j == 23) {
+                tab[i][j] = 1;
+            } else if (i == 1 || i == 12) {
+                tab[i][j] = 2;
+                tab[12][1] = 3;
+                tab[12][22] = 4;
+            } else if (j == 1 || j == 22) {
+                tab[i][j] = 5;
+                tab[1][1] = 6;
+                tab[1][22] = 7;
+            } else {
+                tab[i][j] = 0;
             }
-            break;
-        case 'q':
-            if (*y > 2) {
-                (*y)--;
-            }
-            break;
-        case 's':
-            if (*x < 11) {
-                (*x)++;
-            }
-            break;
-        case 'd':
-            if (*y < 21) {
-                (*y)++;
-            }
-            break;
+        } // fait apparaitre toutes les cases or plateau pour le défilement du temps
+        // c'est un set de départ et ne s'éxecute qu'une seule fois
     }
+    snoopy->x = 3; snoopy->y = 3;
+    tab[snoopy->x][snoopy->y] = 9;
+
+    balle->x = 5; balle->y = 5;
+    tab[balle->x][balle->y] = 10;
 }
+
+
 
 
 

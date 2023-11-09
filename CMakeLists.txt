@@ -5,12 +5,14 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(Snoopy_revenge
         main.c
-        Menu.h
-        temps.h
-        terrain.h
-        balle.h
         temps.c
-        Terrain.c
+        terrain.h
+        menu.h
         balle.c
+        balle.h
+        victory.c
+        snoopy.c
+        snoopy.h
+        terrain.c
 )
 
