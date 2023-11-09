@@ -14,5 +14,6 @@ add_executable(Snoopy_revenge
         snoopy.c
         snoopy.h
         terrain.c
+        menu.c
 )
 
