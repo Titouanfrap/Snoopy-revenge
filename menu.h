@@ -1,3 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <unistd.h>
+
 
 void regles();
 void leave();
