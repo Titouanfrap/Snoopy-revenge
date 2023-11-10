@@ -2,38 +2,40 @@
 #include "menu.h"
 #include "temps.h"
 #include "terrain.h"
-#define snoopy 0x850E8 //9                   //raccourcit avec le code hexa associé a Snoopy
+#define player 0x850E8 //9                   //raccourcit avec le code hexa associé a Snoopy
 
-Time t = {120, 0, 0, 10, 1};        // raccourcit vers la structure du timer
+Time t = {120, 0, 0, 10, 1}; // raccourcit vers la structure du timer
+Balle balle = {5,5,1,1};
+Snoopy snoopy = {3, 3};
 
 int main() {
-    int x=7, y=10;
+
     int dix=0;
     char key;
     char matrice[14][24];
 
-    tableau(matrice);
-    matrice[x][y] = 9;
+    tableau(matrice, &balle, &snoopy);
     while (1){
         terrain(matrice);
         if (dix>=9){
-        timed(matrice, &t);
-        dix=0;
+            timed(matrice, &t);
+            dix=0;
         }
         else {
             dix++;
         }
-
-        if (kbhit()){               //permet de lancer la boucle ssi une touche est pressée
-            matrice[x][y]=0;              // l'ancienne place de Snoopy va etre remplacé par du void, on l'efface
-            key = getch();                // la touche pressée est récupérée et assignée a key
-            deplacement(&key, &x, &y);                   // voir programme déplacement
-
-            matrice[x][y] = 9;               // place Snoopy sur sa nouvelle place renvoyée par de SP déplacement
+        if (kbhit()){             //permet de lancer la boucle ssi une touche est pressée
+            key = getch();             // la touche pressée est récupérée et assignée a key
+            deplacement(matrice, &key, &snoopy);                   // voir programme déplacement
         }
 
-        usleep(140000);                 // on attend 1,57 sec , produit en croix avec le nombre de cases pour avoir 2 minutes
-        system("cls");         //clear de l'écran pour préparer l'affichage de la matrice actualisée
+        mouvballe(matrice, &balle);
+        if (balle.x == snoopy.x && balle.y == snoopy.y) {
+            sleep(2);
+            break;
+        }
+        usleep(140000);           // on attend 1,57 sec , produit en croix avec le nombre de cases pour avoir 2 minutes
+        system("cls");    //clear de l'écran pour préparer l'affichage de la matrice actualisée
     }
 
 }

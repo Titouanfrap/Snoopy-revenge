@@ -1,14 +1,9 @@
 # ninja log v5
-13	159	7211397998034317	CMakeFiles/Snoopy_revenge.dir/Terrain.c.obj	e22c5480ad17e599
-0	166	7211397998044291	CMakeFiles/Snoopy_revenge.dir/temps.c.obj	8b2a9b9abab3c7df
-7	173	7211397998203653	CMakeFiles/Snoopy_revenge.dir/main.c.obj	7f89d0bcd6ad1eac
-22	2397	7211398020450512	CMakeFiles/Snoopy_revenge.dir/balle.c.obj	6142cb809c439ece
-2400	2550	7211398021939108	Snoopy_revenge.exe	3f00b166eac16681
-6	178	7211398859452337	CMakeFiles/Snoopy_revenge.dir/main.c.obj	7f89d0bcd6ad1eac
-180	329	7211398860933918	Snoopy_revenge.exe	3f00b166eac16681
-5	147	7211400177546345	CMakeFiles/Snoopy_revenge.dir/main.c.obj	7f89d0bcd6ad1eac
-150	278	7211400178857940	Snoopy_revenge.exe	3f00b166eac16681
-8	127	7211401337967723	CMakeFiles/Snoopy_revenge.dir/main.c.obj	7f89d0bcd6ad1eac
-128	249	7211401339126314	Snoopy_revenge.exe	3f00b166eac16681
-3	125	7211402714257499	CMakeFiles/Snoopy_revenge.dir/main.c.obj	7f89d0bcd6ad1eac
-125	248	7211402715411288	Snoopy_revenge.exe	3f00b166eac16681
+5	303	7212465705789645	CMakeFiles/Snoopy_revenge.dir/temps.c.obj	8b2a9b9abab3c7df
+90	302	7212465705694473	CMakeFiles/Snoopy_revenge.dir/snoopy.c.obj	57a589271ddf8189
+2	132	7212466265682232	Snoopy_revenge.exe	468c6e60f84b8169
+43	316	7212465706024583	CMakeFiles/Snoopy_revenge.dir/main.c.obj	7f89d0bcd6ad1eac
+60	300	7212465705474495	CMakeFiles/Snoopy_revenge.dir/balle.c.obj	6142cb809c439ece
+1	173	7212466298876972	build.ninja	ec708c9f6d66b62d
+68	324	7212465706194490	CMakeFiles/Snoopy_revenge.dir/victory.c.obj	fd120b38781ecff
+81	301	7212465705539705	CMakeFiles/Snoopy_revenge.dir/terrain.c.obj	6d6d06c69b3058e0

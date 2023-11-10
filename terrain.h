@@ -1,3 +1,5 @@
+#include "balle.h"
+#include "snoopy.h"
 void terrain(char tab[14][24]);
 
-void deplacement(char *key, int *x, int *y) ;
+void tableau(char tab[14][24], Balle *balle, Snoopy *snoopy);
