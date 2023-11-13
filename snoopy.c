@@ -4,8 +4,11 @@
 #include "Victoire.h"
 
 
-void deplacement(char tab[14][24], char *key, Snoopy *snoopy) {//On modifie les valeurs de x et y en fonction de la touche recue, les valeurs sont ensuites renvoyées dans le main
+void deplacement(char tab[14][24], char *key, Snoopy *snoopy) {
+    static int compteur = 0;
+
     tab[snoopy->x][snoopy->y] = 0;
+
     switch (*key) {
         case 'z':
             if (snoopy->x > 2) {
@@ -28,9 +31,15 @@ void deplacement(char tab[14][24], char *key, Snoopy *snoopy) {//On modifie les 
             }
             break;
     }
+    if (tab[snoopy->x][snoopy->y] == 11) {
+        compteur++;
+    }
+
+    if (compteur == 4) {
+        sleep(2);
+        victoire();
+    }
 
     tab[snoopy->x][snoopy->y] = 9;
-
-
 }
 

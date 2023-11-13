@@ -14,7 +14,6 @@ int main() {
     int dix=0;
     char key;
     char matrice[14][24];
-    int compteur = 0;
 
     tableau(matrice, &balle, &snoopy);
     while (1){
@@ -39,13 +38,6 @@ int main() {
             sleep(5);
             menu();
             choix();
-        }
-        if (matrice[snoopy.x][snoopy.y] == 11) {
-            compteur = compteur + 1;
-            if ( compteur == 4) {
-                sleep(2);
-                break;
-            }
         }
 
         usleep(140000);           // on attend 1,57 sec , produit en croix avec le nombre de cases pour avoir 2 minutes
