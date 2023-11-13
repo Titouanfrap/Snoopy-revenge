@@ -200,6 +200,30 @@ balle.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/balle.c.s
 .PHONY : balle.c.s
 
+blocs.obj: blocs.c.obj
+.PHONY : blocs.obj
+
+# target to build an object file
+blocs.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/blocs.c.obj
+.PHONY : blocs.c.obj
+
+blocs.i: blocs.c.i
+.PHONY : blocs.i
+
+# target to preprocess a source file
+blocs.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/blocs.c.i
+.PHONY : blocs.c.i
+
+blocs.s: blocs.c.s
+.PHONY : blocs.s
+
+# target to generate assembly for a file
+blocs.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/blocs.c.s
+.PHONY : blocs.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -338,6 +362,9 @@ help:
 	@echo ... balle.obj
 	@echo ... balle.i
 	@echo ... balle.s
+	@echo ... blocs.obj
+	@echo ... blocs.i
+	@echo ... blocs.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

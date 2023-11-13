@@ -50,7 +50,7 @@ void terrain(char tab[14][24]){
                     printf("%c", player);
                     break;
                 case 10 :
-                    Color(9,0);
+                    Color(12,0);
                     printf("o");
                     Color(15,0);
                     break;

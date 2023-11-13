@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/GameOver.c" "CMakeFiles/Snoopy_revenge.dir/GameOver.c.obj" "gcc" "CMakeFiles/Snoopy_revenge.dir/GameOver.c.obj.d"
   "C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/Victoire.c" "CMakeFiles/Snoopy_revenge.dir/Victoire.c.obj" "gcc" "CMakeFiles/Snoopy_revenge.dir/Victoire.c.obj.d"
   "C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/balle.c" "CMakeFiles/Snoopy_revenge.dir/balle.c.obj" "gcc" "CMakeFiles/Snoopy_revenge.dir/balle.c.obj.d"
+  "C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/blocs.c" "CMakeFiles/Snoopy_revenge.dir/blocs.c.obj" "gcc" "CMakeFiles/Snoopy_revenge.dir/blocs.c.obj.d"
   "C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/main.c" "CMakeFiles/Snoopy_revenge.dir/main.c.obj" "gcc" "CMakeFiles/Snoopy_revenge.dir/main.c.obj.d"
   "C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/menu.c" "CMakeFiles/Snoopy_revenge.dir/menu.c.obj" "gcc" "CMakeFiles/Snoopy_revenge.dir/menu.c.obj.d"
   "C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/snoopy.c" "CMakeFiles/Snoopy_revenge.dir/snoopy.c.obj" "gcc" "CMakeFiles/Snoopy_revenge.dir/snoopy.c.obj.d"

@@ -18,5 +18,7 @@ add_executable(Snoopy_revenge
         GameOver.h
         Victoire.c
         Victoire.h
+        blocs.c
+        blocs.h
 )
 
