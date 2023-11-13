@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge
+CMAKE_SOURCE_DIR = C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -127,6 +127,54 @@ Snoopy_revenge: cmake_check_build_system
 Snoopy_revenge/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/build
 .PHONY : Snoopy_revenge/fast
+
+Defaite.obj: Defaite.c.obj
+.PHONY : Defaite.obj
+
+# target to build an object file
+Defaite.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Defaite.c.obj
+.PHONY : Defaite.c.obj
+
+Defaite.i: Defaite.c.i
+.PHONY : Defaite.i
+
+# target to preprocess a source file
+Defaite.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Defaite.c.i
+.PHONY : Defaite.c.i
+
+Defaite.s: Defaite.c.s
+.PHONY : Defaite.s
+
+# target to generate assembly for a file
+Defaite.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Defaite.c.s
+.PHONY : Defaite.c.s
+
+Victoire.obj: Victoire.c.obj
+.PHONY : Victoire.obj
+
+# target to build an object file
+Victoire.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Victoire.c.obj
+.PHONY : Victoire.c.obj
+
+Victoire.i: Victoire.c.i
+.PHONY : Victoire.i
+
+# target to preprocess a source file
+Victoire.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Victoire.c.i
+.PHONY : Victoire.c.i
+
+Victoire.s: Victoire.c.s
+.PHONY : Victoire.s
+
+# target to generate assembly for a file
+Victoire.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Victoire.c.s
+.PHONY : Victoire.c.s
 
 balle.obj: balle.c.obj
 .PHONY : balle.obj
@@ -272,30 +320,6 @@ terrain.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/terrain.c.s
 .PHONY : terrain.c.s
 
-victory.obj: victory.c.obj
-.PHONY : victory.obj
-
-# target to build an object file
-victory.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/victory.c.obj
-.PHONY : victory.c.obj
-
-victory.i: victory.c.i
-.PHONY : victory.i
-
-# target to preprocess a source file
-victory.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/victory.c.i
-.PHONY : victory.c.i
-
-victory.s: victory.c.s
-.PHONY : victory.s
-
-# target to generate assembly for a file
-victory.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/victory.c.s
-.PHONY : victory.c.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -305,6 +329,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Snoopy_revenge
+	@echo ... Defaite.obj
+	@echo ... Defaite.i
+	@echo ... Defaite.s
+	@echo ... Victoire.obj
+	@echo ... Victoire.i
+	@echo ... Victoire.s
 	@echo ... balle.obj
 	@echo ... balle.i
 	@echo ... balle.s
@@ -323,9 +353,6 @@ help:
 	@echo ... terrain.obj
 	@echo ... terrain.i
 	@echo ... terrain.s
-	@echo ... victory.obj
-	@echo ... victory.i
-	@echo ... victory.s
 .PHONY : help
 
 
