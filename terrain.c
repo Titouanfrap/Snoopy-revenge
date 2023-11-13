@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
 #include "terrain.h"
 #define wall 0xFE //1
 #define time 0xB1 //8
@@ -48,10 +50,14 @@ void terrain(char tab[14][24]){
                     printf("%c", player);
                     break;
                 case 10 :
+                    Color(9,0);
                     printf("o");
+                    Color(15,0);
                     break;
                 case 11 :
+                    Color(14,0);
                     printf("%c", bird);
+                    Color(15,0);
                     break;
             }  //Pour chaque case on cherche le cas correspondant puis on le print, en revenant a la ligne a chaque itération de i pour l'aspect tableau
         }
@@ -96,7 +102,11 @@ void tableau(char tab[14][24], Balle *balle, Snoopy *snoopy) {
 
 
 
-
+void Color(int couleurDuTexte,int couleurDeFond)
+{
+HANDLE H=GetStdHandle(STD_OUTPUT_HANDLE);
+SetConsoleTextAttribute(H,couleurDeFond*16+couleurDuTexte);
+}
 
 
 

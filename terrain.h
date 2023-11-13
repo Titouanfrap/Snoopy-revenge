@@ -1,7 +1,7 @@
 #include "balle.h"
 #include "snoopy.h"
 
-
+void Color(int couleurDuTexte,int couleurDeFond);
 
 void terrain(char tab[14][24]);
 
