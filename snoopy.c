@@ -5,7 +5,6 @@
 
 
 void deplacement(char tab[14][24], char *key, Snoopy *snoopy) {//On modifie les valeurs de x et y en fonction de la touche recue, les valeurs sont ensuites renvoyées dans le main
-    int compteur = 0;
     tab[snoopy->x][snoopy->y] = 0;
     switch (*key) {
         case 'z':
@@ -28,13 +27,6 @@ void deplacement(char tab[14][24], char *key, Snoopy *snoopy) {//On modifie les 
                 snoopy->y++;
             }
             break;
-    }
-    if (tab[snoopy->x][snoopy->y] == 11) {
-        compteur = compteur + 1;
-    }
-    if (compteur == 4) {
-        sleep(2);
-        victoire();
     }
 
     tab[snoopy->x][snoopy->y] = 9;
