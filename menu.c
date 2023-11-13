@@ -73,7 +73,7 @@ int menu() {
 }
 
 void handleDir(char *key);
-int choix()
+void choix()
 {
     char key = ' ';
 
@@ -84,8 +84,6 @@ int choix()
         }
         handleDir(&key);
     }
-
-    return 0;
 }
 
 void handleDir(char *key) {

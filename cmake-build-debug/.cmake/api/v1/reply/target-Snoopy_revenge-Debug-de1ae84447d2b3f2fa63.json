@@ -157,7 +157,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Defaite.c",
+			"path" : "GameOver.c",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -185,7 +185,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Defaite.h",
+			"path" : "GameOver.h",
 			"sourceGroupIndex" : 1
 		},
 		{

@@ -31,14 +31,16 @@ void deplacement(char tab[14][24], char *key, Snoopy *snoopy) {
             }
             break;
     }
+
     if (tab[snoopy->x][snoopy->y] == 11) {
         compteur++;
     }
-
     if (compteur == 4) {
         sleep(2);
         victoire();
+        sleep(5);
     }
+
 
     tab[snoopy->x][snoopy->y] = 9;
 }

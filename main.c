@@ -2,7 +2,7 @@
 #include "menu.h"
 #include "temps.h"
 #include "terrain.h"
-#include "Defaite.h"
+#include "GameOver.h"
 #include "Victoire.h"
 #define player 0x850E8 //9                   //raccourcit avec le code hexa associé a Snoopy
 
@@ -39,6 +39,7 @@ int main() {
             menu();
             choix();
         }
+
 
         usleep(140000);           // on attend 1,57 sec , produit en croix avec le nombre de cases pour avoir 2 minutes
         system("cls");    //clear de l'écran pour préparer l'affichage de la matrice actualisée
