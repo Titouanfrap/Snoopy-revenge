@@ -10,6 +10,7 @@
 #define cotebg 0x850C8 //3
 #define vide ' ' //0
 #define player 0x850E8 //Snoopy 9
+#define bird 0x850B8     // 11
 // on assigne des blocs a des valeurs pour faire un switch case afin d'aller plus vite et d'éviter les erreurs
 
 void terrain(char tab[14][24]){
@@ -49,6 +50,9 @@ void terrain(char tab[14][24]){
                 case 10 :
                     printf("o");
                     break;
+                case 11 :
+                    printf("%c", bird);
+                    break;
             }  //Pour chaque case on cherche le cas correspondant puis on le print, en revenant a la ligne a chaque itération de i pour l'aspect tableau
         }
         printf("\n");
@@ -75,11 +79,19 @@ void tableau(char tab[14][24], Balle *balle, Snoopy *snoopy) {
         } // fait apparaitre toutes les cases or plateau pour le défilement du temps
         // c'est un set de départ et ne s'éxecute qu'une seule fois
     }
-    snoopy->x = 3; snoopy->y = 3;
+    snoopy->x = 4; snoopy->y = 4;
     tab[snoopy->x][snoopy->y] = 9;
 
     balle->x = 5; balle->y = 5;
     tab[balle->x][balle->y] = 10;
+
+    tab[2][2] = 11;
+
+    tab[2][21] = 11;
+
+    tab[11][21] = 11;
+
+    tab[11][2] = 11;
 }
 
 
