@@ -76,16 +76,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/GameOver.c">
+		<Unit filename="C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/FinNiveaux.c">
 			<Option target="Snoopy_revenge"/>
 		</Unit>
-		<Unit filename="C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/GameOver.h">
-			<Option target="Snoopy_revenge"/>
-		</Unit>
-		<Unit filename="C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/Victoire.c">
-			<Option target="Snoopy_revenge"/>
-		</Unit>
-		<Unit filename="C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/Victoire.h">
+		<Unit filename="C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/FinNiveaux.h">
 			<Option target="Snoopy_revenge"/>
 		</Unit>
 		<Unit filename="C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/balle.c">

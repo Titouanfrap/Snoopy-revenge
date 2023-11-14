@@ -128,53 +128,29 @@ Snoopy_revenge/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/build
 .PHONY : Snoopy_revenge/fast
 
-GameOver.obj: GameOver.c.obj
-.PHONY : GameOver.obj
+FinNiveaux.obj: FinNiveaux.c.obj
+.PHONY : FinNiveaux.obj
 
 # target to build an object file
-GameOver.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/GameOver.c.obj
-.PHONY : GameOver.c.obj
+FinNiveaux.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/FinNiveaux.c.obj
+.PHONY : FinNiveaux.c.obj
 
-GameOver.i: GameOver.c.i
-.PHONY : GameOver.i
-
-# target to preprocess a source file
-GameOver.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/GameOver.c.i
-.PHONY : GameOver.c.i
-
-GameOver.s: GameOver.c.s
-.PHONY : GameOver.s
-
-# target to generate assembly for a file
-GameOver.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/GameOver.c.s
-.PHONY : GameOver.c.s
-
-Victoire.obj: Victoire.c.obj
-.PHONY : Victoire.obj
-
-# target to build an object file
-Victoire.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Victoire.c.obj
-.PHONY : Victoire.c.obj
-
-Victoire.i: Victoire.c.i
-.PHONY : Victoire.i
+FinNiveaux.i: FinNiveaux.c.i
+.PHONY : FinNiveaux.i
 
 # target to preprocess a source file
-Victoire.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Victoire.c.i
-.PHONY : Victoire.c.i
+FinNiveaux.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/FinNiveaux.c.i
+.PHONY : FinNiveaux.c.i
 
-Victoire.s: Victoire.c.s
-.PHONY : Victoire.s
+FinNiveaux.s: FinNiveaux.c.s
+.PHONY : FinNiveaux.s
 
 # target to generate assembly for a file
-Victoire.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Victoire.c.s
-.PHONY : Victoire.c.s
+FinNiveaux.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/FinNiveaux.c.s
+.PHONY : FinNiveaux.c.s
 
 balle.obj: balle.c.obj
 .PHONY : balle.obj
@@ -353,12 +329,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Snoopy_revenge
-	@echo ... GameOver.obj
-	@echo ... GameOver.i
-	@echo ... GameOver.s
-	@echo ... Victoire.obj
-	@echo ... Victoire.i
-	@echo ... Victoire.s
+	@echo ... FinNiveaux.obj
+	@echo ... FinNiveaux.i
+	@echo ... FinNiveaux.s
 	@echo ... balle.obj
 	@echo ... balle.i
 	@echo ... balle.s
