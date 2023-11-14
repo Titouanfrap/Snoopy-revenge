@@ -19,6 +19,7 @@ int main() {
     tableau(matrice, &balle, &snoopy);
     while(game != 1){
         terrain(matrice);
+        void bloc(char tab[14][24]);
         if (dix>=9){
             timed(matrice, &t);
             dix=0;

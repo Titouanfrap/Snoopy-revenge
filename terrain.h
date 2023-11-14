@@ -6,3 +6,5 @@ void Color(int couleurDuTexte,int couleurDeFond);
 void terrain(char tab[14][24]);
 
 void tableau(char tab[14][24], Balle *balle, Snoopy *snoopy);
+
+void bloc(char tab[14][24])

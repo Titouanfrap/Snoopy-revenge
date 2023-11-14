@@ -65,6 +65,20 @@ void terrain(char tab[14][24]){
     }
 }
 
+void bloc(char tab[14][24]) {
+    for (int i = 0; i < 14; i++) {
+        for (int j = 0; j < 24; j++) {
+            tab[9][12] = 1;
+            tab[9][13] = 1;
+            tab[9][14] = 1;
+            tab[9][15] = 1;
+            tab[8][15] = 1;
+            tab[7][15] = 1;
+            tab[6][15] = 1;
+            tab[5][15] = 1;
+        }
+    }
+}
 
 void tableau(char tab[14][24], Balle *balle, Snoopy *snoopy) {
     for (int i = 0; i < 14; i++) {
