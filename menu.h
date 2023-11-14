@@ -10,4 +10,3 @@ void password();
 int menu();
 void handleDir(char *key);
 void choix();
-void handleDir(char *key);

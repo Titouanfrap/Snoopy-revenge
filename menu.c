@@ -30,7 +30,7 @@ void leave() {
            "\t\t\t*       super jeu video !        *\n"
            "\t\t\t*                                *\n"
            "\t\t\t********** A bientot ! ***********\n");
-    sleep(5);
+    sleep(3);
     system("cls");
 }
 void password() {

@@ -46,6 +46,7 @@ int main() {
             game = 1;
             sleep(2);
             victoire();
+            choice();
             sleep(100);
         }
 

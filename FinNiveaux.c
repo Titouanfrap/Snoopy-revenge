@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <conio.h>
 #include "menu.h"
-void victoire(char *key) {
+void victoire() {
     system("cls");
     printf("//==============================\\\\\n"
            "||          **********\t        ||\n"
@@ -24,27 +24,45 @@ void victoire(char *key) {
            "||         Deconnexion          || \n"
            "||                              || \n"
            "\\\\==============================//");
-
-    if (kbhit()){
-        key=getch;
-
-    switch (*key){
-        case 1:
-            printf("Sauvegarde en cours...");
-     case 2:
-         printf("Niveau suivant");
-     case 3:
-         printf("Retour au Menu");
-         sleep(3);
-         menu();
-     case 4:
-       printf("Deconnexion");
-       sleep (5);
-       break;
-    }
-  }
 }
 
+void menuchoix(char *touche);
+
+void choice()
+{
+    char touche = ' ';
+
+    while (1)
+    {
+        if (kbhit()) {
+            touche = getch();
+        }
+        menuchoix(&touche);
+    }
+}
+
+void menuchoix(char *touche) {
+    switch (*touche){
+        case '1':
+            printf("\n\nSauvegarde en cours...");
+            break;
+        case '2':
+            printf("\n\nNiveau suivant");
+            break;
+        case '3':
+            printf("\n\n Retour au Menu...");
+            sleep(3);
+            menu();
+            break;
+        case '4':
+            printf("\n\nDeconnexion...");
+            sleep(3);
+            break;
+        default:
+            break;
+    }
+    *touche = ' ';
+}
 
 
 void defaite(char *key){
@@ -86,8 +104,7 @@ void defaite(char *key){
 
 
 
-void GameOver() {
-    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+void GameOver() {printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     printf("\t\t/---------------------------------------------------------------\\\n");
     printf("\t\t|  _____          __  __ ______    ______      ________ _____  \t|\n");
     printf("\t\t| |  __ \\   /\\   |  \\/  |  ____|  / __ \\ \\    / /  ____|  __ \\ \t|\n");
@@ -98,5 +115,6 @@ void GameOver() {
     printf("\t\t\\---------------------------------------------------------------/\n");
     printf("\t\t----======Vous vous etes fais toucher par la balle======---- \n\n\n");
     printf("Retour au menu principal...\n");
+
 
 }
