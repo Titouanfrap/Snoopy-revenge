@@ -2,8 +2,7 @@
 #include "menu.h"
 #include "temps.h"
 #include "terrain.h"
-#include "GameOver.h"
-#include "Victoire.h"
+#include "FinNiveaux.h"
 #define player 0x850E8 //9                   //raccourcit avec le code hexa associé a Snoopy
 
 Time t = {120, 0, 0, 10, 1}; // raccourcit vers la structure du timer
@@ -14,9 +13,11 @@ int main() {
     int dix=0;
     char key;
     char matrice[14][24];
+    int compteur = 0;
+    int game = 0;
 
     tableau(matrice, &balle, &snoopy);
-    while (1){
+    while(game != 1){
         terrain(matrice);
         if (dix>=9){
             timed(matrice, &t);
@@ -27,7 +28,7 @@ int main() {
         }
         if (kbhit()){             //permet de lancer la boucle ssi une touche est pressée
             key = getch();             // la touche pressée est récupérée et assignée a key
-            deplacement(matrice, &key, &snoopy);                   // voir programme déplacement
+            deplacement(matrice, &key, &snoopy, &compteur);                   // voir programme déplacement
         }
 
 
@@ -38,6 +39,12 @@ int main() {
             sleep(5);
             menu();
             choix();
+        }
+
+        if (compteur == 4) {
+            game = 1;
+            sleep(2);
+            victoire();
         }
 
 

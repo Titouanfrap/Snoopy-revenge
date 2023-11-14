@@ -1,11 +1,10 @@
 #include "snoopy.h"
 #include <stdio.h>
 #include <unistd.h>
-#include "Victoire.h"
+#include "FinNiveaux.h"
 
 
-void deplacement(char tab[14][24], char *key, Snoopy *snoopy) {
-    static int compteur = 0;
+void deplacement(char tab[14][24], char *key, Snoopy *snoopy, int *compteur) {
 
     tab[snoopy->x][snoopy->y] = 0;
 
@@ -33,14 +32,8 @@ void deplacement(char tab[14][24], char *key, Snoopy *snoopy) {
     }
 
     if (tab[snoopy->x][snoopy->y] == 11) {
-        compteur++;
+        (*compteur)++;
     }
-    if (compteur == 4) {
-        sleep(2);
-        victoire();
-        sleep(5);
-    }
-
 
     tab[snoopy->x][snoopy->y] = 9;
 }

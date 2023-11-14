@@ -1,0 +1,3 @@
+void victoire();
+
+void GameOver();

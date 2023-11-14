@@ -10,14 +10,12 @@ add_executable(Snoopy_revenge
         menu.h
         balle.c
         balle.h
-        GameOver.c
         snoopy.c
         snoopy.h
         terrain.c
         menu.c
-        GameOver.h
-        Victoire.c
-        Victoire.h
+        FinNiveaux.c
+        FinNiveaux.h
         blocs.c
         blocs.h
 )
