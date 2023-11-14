@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <conio.h>
 #include "menu.h"
-void victoire() {
+void victoire(char *key) {
     system("cls");
     printf("//==============================\\\\\n"
            "||          **********\t        ||\n"
@@ -24,35 +24,27 @@ void victoire() {
            "||         Deconnexion          || \n"
            "||                              || \n"
            "\\\\==============================//");
-//    switch (*key) {
-//        case'1':
-//            printf("\n\n\n\n Sauvegarde en cours");
-//        case '2':
-//            printf("\n\n\n\n Passer au niveau Suivant?"
-//                   "\n\t       Oui : y               Non : n");
-//            char confirmKey = getch();
-//            if (confirmKey == 'y') {
-//            }
-//            else if (confirmKey == 'n') {
-//                return;
-//        case '3':
-//             printf("\n\n\n\n Retour Menu ?"
-//             "\n\t       Oui : y               Non : n");
-//             char confirmKey = getch();
-//              if (confirmKey == 'y') {
-//                menu();}
-//               else if (confirmKey == 'n') {
-//                    return;    }
-//
-//        case '4':
-//        printf("\n\n\n\n Retour Menu ?"
-//               "\n\t       Oui : y               Non : n");
-//         char confirmKey = getch();
-//                if (confirmKey == 'y') {
-//                }
-//                else if (confirmKey == 'n') {
-//                    return;
+
+    if (kbhit()){
+        key=getch;
+
+    switch (*key){
+        case 1:
+            printf("Sauvegarde en cours...");
+     case 2:
+         printf("Niveau suivant");
+     case 3:
+         printf("Retour au Menu");
+         sleep(3);
+         menu();
+     case 4:
+       printf("Deconnexion");
+       sleep (5);
+       break;
+    }
+  }
 }
+
 
 
 void defaite(char *key){
@@ -74,7 +66,24 @@ void defaite(char *key){
            "||         Deconnexion          ||\n"
            "||                              ||\n"
            "\\\\==============================//");
+    switch (*key){
+        case 1:
+            printf("Retenter sa chance");
+            sleep(3);
+        case 2:
+            printf("Sauvegarde...");
+            sleep(3);
+        case 3:
+            printf("Retour au Menu");
+            sleep(3);
+            menu();
+        case 4:
+            printf("Deconnexion");
+            sleep (5);
+            break;}
+
 }
+
 
 
 void GameOver() {
