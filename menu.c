@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <unistd.h>
+#include "Lvl1.h"
 
 void regles() {
     system("cls");
@@ -105,6 +106,10 @@ void handleDir(char *key) {
         case '2':
             printf("\n\n\n\n Voulez vous commencer une nouvelle partie ?"
                    "\n\t       Oui : y               Non : n");
+            char confirmKey3 = getch();
+            if (confirmKey3 == 'y') {
+                Lvl1();
+            }
             break;
         case '3':
             printf("\n\n\n\n Voulez vous charger une partie ?"

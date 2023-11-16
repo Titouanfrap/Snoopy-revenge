@@ -65,7 +65,7 @@ void terrain(char tab[14][24]){
     }
 }
 
-void bloc(char tab[14][24]) {
+void BlocNiv1(char tab[14][24]) {
     for (int i = 0; i < 14; i++) {
         for (int j = 0; j < 24; j++) {
             tab[2][3] = 1;
