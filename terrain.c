@@ -13,6 +13,9 @@
 #define vide ' ' //0
 #define player 0x850E8 //Snoopy 9
 #define bird 0x850B8     // 11
+#define tp 0x850CF
+#define cassable 0x850B1
+#define angle 0x850CB
 // on assigne des blocs a des valeurs pour faire un switch case afin d'aller plus vite et d'éviter les erreurs
 
 void terrain(char tab[14][24]){
@@ -59,6 +62,15 @@ void terrain(char tab[14][24]){
                     printf("%c", bird);
                     Color(15,0);
                     break;
+                case 12:
+                    printf("%c",tp);
+                    break;
+                case 13:
+                    printf("%c",cassable);
+                    break;
+                case 14:
+                    printf("%c",angle);
+                    break;
             }  //Pour chaque case on cherche le cas correspondant puis on le print, en revenant a la ligne a chaque itération de i pour l'aspect tableau
         }
         printf("\n");
@@ -98,7 +110,6 @@ void BlocNiv1(char tab[14][24]) {
         }
     }
 }
-
 void tableau(char tab[14][24], Balle *balle, Snoopy *snoopy) {
     for (int i = 0; i < 14; i++) {
         for (int j = 0; j < 24; j++) {
