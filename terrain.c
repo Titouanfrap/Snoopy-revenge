@@ -16,6 +16,8 @@
 #define tp 0x850CF
 #define cassable 0x850B1
 #define angle 0x850CB
+#define lienh 0x850CA
+
 // on assigne des blocs a des valeurs pour faire un switch case afin d'aller plus vite et d'éviter les erreurs
 
 void terrain(char tab[14][24]){
@@ -71,6 +73,9 @@ void terrain(char tab[14][24]){
                 case 14:
                     printf("%c",angle);
                     break;
+                case 15:
+                    printf("%c",lienh);
+                    break;
             }  //Pour chaque case on cherche le cas correspondant puis on le print, en revenant a la ligne a chaque itération de i pour l'aspect tableau
         }
         printf("\n");
@@ -80,32 +85,32 @@ void terrain(char tab[14][24]){
 void BlocNiv1(char tab[14][24]) {
     for (int i = 0; i < 14; i++) {
         for (int j = 0; j < 24; j++) {
-            tab[2][3] = 1;
-            tab[3][3] = 1;
-            tab[4][3] = 1;
-            tab[9][4] = 1;
-            tab[8][4] = 1;
-            tab[7][4] = 1;
-            tab[10][5] = 1;
-            tab[10][4] = 1;
-            tab[10][3] = 1;
-            tab[10][2] = 1;
-            tab[6][10] = 1;
-            tab[5][10] = 1;
-            tab[4][10] = 1;
-            tab[3][10] = 1;
-            tab[6][11] = 1;
-            tab[3][11] = 1;
-            tab[9][12] = 1;
-            tab[9][13] = 1;
-            tab[10][13] = 1;
-            tab[2][14] = 1;
-            tab[3][14] = 1;
-            tab[4][14] = 1;
-            tab[7][19] = 1;
-            tab[7][20] = 1;
-            tab[7][18] = 1;
-            tab[7][21] = 1;
+            tab[2][3] = 5;
+            tab[3][3] = 5;
+            tab[4][3] = 5;
+            tab[9][4] = 5;
+            tab[8][4] = 5;
+            tab[7][4] = 5;
+            tab[10][5] = 2;
+            tab[10][4] = 15;
+            tab[10][3] = 2;
+            tab[10][2] = 2;
+            tab[6][10] = 3;
+            tab[5][10] = 5;
+            tab[4][10] = 5;
+            tab[3][10] = 6;
+            tab[6][11] = 2;
+            tab[3][11] = 2;
+            tab[9][12] = 2;
+            tab[9][13] = 7;
+            tab[10][13] = 5;
+            tab[2][14] = 5;
+            tab[3][14] = 5;
+            tab[4][14] = 5;
+            tab[7][19] = 2;
+            tab[7][20] = 2;
+            tab[7][18] = 2;
+            tab[7][21] = 2;
 
         }
     }
