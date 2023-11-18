@@ -8,3 +8,5 @@ void terrain(char tab[14][24]);
 void tableau(char tab[14][24], Balle *balle, Snoopy *snoopy);
 
 void BlocNiv1(char tab[14][24]);
+
+void BlocNiv2(char tab[14][24]);
