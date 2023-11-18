@@ -20,5 +20,7 @@ add_executable(Snoopy_revenge
         blocs.h
         Lvl1.c
         Lvl1.h
+        Lvl2.c
+        Lvl2.h
 )
 

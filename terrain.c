@@ -87,8 +87,6 @@ void terrain(char tab[14][24]){
 }
 
 void BlocNiv1(char tab[14][24]) {
-    for (int i = 0; i < 14; i++) {
-        for (int j = 0; j < 24; j++) {
             tab[2][3] = 5;
             tab[3][3] = 5;
             tab[4][3] = 5;
@@ -117,8 +115,7 @@ void BlocNiv1(char tab[14][24]) {
             tab[7][21] = 2;
 
         }
-    }
-}
+
 void tableau(char tab[14][24], Balle *balle, Snoopy *snoopy) {
     for (int i = 0; i < 14; i++) {
         for (int j = 0; j < 24; j++) {
@@ -182,8 +179,10 @@ void BlocNiv2(char tab[14][24]) {
     tab[10][8] = 3;
     tab[3][9] = 5;
     tab[4][9] = 3;
+    tab[8][9]=16;
     tab[10][9] = 2;
     tab[4][10] = 2;
+    tab[8][10]=16;
     tab[10][10]=2;
     tab[4][11] = 7;
     tab[9][11] = 5;
@@ -194,6 +193,7 @@ void BlocNiv2(char tab[14][24]) {
     tab[5][14]=2;
     tab[8][14]=2;
     tab[3][15] = 8;
+    tab[4][15]=16;
     tab[5][15] =8;
     tab[8][15] =2;
     tab[3][16]=2;
@@ -201,6 +201,7 @@ void BlocNiv2(char tab[14][24]) {
     tab[7][16] = 5;
     tab[8][16] = 4;
     tab[3][17] = 8;
+    tab[4][17]=16;
     tab[5][17] =8;
     tab[2][18]=5;
     tab[3][18]=4;
@@ -209,8 +210,11 @@ void BlocNiv2(char tab[14][24]) {
     tab[9][18]=5;
     tab[10][18]=3;
     tab[5][19]=2;
+    tab[8][19]=16;
     tab[10][19]=2;
     tab[5][20]=2;
+    tab[7][20]=16;
+    tab[8][20]=16;
     tab[10][20]=2;
     tab[5][21]=2;
     tab[9][21]=5;
