@@ -17,6 +17,7 @@
 #define cassable 0x850B1
 #define angle 0x850CB
 #define lienh 0x850CA
+#define poussable 0x850AF  //16
 
 // on assigne des blocs a des valeurs pour faire un switch case afin d'aller plus vite et d'éviter les erreurs
 
@@ -75,6 +76,9 @@ void terrain(char tab[14][24]){
                     break;
                 case 15:
                     printf("%c",lienh);
+                    break;
+                case 16:
+                    printf("%c",poussable);
                     break;
             }  //Pour chaque case on cherche le cas correspondant puis on le print, en revenant a la ligne a chaque itération de i pour l'aspect tableau
         }
@@ -159,3 +163,56 @@ SetConsoleTextAttribute(H,couleurDeFond*16+couleurDuTexte);
 
 
 
+void BlocNiv2(char tab[14][24]) {
+    tab[4][2] = 5;
+    tab[5][2] = 5;
+    tab[7][2] = 5;
+    tab[5][3]=8;
+    tab[6][3]=16;
+    tab[2][4] = 5;
+    tab[3][4] = 5;
+    tab[4][4] = 5;
+    tab[5][4] = 5;
+    tab[7][4] = 5;
+    tab[7][5] = 2;
+    tab[5][6] = 5;
+    tab[6][6] = 5;
+    tab[7][6]=4;
+    tab[9][8] = 5;
+    tab[10][8] = 3;
+    tab[3][9] = 5;
+    tab[4][9] = 3;
+    tab[10][9] = 2;
+    tab[4][10] = 2;
+    tab[10][10]=2;
+    tab[4][11] = 7;
+    tab[9][11] = 5;
+    tab[5][11]=5;
+    tab[10][11]=4;
+    tab[3][12]= 5;
+    tab[4][12]=4;
+    tab[5][14]=2;
+    tab[8][14]=2;
+    tab[3][15] = 8;
+    tab[5][15] =8;
+    tab[8][15] =2;
+    tab[3][16]=2;
+    tab[6][16] = 5;
+    tab[7][16] = 5;
+    tab[8][16] = 4;
+    tab[3][17] = 8;
+    tab[5][17] =8;
+    tab[2][18]=5;
+    tab[3][18]=4;
+    tab[5][18]=6;
+    tab[6][18]=5;
+    tab[9][18]=5;
+    tab[10][18]=3;
+    tab[5][19]=2;
+    tab[10][19]=2;
+    tab[5][20]=2;
+    tab[10][20]=2;
+    tab[5][21]=2;
+    tab[9][21]=5;
+    tab[10][21]=4;
+}
