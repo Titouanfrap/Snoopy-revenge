@@ -12,7 +12,7 @@ Balle balle = {5,5,1,1};
 Snoopy snoopy = {4, 4};
 
 
-void Lvl2() {
+void Lvl1() {
     int dix=0;
     char key;
     char matrice[14][24];
