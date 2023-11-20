@@ -2,7 +2,7 @@
 #include "terrain.h"
 #include "FinNiveaux.h"
 #include <unistd.h>
-#include <stdio.h>
+#include "Lvl1.h"
 #include <conio.h>
 #include "menu.h"
 #define player 0x850E8 //9                   //raccourcit avec le code hexa associé a Snoopy
@@ -11,7 +11,8 @@ Time t = {120, 0, 0, 10, 1}; // raccourcit vers la structure du timer
 Balle balle = {5,5,1,1};
 Snoopy snoopy = {4, 4};
 
-void Lvl1() {
+
+void Lvl2() {
     int dix=0;
     char key;
     char matrice[14][24];

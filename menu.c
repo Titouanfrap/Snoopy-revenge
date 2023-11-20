@@ -3,6 +3,7 @@
 #include <conio.h>
 #include <unistd.h>
 #include "Lvl1.h"
+#include "Lvl2.h"
 
 void regles() {
     system("cls");
