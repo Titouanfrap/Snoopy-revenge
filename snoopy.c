@@ -28,7 +28,7 @@ void deplacement(char tab[14][24], char *key, Snoopy *snoopy, int *compteur) {
                         if (tab[snoopy->x][snoopy->y-1] != 7){
                             if (tab[snoopy->x][snoopy->y-1] != 4){
                                 if (tab[snoopy->x][snoopy->y-1] != 3){
-                                    if (tab[snoopy->x-1][snoopy->y] != 13) {
+                                    if (tab[snoopy->x][snoopy->y-1] != 13) {
             if (snoopy->y > 2) {
                 snoopy->y--;
             }}}}}}}
@@ -40,7 +40,7 @@ void deplacement(char tab[14][24], char *key, Snoopy *snoopy, int *compteur) {
                         if (tab[snoopy->x+1][snoopy->y] != 2){
                             if (tab[snoopy->x+1][snoopy->y] != 3){
                                 if (tab[snoopy->x+1][snoopy->y] != 4){
-                                    if (tab[snoopy->x-1][snoopy->y] != 13) {
+                                    if (tab[snoopy->x+1][snoopy->y] != 13) {
                                 }
             if (snoopy->x < 11) {
                 snoopy->x++;
@@ -53,7 +53,7 @@ void deplacement(char tab[14][24], char *key, Snoopy *snoopy, int *compteur) {
                         if (tab[snoopy->x][snoopy->y+1] != 4) {
                             if (tab[snoopy->x][snoopy->y+1] != 7) {
                                 if (tab[snoopy->x][snoopy->y+1] != 6) {
-                                    if (tab[snoopy->x-1][snoopy->y] != 13) {
+                                    if (tab[snoopy->x][snoopy->y+1] != 13) {
                                 }
                 if (snoopy->y < 21) {
                     snoopy->y++;
