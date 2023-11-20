@@ -14,7 +14,7 @@
 #define player 0x850E8 //Snoopy 9
 #define bird 0x850B8     // 11
 #define tp 0x850CF
-#define cassable 0x850B1
+#define cassable 0x850B1 //13
 #define angle 0x850CB
 #define lienh 0x850CA
 #define poussable 0x850AF  //16
