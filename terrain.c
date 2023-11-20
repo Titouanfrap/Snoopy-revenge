@@ -13,10 +13,10 @@
 #define vide ' ' //0
 #define player 0x850E8 //Snoopy 9
 #define bird 0x850B8     // 11
-#define tp 0x850CF
+#define tp 0x850CF //12
 #define cassable 0x850B1 //13
-#define angle 0x850CB
-#define lienh 0x850CA
+#define angle 0x850CB //14
+#define lienh 0x850CA //15
 #define poussable 0x850AF  //16
 
 // on assigne des blocs a des valeurs pour faire un switch case afin d'aller plus vite et d'éviter les erreurs
