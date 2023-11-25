@@ -123,10 +123,17 @@ void deplacement(char tab[14][24], char *key, Snoopy *snoopy, int *compteur) {
         }
     }
     if (tab[snoopy->x][snoopy->y] == 16){
+<<<<<<< HEAD
         if (tab[snoopy->x][snoopy->y-1] == 0){
             if (*key== 'q'){
                 tab[snoopy->x][snoopy->y] = 0;
                 tab[snoopy->x][snoopy->y-1] = 5;
+=======
+        if (tab[snoopy->x][snoopy->y] == 0){
+            if (*key== 'q'){
+                tab[snoopy->x][snoopy->y] = 0;
+                tab[snoopy->x][snoopy->y+1] = 5;
+>>>>>>> ac2d50d4d3434fe0e5b5a29391fe78c4cf8783d1
             }
         }
     }

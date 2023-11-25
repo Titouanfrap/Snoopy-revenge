@@ -21,6 +21,7 @@ void Lvl1() {
     char tempo;
 
     tableau(matrice, &balle, &snoopy);
+
     while(game != 1){
         terrain(matrice);
         BlocNiv1(matrice);
