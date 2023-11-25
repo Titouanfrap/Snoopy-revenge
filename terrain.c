@@ -86,7 +86,7 @@ void terrain(char tab[14][24]){
     }
 }
 
-void BlocNiv1(char tab[14][24]) {
+void BlocNiv2(char tab[14][24]) {
             tab[2][3] = 5;
             tab[3][3] = 5;
             tab[4][3] = 5;
@@ -164,7 +164,7 @@ SetConsoleTextAttribute(H,couleurDeFond*16+couleurDuTexte);
 
 
 
-void BlocNiv2(char tab[14][24]) {
+void BlocNiv1(char tab[14][24]) {
     tab[4][2] = 5;
     tab[5][2] = 5;
     tab[7][2] = 5;

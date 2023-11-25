@@ -10,6 +10,8 @@ void mouvballe(char tab[14][24], Balle *balle) {
     if (balle->y < 3 || balle->y >= 21) {
         balle->dy = -balle->dy;
     }
-    tab[balle->x][balle->y] = 10;
-}
 
+        tab[balle->x][balle->y] = 10;
+
+
+}

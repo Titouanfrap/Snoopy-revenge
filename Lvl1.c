@@ -20,6 +20,7 @@ void Lvl1() {
     int game = 0;
 
     tableau(matrice, &balle, &snoopy);
+
     while(game != 1){
         terrain(matrice);
         BlocNiv1(matrice);
