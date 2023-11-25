@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include "Lvl1.h"
 #include "Lvl2.h"
+#include "balle.h"
 
 void regles() {
     system("cls");
@@ -74,9 +75,10 @@ int menu() {
            "\n\n\nSelectionnez votre choix grace a touche allant de 1 a 6");
 }
 
-void handleDir(char *key);
+void handleDir(char *key, char *tempo);
 void choix()
 {
+    char tempo;
     char key = ' ';
 
     while (1)
@@ -84,11 +86,11 @@ void choix()
         if (kbhit()) {
             key = getch();
         }
-        handleDir(&key);
+        handleDir(&key, &tempo);
     }
 }
 
-void handleDir(char *key) {
+void handleDir(char *key, char *tempo) {
     switch (*key) {
         case '1':
             printf("\n\n\n\n Voulez vous lire les regles du jeu ?"

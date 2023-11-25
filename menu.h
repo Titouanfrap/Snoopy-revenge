@@ -8,5 +8,5 @@ void regles();
 void leave();
 void password();
 int menu();
-void handleDir(char *key);
+void handleDir(char *key, char *tempo);
 void choix();

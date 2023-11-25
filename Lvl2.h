@@ -1,1 +1,1 @@
-void Lvl2();
+void Lvl2(char *tempo);

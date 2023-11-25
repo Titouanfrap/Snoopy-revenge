@@ -6,5 +6,5 @@ typedef struct {
     int dy;
 }Balle;
 
-void mouvballe(char tab[14][24], Balle *balle);
+void mouvballe(char tab[14][24], Balle *balle, char *tempo);
 

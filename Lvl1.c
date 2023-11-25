@@ -18,6 +18,7 @@ void Lvl1() {
     char matrice[14][24];
     int compteur = 0;
     int game = 0;
+    char tempo;
 
     tableau(matrice, &balle, &snoopy);
     while(game != 1){
@@ -36,7 +37,7 @@ void Lvl1() {
         }
 
 
-        mouvballe(matrice, &balle);
+        mouvballe(matrice, &balle, &tempo);
         if (balle.x == snoopy.x && balle.y == snoopy.y) {
             sleep(2);
             GameOver();
