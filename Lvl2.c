@@ -18,9 +18,9 @@
 //    int compteur = 0;
 //    int game = 0;
 //
-//
-//    tableau(matrice, &balle, &snoopy);
 //    BlocNiv2(matrice);
+//    tableau(matrice, &balle, &snoopy);
+//
 //    while(game != 1){
 //        terrain(matrice);
 //        if (dix>=9){
