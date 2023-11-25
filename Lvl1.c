@@ -22,9 +22,9 @@ void Lvl1() {
 
     tableau(matrice, &balle, &snoopy);
 
+    BlocNiv1(matrice);
     while(game != 1){
         terrain(matrice);
-        BlocNiv1(matrice);
         if (dix>=9){
             timed(matrice, &t);
             dix=0;
