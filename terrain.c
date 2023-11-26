@@ -15,9 +15,14 @@
 #define bird 0x850B8     // 11
 #define tp 0x850CF //12
 #define cassable 0x850B1 //13
-#define angle 0x850CB //14
+#define lienb 0x850CB //14
 #define lienh 0x850CA //15
 #define poussable 0x850AF  //16
+#define tapish 0x850B3  //17
+#define tapisb 0x850B3  //18
+#define tapisd 0x850C4 //19
+#define tapisg 0x850C4  //20
+
 
 // on assigne des blocs a des valeurs pour faire un switch case afin d'aller plus vite et d'éviter les erreurs
 
@@ -72,7 +77,7 @@ void terrain(char tab[14][24]){
                     printf("%c",cassable);
                     break;
                 case 14:
-                    printf("%c",angle);
+                    printf("%c",lienb);
                     break;
                 case 15:
                     printf("%c",lienh);
@@ -80,46 +85,23 @@ void terrain(char tab[14][24]){
                 case 16:
                     printf("%c",poussable);
                     break;
+                case 17:
+                    printf("%c",tapish);
+                    break;
+                case 18:
+                    printf("%c",tapisb);
+                    break;
+                case 19:
+                    printf("%c",tapisd);
+                    break;
+                case 20:
+                    printf("%c",tapisg);
+                    break;
             }  //Pour chaque case on cherche le cas correspondant puis on le print, en revenant a la ligne a chaque itération de i pour l'aspect tableau
         }
         printf("\n");
     }
 }
-
-void BlocNiv1(char tab[14][24]) {
-            tab[2][3] = 5;
-            tab[3][3] = 5;
-            tab[4][3] = 5;
-            tab[9][4] = 5;
-            tab[8][4] = 5;
-            tab[7][4] = 5;
-            tab[10][5] = 2;
-            tab[10][4] = 15;
-            tab[10][3] = 2;
-            tab[10][2] = 2;
-            tab[6][10] = 3;
-            tab[5][10] = 5;
-            tab[4][10] = 5;
-            tab[3][10] = 5;
-            tab[2][10] = 6;
-            tab[6][11] = 2;
-            tab[2][11] = 2;
-            tab[9][12] = 2;
-            tab[9][13] = 7;
-            tab[10][13] = 5;
-            tab[2][14] = 5;
-            tab[3][14] = 5;
-            tab[4][14] = 5;
-            tab[7][19] = 2;
-            tab[7][20] = 2;
-            tab[7][18] = 3;
-            tab[7][21] = 2;
-            tab[4][19] = 2;
-            tab[4][18] = 3;
-            tab[3][18] = 5;
-            tab[6][18] = 5;
-
-        }
 
 void tableau(char tab[14][24], Balle *balle, Snoopy *snoopy) {
     for (int i = 0; i < 14; i++) {
@@ -164,6 +146,41 @@ SetConsoleTextAttribute(H,couleurDeFond*16+couleurDuTexte);
 }
 
 
+
+void BlocNiv1(char tab[14][24]) {
+    tab[2][3] = 5;
+    tab[3][3] = 5;
+    tab[4][3] = 5;
+    tab[9][4] = 5;
+    tab[8][4] = 5;
+    tab[7][4] = 5;
+    tab[10][5] = 2;
+    tab[10][4] = 15;
+    tab[10][3] = 2;
+    tab[10][2] = 2;
+    tab[6][10] = 3;
+    tab[5][10] = 5;
+    tab[4][10] = 5;
+    tab[3][10] = 5;
+    tab[2][10] = 6;
+    tab[6][11] = 2;
+    tab[2][11] = 2;
+    tab[9][12] = 2;
+    tab[9][13] = 7;
+    tab[10][13] = 5;
+    tab[2][14] = 5;
+    tab[3][14] = 5;
+    tab[4][14] = 5;
+    tab[7][19] = 2;
+    tab[7][20] = 2;
+    tab[7][18] = 3;
+    tab[7][21] = 2;
+    tab[4][19] = 2;
+    tab[4][18] = 3;
+    tab[3][18] = 5;
+    tab[6][18] = 5;
+
+}
 
 void BlocNiv2(char tab[14][24]) {
     tab[4][2] = 5;
@@ -218,6 +235,91 @@ void BlocNiv2(char tab[14][24]) {
     tab[8][19]=16;
     tab[11][17]=5;
     tab[10][17]=5;
+
+}
+
+void BlocNiv3(char tab[14][24]) {
+    tab[3][5] = 5;
+    tab[2][4] = 16;
+    tab[3][3] = 13;
+    tab[4][3] = 3;
+    tab[4][4] = 14;
+    tab[4][5] = 4;
+    tab[5][4] = 5;
+    tab[5][2] = 16;
+    tab[7][5] = 5;
+    tab[6][5] = 5;
+    tab[8][5] = 15;
+    tab[8][6] = 7;
+    tab[8][4] = 2;
+    tab[8][3] = 6;
+    tab[9][3] = 5;
+    tab[9][6] = 5;
+    tab[9][4] = 13;
+    tab[10][4] = 16;
+    tab[11][3] = 5;
+    tab[2][9] = 5;
+    tab[2][10] = 18;
+    tab[2][11] = 20;
+    tab[2][12] = 20;
+    tab[3][9] = 5;
+    tab[3][10] = 18;
+    tab[3][12] = 5;
+    tab[4][10] = 16;
+    tab[4][12] = 5;
+    tab[5][12] = 5;
+    tab[5][9] = 2;
+    tab[5][10] = 7;
+    tab[6][8] = 16;
+    tab[6][10] = 13;
+    tab[6][12] = 3;
+    tab[6][13] = 2;
+    tab[7][9] = 2;
+    tab[7][10] = 13;
+    tab[7][11] = 2;
+    tab[7][12] = 19;
+    tab[7][13] = 19;
+    tab[8][9] = 16;
+    tab[8][11] = 19;
+    tab[8][13] = 5;
+    tab[9][13] = 4;
+    tab[9][10] = 6;
+    tab[9][11] = 14;
+    tab[9][12] = 2;
+    tab[10][9] = 2;
+    tab[10][10] = 15;
+    tab[10][11] = 4;
+    tab[11][11] = 5;
+    tab[2][16] = 5;
+    tab[3][16] = 13;
+    tab[4][16] = 5;
+    tab[5][16] = 5;
+    tab[6][16] = 5;
+    tab[7][16] = 3;
+    tab[7][17] = 2;
+    tab[7][18] = 2;
+    tab[7][19] = 2;
+    tab[7][20] = 2;
+    tab[7][21] = 2;
+    tab[2][18] = 5;
+    tab[3][18] = 5;
+    tab[4][18] = 5;
+    tab[5][18] = 3;
+    tab[5][19] = 2;
+    tab[5][20] = 13;
+    tab[5][21] = 2;
+    tab[4][20] = 16;
+    tab[2][20] = 13;
+    tab[3][21] = 2;
+    tab[9][17] = 6;
+    tab[9][18] = 2;
+    tab[9][19] = 2;
+    tab[9][20] = 7;
+    tab[10][17] = 13;
+    tab[10][18] = 13;
+    tab[11][17] = 5;
+    tab[10][20] = 5;
+    tab[11][19] = 16;
 
 }
 

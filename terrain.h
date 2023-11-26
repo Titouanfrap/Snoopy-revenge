@@ -12,3 +12,4 @@ void BlocNiv1(char tab[14][24]);
 
 void BlocNiv2(char tab[14][24]);
 
+void BlocNiv3(char tab[14][24]);

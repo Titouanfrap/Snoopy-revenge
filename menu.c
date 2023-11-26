@@ -63,7 +63,9 @@ void password(char *tempo) {
             Lvl2(tempo);
         }
         else if (strcmp(mot, "ecejbtv") == 0) {
-            printf("Niveau indisponible");
+            printf("Lancement du niveau 3...");
+            sleep(3);
+            Lvl3(tempo);
         }
         else if (strcmp(mot, "champions") == 0) {
             printf("Niveau indisponible");
