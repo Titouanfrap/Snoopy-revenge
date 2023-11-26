@@ -46,7 +46,22 @@ void password() {
            "Tout se merite dans ce jeux, bon courage !"
            "\n\n----------------------------------------------------------------------------------"
            "\n\n\n Veuillez entrer le mot de passe correspondant au niveau que vous voulez rejoindre :");
+
+    char mot[100];
+
+    scanf("%s", mot);
+
+    if (strcmp(mot, "eceinfo") == 0) {
+        printf("Lancement du niveau 1...");
+        sleep(3);
+        Lvl1();
+    } else {
+        printf("Mot invalide\n");
+    }
+
+
 }
+
 int menu() {
 
     system("cls");
