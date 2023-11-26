@@ -83,6 +83,20 @@ void password(char *tempo) {
     }
 }
 
+void parametre (){
+
+    printf("Vous etes dans le menu parametre:\n"
+           "\n"
+           "Touches mouvement:\n"
+           "\n"
+           "z: haut\n"
+           "s: bas\n"
+           "q: gauche\n"
+           "d: droite\n"
+           "\n"
+           "Les blocks suivant:\n"
+           "");
+}
 
 int menu() {
 
@@ -93,23 +107,24 @@ int menu() {
 
            "             ---------============THE REVENGE OF SNOOPY============---------\n\n\n\n");
 
-    printf(""
-           "\t\t\t\t//======================================\\\\\n"
-           "\t\t\t\t||      \t\t\t\t||\n"
-           "\t\t\t\t||\t    -> ~~Game Rules~~\t\t||\n"
-           "\t\t\t\t||\t\t\t\t\t||\n"
-           "\t\t\t\t||            ~~New Game~~\t\t||\n"
-           "\t\t\t\t||\t \t\t\t\t||\n"
-           "\t\t\t\t||\t      ~~Load Game~~\t\t||\n"
-           "\t\t\t\t||\t\t\t\t\t||\n"
-           "\t\t\t\t||\t      ~~Password~~\t\t||\n"
-           "\t\t\t\t||\t\t\t\t\t||\n"
-           "\t\t\t\t||\t       ~~Score~~\t\t||\n"
-           "\t\t\t\t||\t\t \t\t\t||\n"
-           "\t\t\t\t||\t       ~~Leave~~\t\t||\n"
-           "\t\t\t\t||\t\t\t\t\t||\n"
-           "\t\t\t\t\\\\======================================//"
-           "\n\n\nSelectionnez votre choix grace a touche allant de 1 a 6");
+    printf("\t\t\t\t//======================================\\\\\n"
+           "\t\t\t\t||                                      ||\n"
+           "\t\t\t\t||           ~~1.Games Rule~~           ||\n"
+           "\t\t\t\t||                                      ||\n"
+           "\t\t\t\t||           ~~ 2.New Game~~            ||\n"
+           "\t\t\t\t||                                      ||\n"
+           "\t\t\t\t||            ~~3.Load Game~~           ||\n"
+           "\t\t\t\t||                                      ||\n"
+           "\t\t\t\t||            ~~4.Password~~            ||\n"
+           "\t\t\t\t||                                      ||\n"
+           "\t\t\t\t||              ~~5.Score~~             ||\n"
+           "\t\t\t\t||                                      ||\n"
+           "\t\t\t\t||             ~~6.Touches~~            ||\n"
+           "\t\t\t\t||                                      ||\n"
+           "\t\t\t\t||          ~~7.Deconnexion~~           ||\n"
+           "\t\t\t\t||                                      ||\n"
+           "\t\t\t\t\\\\======================================//\n\n"
+           "Tapez un nombre entre 1 et 7 pour selectioner une action :");
 }
 
 void handleDir(char *key, char *tempo);
@@ -172,12 +187,23 @@ void handleDir(char *key, char *tempo) {
                    "\n\t       Oui : y               Non : n");
             break;
         case '6':
+            printf("\n\n\n\n Voulez vous rejoindre un niveau a l'aide d'un mot de passe ?"
+                   "\n\t       Oui : y               Non : n");
+            char confirmKey4 = getch();
+            if (confirmKey4 == 'y') {
+                system("cls");
+                parametre();
+
+            } else if (confirmKey2 == 'n') {
+                menu();
+            }
+        case '7':
             printf("\n\n\n\n Voulez vous vraiment quitter le jeu ?"
                    "\n\t       Oui : y               Non : n");
-            char confirmKey1 = getch();
-            if (confirmKey1 == 'y') {
+            char confirmKey5 = getch();
+            if (confirmKey5 == 'y') {
                 leave();
-            } else if (confirmKey1 == 'n') {
+            } else if (confirmKey5 == 'n') {
                 menu();
             }
         default:
@@ -187,5 +213,7 @@ void handleDir(char *key, char *tempo) {
     *key = ' '; // Reset direction
 
 }
+
+
 
 

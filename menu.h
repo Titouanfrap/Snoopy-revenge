@@ -10,3 +10,4 @@ void password(char *tempo);
 void menu();
 void handleDir(char *key, char *tempo);
 void choix();
+void parametre();
