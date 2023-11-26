@@ -147,6 +147,8 @@ void handleDir(char *key, char *tempo) {
             char confirmKey3 = getch();
             if (confirmKey3 == 'y') {
                 Lvl1();
+            } else if (confirmKey3 == 'n') {
+                menu();
             }
             break;
         case '3':
