@@ -3,6 +3,7 @@
 #include "menu.h"
 #include "Niveaux.h"
 
+
 void victoire1(char *tempo) {
     system("cls");
     printf("//==============================\\\\\n"
@@ -88,6 +89,35 @@ void victoire2(char *tempo) {
            "||    Mot de passe : ecemaths    ||\n"
            "||                              ||\n"
            "\\==============================//\n");
+    char touche = ' ';
+
+    while (1) {
+        if (kbhit()) {
+            touche = getch();
+        }
+        switch (touche) {
+            case '1':
+                printf("\n\nSauvegarde en cours...");
+                break;
+            case '2':
+                printf("\n\nNiveau suivant...");
+                sleep(3);
+                Lvl3(tempo);
+                break;
+            case '3':
+                printf("\n\n Retour au Menu...");
+                sleep(3);
+                menu();
+                break;
+            case '4':
+                printf("\n\nDeconnexion...");
+                sleep(3);
+                break;
+            default:
+                break;
+        }
+        touche = ' ';
+    }
 }
 
 void victoire3() {
@@ -116,6 +146,35 @@ void victoire3() {
            "||    Mot de passe : ecejbtv    ||\n"
            "||                              ||\n"
            "\\==============================//\n");
+    char touche = ' ';
+
+    while (1) {
+        if (kbhit()) {
+            touche = getch();
+        }
+        switch (touche) {
+            case '1':
+                printf("\n\nSauvegarde en cours...");
+                break;
+            case '2':
+                printf("\n\nNiveau suivant...");
+                sleep(3);
+                Lvl4(tempo);
+                break;
+            case '3':
+                printf("\n\n Retour au Menu...");
+                sleep(3);
+                menu();
+                break;
+            case '4':
+                printf("\n\nDeconnexion...");
+                sleep(3);
+                break;
+            default:
+                break;
+        }
+        touche = ' ';
+    }
 }
 
 void victoire4(char *touche) {
@@ -131,9 +190,6 @@ void victoire4(char *touche) {
            "||                              ||\n"
            "||\t   Sauvegarder\t\t||\n"
            "||   ________________________   ||\n"
-           "||\t\t \t\t||\n"
-           "||        Niveau Suivant        ||\n"
-           "||   ________________________   ||\n"
            "||                              ||\t\t\n"
            "||         Retour Menu          ||\n"
            "||   ________________________   || \n"
@@ -144,6 +200,29 @@ void victoire4(char *touche) {
            "||   Mot de passe : champions   ||\n"
            "||                              ||\n"
            "\\==============================//\n");
+    char touche = ' ';
+    while (1) {
+        if (kbhit()) {
+            touche = getch();
+        }
+        switch (touche) {
+            case '1':
+                printf("\n\nSauvegarde en cours...");
+                break;
+            case '2':
+                printf("\n\n Retour au Menu...");
+                sleep(3);
+                menu();
+                break;
+            case '3':
+                printf("\n\nDeconnexion...");
+                sleep(3);
+                break;
+            default:
+                break;
+        }
+        touche = ' ';
+    }
 
 }
 
