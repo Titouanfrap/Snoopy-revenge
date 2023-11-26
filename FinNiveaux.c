@@ -86,7 +86,7 @@ void victoire2(char *tempo) {
            "||         Deconnexion          || \n"
            "||   ________________________   ||\n"
            "||	                        ||\n"
-           "||    Mot de passe : ecemaths    ||\n"
+           "||    Mot de passe : ecemaths   ||\n"
            "||                              ||\n"
            "\\==============================//\n");
     char touche = ' ';

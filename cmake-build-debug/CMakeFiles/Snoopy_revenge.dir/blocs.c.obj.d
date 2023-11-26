@@ -1,5 +1,5 @@
 CMakeFiles/Snoopy_revenge.dir/blocs.c.obj: \
- C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\blocs.c \
+ C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\blocs.c \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
@@ -11,4 +11,4 @@ CMakeFiles/Snoopy_revenge.dir/blocs.c.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
- C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\snoopy.h
+ C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\snoopy.h

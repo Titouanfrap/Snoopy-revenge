@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug"
+			"value" : "c:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -475,7 +475,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -547,7 +547,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge"
+			"value" : "C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1167,7 +1167,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug"
+			"value" : "C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug"
 		},
 		{
 			"name" : "Snoopy_revenge_IS_TOP_LEVEL",
@@ -1191,7 +1191,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge"
+			"value" : "C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
