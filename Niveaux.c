@@ -14,7 +14,7 @@ Snoopy snoopy = {3, 11};
 
 void Lvl1() {
     int dix=0;
-    char key;
+    char key,pause;
     char matrice[14][24];
     int compteur = 0;
     int game = 0;
@@ -34,7 +34,13 @@ void Lvl1() {
         }
         if (kbhit()){             //permet de lancer la boucle ssi une touche est pressée
             key = getch();             // la touche pressée est récupérée et assignée a key
-            deplacement(matrice, &key, &snoopy, &compteur);                   // voir programme déplacement
+            if(key=='p') {
+                printf ("Pressez une touche pour quitter le menu pause");
+                while(!kbhit()){
+                    sleep(1);
+                }
+            }
+            deplacement(matrice, &key, &snoopy, &compteur);// voir programme déplacement
         }
 
 
@@ -81,7 +87,13 @@ void Lvl2(char *tempo) {
             dix++;
         }
         if (kbhit()){             //permet de lancer la boucle ssi une touche est pressée
-            key = getch();             // la touche pressée est récupérée et assignée a key
+            key = getch();     // la touche pressée est récupérée et assignée a key
+            if(key=='p') {
+                printf ("Pressez une touche pour quitter le menu pause");
+                while(!kbhit()){
+                    sleep(1);
+                }
+            }
             deplacement(matrice, &key, &snoopy, &compteur);                   // voir programme déplacement
         }
 
