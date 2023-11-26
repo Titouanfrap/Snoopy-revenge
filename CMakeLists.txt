@@ -18,7 +18,7 @@ add_executable(Snoopy_revenge
         FinNiveaux.h
         blocs.c
         blocs.h
-        Lvl1.c
-        Lvl1.h
+        Niveaux.c
+        Niveaux.h
 )
 

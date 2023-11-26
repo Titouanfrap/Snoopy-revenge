@@ -5,12 +5,12 @@
 #include <stdio.h>
 #include <conio.h>
 #include "menu.h"
-#include "Lvl1.h"
+#include "Niveaux.h"
 #define player 0x850E8 //9                   //raccourcit avec le code hexa associé a Snoopy
 
 Time t = {120, 0, 0, 10, 1}; // raccourcit vers la structure du timer
-Balle balle = {5,5,1,1};
-Snoopy snoopy = {4, 4};
+Balle balle = {7,7,1,1};
+Snoopy snoopy = {5, 5};
 
 void Lvl1() {
     int dix=0;
@@ -50,8 +50,7 @@ void Lvl1() {
         if (compteur == 4) {
             game = 1;
             sleep(2);
-            victoire1();
-            choice();
+            victoire1(&tempo);
             sleep(100);
         }
 
@@ -99,8 +98,7 @@ void Lvl2(char *tempo) {
         if (compteur == 4) {
             game = 1;
             sleep(2);
-            victoire1();
-            choice();
+            victoire2(tempo);
             sleep(100);
         }
 

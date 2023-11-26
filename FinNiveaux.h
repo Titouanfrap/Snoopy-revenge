@@ -1,6 +1,6 @@
-void victoire1();
+void victoire1(char *tempo);
 
-void victoire2();
+void victoire2(char *tempo);
 
 void victoire3();
 

@@ -139,10 +139,10 @@ void tableau(char tab[14][24], Balle *balle, Snoopy *snoopy) {
         } // fait apparaitre toutes les cases or plateau pour le défilement du temps
         // c'est un set de départ et ne s'éxecute qu'une seule fois
     }
-    snoopy->x = 4; snoopy->y = 4;
+    snoopy->x = 5; snoopy->y = 5;
     tab[snoopy->x][snoopy->y] = 9;
 
-    balle->x = 5; balle->y = 5;
+    balle->x = 7; balle->y = 7;
     tab[balle->x][balle->y] = 10;
 
     tab[2][2] = 11;

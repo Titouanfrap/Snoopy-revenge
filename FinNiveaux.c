@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <conio.h>
 #include "menu.h"
-#include "Lvl1.h"
+#include "Niveaux.h"
 
-void victoire1() {
+void victoire1(char *tempo) {
     system("cls");
     printf("//==============================\\\\\n"
            "||          **********\t        ||\n"
@@ -28,10 +28,41 @@ void victoire1() {
            "||	                        ||\n"
            "||    Mot de passe : eceinfo    ||\n"
            "||                              ||\n"
-    "\\==============================//\n");
+           "\\==============================//\n");
+
+    char touche = ' ';
+
+    while (1) {
+        if (kbhit()) {
+            touche = getch();
+        }
+        switch (touche) {
+            case '1':
+                printf("\n\nSauvegarde en cours...");
+                break;
+            case '2':
+                printf("\n\nNiveau suivant...");
+                sleep(3);
+                Lvl2(tempo);
+                break;
+            case '3':
+                printf("\n\n Retour au Menu...");
+                sleep(3);
+                menu();
+                break;
+            case '4':
+                printf("\n\nDeconnexion...");
+                sleep(3);
+                break;
+            default:
+                break;
+        }
+        touche = ' ';
+    }
 }
 
-void victoire2() {
+
+void victoire2(char *tempo) {
     system("cls");
     printf("//==============================\\\\\n"
            "||          **********\t        ||\n"
@@ -115,46 +146,6 @@ void victoire4(char *touche) {
            "\\==============================//\n");
 
 }
-
-
-void menuchoix(char *touche);
-
-void choice()
-{
-    char touche = ' ';
-
-    while (1)
-    {
-        if (kbhit()) {
-            touche = getch();
-        }
-        menuchoix(&touche);
-    }
-}
-
-void menuchoix(char *touche) {
-    switch (*touche){
-        case '1':
-            printf("\n\nSauvegarde en cours...");
-            break;
-        case '2':
-            printf("\n\nNiveau suivant");
-            break;
-        case '3':
-            printf("\n\n Retour au Menu...");
-            sleep(3);
-            menu();
-            break;
-        case '4':
-            printf("\n\nDeconnexion...");
-            sleep(3);
-            break;
-        default:
-            break;
-    }
-    *touche = ' ';
-}
-
 
 void defaite(char *key){
     printf("//==============================\\\\\n"

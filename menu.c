@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <unistd.h>
-#include "Lvl1.h"
+#include "Niveaux.h"
 #include "balle.h"
 
 void regles() {
@@ -35,7 +35,7 @@ void leave() {
     sleep(3);
     system("cls");
 }
-void password() {
+void password(char *tempo) {
     printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  "
            "           ---------============THE REVENGE OF SNOOPY============---------\n\n\n\n"
            "Pour rappel, les differents mots de passe s'obtiennent en reussissant\n"
@@ -50,7 +50,6 @@ void password() {
     int tentatives = 0;
 
     while (1) {
-        printf("Entrez le mot de passe : ");
         scanf("%s", mot);
 
         if (strcmp(mot, "eceinfo") == 0) {
@@ -59,7 +58,9 @@ void password() {
             Lvl1();
             break;
         } else if (strcmp(mot, "ecemaths") == 0) {
-            printf("Niveau indisponible");
+            printf("Lancement du niveau 2...\n");
+            sleep(3);
+            Lvl2(tempo);
         }
         else if (strcmp(mot, "ecejbtv") == 0) {
             printf("Niveau indisponible");
@@ -79,12 +80,6 @@ void password() {
         }
     }
 }
-
-
-
-
-
-
 
 
 int menu() {
@@ -163,7 +158,7 @@ void handleDir(char *key, char *tempo) {
                    "\n\t       Oui : y               Non : n");
             char confirmKey2 = getch();
             if (confirmKey2 == 'y') {
-                password();
+                password(tempo);
             } else if (confirmKey2 == 'n') {
                 menu();
             }
