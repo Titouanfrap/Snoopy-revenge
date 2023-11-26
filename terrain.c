@@ -100,9 +100,10 @@ void BlocNiv1(char tab[14][24]) {
             tab[6][10] = 3;
             tab[5][10] = 5;
             tab[4][10] = 5;
-            tab[3][10] = 6;
+            tab[3][10] = 5;
+            tab[2][10] = 6;
             tab[6][11] = 2;
-            tab[3][11] = 2;
+            tab[2][11] = 2;
             tab[9][12] = 2;
             tab[9][13] = 7;
             tab[10][13] = 5;
@@ -139,7 +140,7 @@ void tableau(char tab[14][24], Balle *balle, Snoopy *snoopy) {
         } // fait apparaitre toutes les cases or plateau pour le défilement du temps
         // c'est un set de départ et ne s'éxecute qu'une seule fois
     }
-    snoopy->x = 5; snoopy->y = 5;
+    snoopy->x = 3; snoopy->y = 11;
     tab[snoopy->x][snoopy->y] = 9;
 
     balle->x = 7; balle->y = 7;

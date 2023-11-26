@@ -10,7 +10,7 @@
 
 Time t = {120, 0, 0, 10, 1}; // raccourcit vers la structure du timer
 Balle balle = {7,7,1,1};
-Snoopy snoopy = {5, 5};
+Snoopy snoopy = {3, 11};
 
 void Lvl1() {
     int dix=0;
