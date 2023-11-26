@@ -1,4 +1,4 @@
-void victoire();
+void victoire1();
 
 void GameOver();
 

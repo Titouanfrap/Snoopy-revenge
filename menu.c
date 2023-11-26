@@ -3,7 +3,6 @@
 #include <conio.h>
 #include <unistd.h>
 #include "Lvl1.h"
-#include "Lvl2.h"
 #include "balle.h"
 
 void regles() {
@@ -126,7 +125,7 @@ void handleDir(char *key, char *tempo) {
                    "\n\t       Oui : y               Non : n");
             char confirmKey3 = getch();
             if (confirmKey3 == 'y') {
-                Lvl1();
+                Lvl2(tempo);
             }
             break;
         case '3':
