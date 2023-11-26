@@ -238,7 +238,7 @@ void BlocNiv4(char tab[14][24]) {
                 tab[11][17] = 5;
                 tab[11][18] = 12;
 
-                tab[5][18] = 2; // mileu droit (tp) avec mur cassable
+                    tab[5][18] = 2; // mileu droit (tp) avec mur cassable
                 tab[5][19] = 2;
                 tab[5][20] = 2;
                 tab[5][21] = 2;

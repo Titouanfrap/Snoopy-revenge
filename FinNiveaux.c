@@ -87,7 +87,7 @@ void victoire3() {
            "\\==============================//\n");
 }
 
-void victoire4() {
+void victoire4(char *touche) {
     system("cls");
     printf("//==============================\\\\\n"
            "||          **********\t        ||\n"
@@ -113,6 +113,7 @@ void victoire4() {
            "||   Mot de passe : champions   ||\n"
            "||                              ||\n"
            "\\==============================//\n");
+
 }
 
 

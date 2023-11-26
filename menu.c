@@ -47,19 +47,45 @@ void password() {
            "\n\n\n Veuillez entrer le mot de passe correspondant au niveau que vous voulez rejoindre :");
 
     char mot[100];
+    int tentatives = 0;
 
-    scanf("%s", mot);
+    while (1) {
+        printf("Entrez le mot de passe : ");
+        scanf("%s", mot);
 
-    if (strcmp(mot, "eceinfo") == 0) {
-        printf("Lancement du niveau 1...");
-        sleep(3);
-        Lvl1();
-    } else {
-        printf("Mot invalide\n");
+        if (strcmp(mot, "eceinfo") == 0) {
+            printf("Lancement du niveau 1...\n");
+            sleep(3);
+            Lvl1();
+            break;
+        } else if (strcmp(mot, "ecemaths") == 0) {
+            printf("Niveau indisponible");
+        }
+        else if (strcmp(mot, "ecejbtv") == 0) {
+            printf("Niveau indisponible");
+        }
+        else if (strcmp(mot, "champions") == 0) {
+            printf("Niveau indisponible");
+        } else {
+            printf("Mot invalide\n");
+            tentatives++;
+
+            if (tentatives == 5) {
+                printf("Trop de tentatives. Deconnexion Force..\n");
+                sleep(3);
+                system("cls");
+                break;
+            }
+        }
     }
-
-
 }
+
+
+
+
+
+
+
 
 int menu() {
 
@@ -125,7 +151,7 @@ void handleDir(char *key, char *tempo) {
                    "\n\t       Oui : y               Non : n");
             char confirmKey3 = getch();
             if (confirmKey3 == 'y') {
-                Lvl2(tempo);
+                Lvl1();
             }
             break;
         case '3':
