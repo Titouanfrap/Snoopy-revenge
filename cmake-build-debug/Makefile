@@ -176,30 +176,6 @@ Lvl1.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Lvl1.c.s
 .PHONY : Lvl1.c.s
 
-Lvl2.obj: Lvl2.c.obj
-.PHONY : Lvl2.obj
-
-# target to build an object file
-Lvl2.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Lvl2.c.obj
-.PHONY : Lvl2.c.obj
-
-Lvl2.i: Lvl2.c.i
-.PHONY : Lvl2.i
-
-# target to preprocess a source file
-Lvl2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Lvl2.c.i
-.PHONY : Lvl2.c.i
-
-Lvl2.s: Lvl2.c.s
-.PHONY : Lvl2.s
-
-# target to generate assembly for a file
-Lvl2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Lvl2.c.s
-.PHONY : Lvl2.c.s
-
 balle.obj: balle.c.obj
 .PHONY : balle.obj
 
@@ -383,9 +359,6 @@ help:
 	@echo ... Lvl1.obj
 	@echo ... Lvl1.i
 	@echo ... Lvl1.s
-	@echo ... Lvl2.obj
-	@echo ... Lvl2.i
-	@echo ... Lvl2.s
 	@echo ... balle.obj
 	@echo ... balle.i
 	@echo ... balle.s
