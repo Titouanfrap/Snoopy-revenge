@@ -17,11 +17,9 @@
 #define cassable 0x850B1 //13
 #define lienb 0x850CB //14
 #define lienh 0x850CA //15
-#define poussable 0x850AF  //16
-#define tapish 0x850B3  //17
-#define tapisb 0x850B3  //18
-#define tapisd 0x850C4 //19
-#define tapisg 0x850C4  //20
+#define tapisd 0x850AF  //16
+#define tapisg 0x850AE  //17
+
 
 
 // on assigne des blocs a des valeurs pour faire un switch case afin d'aller plus vite et d'éviter les erreurs
@@ -83,18 +81,9 @@ void terrain(char tab[14][24]){
                     printf("%c",lienh);
                     break;
                 case 16:
-                    printf("%c",poussable);
-                    break;
-                case 17:
-                    printf("%c",tapish);
-                    break;
-                case 18:
-                    printf("%c",tapisb);
-                    break;
-                case 19:
                     printf("%c",tapisd);
                     break;
-                case 20:
+                case 17:
                     printf("%c",tapisg);
                     break;
             }  //Pour chaque case on cherche le cas correspondant puis on le print, en revenant a la ligne a chaque itération de i pour l'aspect tableau
@@ -192,8 +181,8 @@ void BlocNiv2(char tab[14][24]) {
     tab[4][4] = 5;
     tab[5][4] = 5;
     tab[7][4] = 5;
-    tab[9][3]=16;
-    tab[9][4]=16;
+    tab[9][3]=1;
+    tab[9][4]=1;
     tab[7][5] = 2;
     tab[5][6] = 5;
     tab[6][6] = 5;
@@ -222,17 +211,17 @@ void BlocNiv2(char tab[14][24]) {
     tab[5][20]=2;
     tab[5][21]=2;
     tab[5][3]=13;
-    tab[6][3]=16;
+    tab[6][3]=1;
     tab[3][15] = 13;
-    tab[4][15]=16;
+    tab[4][15]=1;
     tab[5][15] =13;
     tab[3][17] = 13;
-    tab[4][17]=16;
+    tab[4][17]=1;
     tab[5][17] =13;
     tab[9][21]=2;
-    tab[9][19]=16;
-    tab[9][18]=16;
-    tab[8][19]=16;
+    tab[9][19]=1;
+    tab[9][18]=1;
+    tab[8][19]=1;
     tab[11][17]=5;
     tab[10][17]=5;
 
@@ -240,13 +229,13 @@ void BlocNiv2(char tab[14][24]) {
 
 void BlocNiv3(char tab[14][24]) {
     tab[3][5] = 5;
-    tab[2][4] = 16;
+    tab[2][4] = 1;
     tab[3][3] = 13;
     tab[4][3] = 3;
     tab[4][4] = 14;
     tab[4][5] = 4;
     tab[5][4] = 5;
-    tab[5][2] = 16;
+    tab[5][2] = 1;
     tab[7][5] = 5;
     tab[6][5] = 5;
     tab[8][5] = 15;
@@ -256,31 +245,32 @@ void BlocNiv3(char tab[14][24]) {
     tab[9][3] = 5;
     tab[9][6] = 5;
     tab[9][4] = 13;
-    tab[10][4] = 16;
+    tab[10][4] = 1;
     tab[11][3] = 5;
     tab[2][9] = 5;
-    tab[2][10] = 18;
-    tab[2][11] = 20;
-    tab[2][12] = 20;
+    tab[2][10] = 17;
+    tab[2][11] = 17;
+    tab[2][12] = 17;
     tab[3][9] = 5;
-    tab[3][10] = 18;
+    tab[3][10] = 17;
     tab[3][12] = 5;
-    tab[4][10] = 16;
+    tab[4][10] = 1;
     tab[4][12] = 5;
     tab[5][12] = 5;
     tab[5][9] = 2;
     tab[5][10] = 7;
-    tab[6][8] = 16;
+    tab[6][8] = 1;
     tab[6][10] = 13;
     tab[6][12] = 3;
     tab[6][13] = 2;
     tab[7][9] = 2;
     tab[7][10] = 13;
     tab[7][11] = 2;
-    tab[7][12] = 19;
-    tab[7][13] = 19;
-    tab[8][9] = 16;
-    tab[8][11] = 19;
+    tab[7][12] = 16;
+    tab[7][13] = 16;
+    tab[8][9] = 1;
+    tab[8][11] = 16;
+    tab[8][12] = 16;
     tab[8][13] = 5;
     tab[9][13] = 4;
     tab[9][10] = 6;
@@ -308,7 +298,7 @@ void BlocNiv3(char tab[14][24]) {
     tab[5][19] = 2;
     tab[5][20] = 13;
     tab[5][21] = 2;
-    tab[4][20] = 16;
+    tab[4][20] = 1;
     tab[2][20] = 13;
     tab[3][21] = 2;
     tab[9][17] = 6;
@@ -319,7 +309,7 @@ void BlocNiv3(char tab[14][24]) {
     tab[10][18] = 13;
     tab[11][17] = 5;
     tab[10][20] = 5;
-    tab[11][19] = 16;
+    tab[11][19] = 1;
 
 }
 
