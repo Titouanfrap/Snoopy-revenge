@@ -159,7 +159,7 @@ void Lvl3(char *tempo) {
         if (compteur == 4) {
             game = 1;
             sleep(2);
-            victoire2(tempo);
+            victoire3(tempo);
             sleep(100);
         }
 
@@ -169,3 +169,50 @@ void Lvl3(char *tempo) {
     }
 }
 
+void Lvl4(char *tempo) {
+    int dix=0;
+    char key;
+    char matrice[14][24];
+    int compteur = 0;
+    int game = 0;
+
+
+    tableau(matrice, &balle, &snoopy);
+    BlocNiv3(matrice);
+
+    while(game != 1){
+        terrain(matrice);
+        if (dix>=9){
+            timed(matrice, &t);
+            dix=0;
+        }
+        else {
+            dix++;
+        }
+        if (kbhit()){             //permet de lancer la boucle ssi une touche est pressée
+            key = getch();             // la touche pressée est récupérée et assignée a key
+            deplacement(matrice, &key, &snoopy, &compteur);                   // voir programme déplacement
+        }
+
+
+        mouvballe(matrice, &balle, tempo);
+        if (balle.x == snoopy.x && balle.y == snoopy.y) {
+            sleep(2);
+            GameOver();
+            sleep(5);
+            menu();
+            choix();
+        }
+
+        if (compteur == 4) {
+            game = 1;
+            sleep(2);
+            victoire4(tempo);
+            sleep(100);
+        }
+
+
+        usleep(140000);           // on attend 1,57 sec , produit en croix avec le nombre de cases pour avoir 2 minutes
+        system("cls");    //clear de l'écran pour préparer l'affichage de la matrice actualisée
+    }
+}

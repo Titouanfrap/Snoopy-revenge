@@ -6,7 +6,7 @@ void victoire3(char *tempo);
 
 void victoire4(char *tempo);
 
-void GameOver(char *tempo);
+void GameOver();
 
 void menuchoix(char *touche);
 

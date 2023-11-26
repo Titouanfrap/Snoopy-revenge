@@ -120,7 +120,7 @@ void victoire2(char *tempo) {
     }
 }
 
-void victoire3() {
+void victoire3(char *tempo) {
     system("cls");
     printf("//==============================\\\\\n"
            "||          **********\t        ||\n"
@@ -177,7 +177,7 @@ void victoire3() {
     }
 }
 
-void victoire4(char *touche) {
+void victoire4(char *tempo) {
     system("cls");
     printf("//==============================\\\\\n"
            "||          **********\t        ||\n"
