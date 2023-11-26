@@ -85,7 +85,7 @@ void victoire2(char *tempo) {
            "||         Deconnexion          || \n"
            "||   ________________________   ||\n"
            "||	                        ||\n"
-           "||    Mot de passe : ecemath    ||\n"
+           "||    Mot de passe : ecemaths    ||\n"
            "||                              ||\n"
            "\\==============================//\n");
 }
