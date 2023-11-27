@@ -1,5 +1,5 @@
 CMakeFiles/Snoopy_revenge.dir/FinNiveaux.c.obj: \
- C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\FinNiveaux.c \
+ C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\FinNiveaux.c \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
@@ -16,7 +16,7 @@ CMakeFiles/Snoopy_revenge.dir/FinNiveaux.c.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/sec_api/conio_s.h \
- C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\menu.h \
+ C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\menu.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
@@ -35,4 +35,4 @@ CMakeFiles/Snoopy_revenge.dir/FinNiveaux.c.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/sys/types.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/getopt.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h \
- C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\Niveaux.h
+ C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\Niveaux.h

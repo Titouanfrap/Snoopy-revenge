@@ -1,5 +1,5 @@
 CMakeFiles/Snoopy_revenge.dir/terrain.c.obj: \
- C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\terrain.c \
+ C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\terrain.c \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
@@ -270,6 +270,6 @@ CMakeFiles/Snoopy_revenge.dir/terrain.c.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/winsvc.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/mcx.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/imm.h \
- C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\terrain.h \
- C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\balle.h \
- C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\snoopy.h
+ C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\terrain.h \
+ C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\balle.h \
+ C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\snoopy.h

@@ -93,8 +93,9 @@ void parametre (){
            "s: bas\n"
            "q: gauche\n"
            "d: droite\n"
+           "a: casser les blocs\n"
            "\n"
-           "Les blocks suivant:\n"
+           "Les blocs suivant:\n"
            "");
 }
 
@@ -123,7 +124,7 @@ int menu() {
            "\t\t\t\t||                                      ||\n"
            "\t\t\t\t||          ~~7.Deconnexion~~           ||\n"
            "\t\t\t\t||                                      ||\n"
-           "\t\t\t\t\\\\======================================//\n\n"
+         "\t\t\t\t\\\\======================================//\n\n"
            "Tapez un nombre entre 1 et 7 pour selectioner une action :");
 }
 

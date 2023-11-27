@@ -67,6 +67,7 @@ void Lvl1() {
 }
 
 void Lvl2(char *tempo) {
+    system("cls");
     int dix=0;
     char key;
     char matrice[14][24];
