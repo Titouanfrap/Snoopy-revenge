@@ -73,6 +73,10 @@ void Lvl2(char *tempo) {
     int compteur = 0;
     int game = 0;
 
+    t.y=10;
+    t.x=0;
+    t.x += t.directx;
+    t.y += t.directy;
 
     tableau(matrice, &balle, &snoopy);
     BlocNiv2(matrice);
@@ -128,6 +132,11 @@ void Lvl3(char *tempo) {
     int compteur = 0;
     int game = 0;
 
+    t.y=10;
+    t.x=0;
+    t.x += t.directx;
+    t.y += t.directy;
+
 
     tableau(matrice, &balle, &snoopy);
     BlocNiv3(matrice);
@@ -175,6 +184,11 @@ void Lvl4(char *tempo) {
     char matrice[14][24];
     int compteur = 0;
     int game = 0;
+
+    t.y=10;
+    t.x=0;
+    t.x += t.directx;
+    t.y += t.directy;
 
 
     tableau(matrice, &balle, &snoopy);

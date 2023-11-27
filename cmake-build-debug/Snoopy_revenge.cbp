@@ -94,12 +94,6 @@
 		<Unit filename="C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/balle.h">
 			<Option target="Snoopy_revenge"/>
 		</Unit>
-		<Unit filename="C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/blocs.c">
-			<Option target="Snoopy_revenge"/>
-		</Unit>
-		<Unit filename="C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/blocs.h">
-			<Option target="Snoopy_revenge"/>
-		</Unit>
 		<Unit filename="C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/main.c">
 			<Option target="Snoopy_revenge"/>
 		</Unit>
