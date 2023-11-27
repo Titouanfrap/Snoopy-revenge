@@ -8,6 +8,8 @@ void victoire4(char *tempo);
 
 void GameOver();
 
+void defaite1();
+
 void menuchoix(char *touche);
 
 void choice();

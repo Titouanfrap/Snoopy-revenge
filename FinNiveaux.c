@@ -226,7 +226,7 @@ void victoire4(char *tempo) {
 
 }
 
-void defaite(char *key){
+void defaite1(char *key){
     printf("//==============================\\\\\n"
            "||           *********          ||\n"
            "||      ---===Defaite===---     ||\n"
@@ -245,22 +245,29 @@ void defaite(char *key){
            "||         Deconnexion          ||\n"
            "||                              ||\n"
            "\\\\==============================//");
-    switch (*key){
-        case 1:
-            printf("Retenter sa chance...");
-            sleep(3);
-            Lvl1();
-        case 2:
-            printf("Sauvegarde...");
-            sleep(3);
-        case 3:
-            printf("Retour au Menu");
-            sleep(3);
-            menu();
-        case 4:
-            printf("Deconnexion");
-            sleep (5);
-            break;}
+    char touche = ' ';
+    while (1) {
+        if (kbhit()) {
+            touche = getch();
+        }
+        switch (touche) {
+            case '1':
+                printf("\n\nRetenter sa chance");
+                Lvl1();
+                break;
+            case '2':
+                printf("\n\n Sauvegarde");
+                break;
+            case '3':
+                printf("\n\nRetour au menu");
+                sleep(3);
+                menu();
+                break;
+            default:
+                break;
+        }
+        touche = ' ';
+    }
 
 }
 
