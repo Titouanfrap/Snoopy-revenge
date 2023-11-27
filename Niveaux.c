@@ -87,7 +87,6 @@ void Lvl1() {
         }
 
         if (nb_defaites == 2) {
-            printf("Deux parties perdues. Affichage du menu Game Over.\n");
             GameOver();
             break;
         }
