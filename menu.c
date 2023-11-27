@@ -187,7 +187,7 @@ void handleDir(char *key, char *tempo) {
                    "\n\t       Oui : y               Non : n");
             break;
         case '6':
-            printf("\n\n\n\n Voulez vous rejoindre un niveau a l'aide d'un mot de passe ?"
+            printf("\n\n\n\n Voulez vous voir les touches ?"
                    "\n\t       Oui : y               Non : n");
             char confirmKey4 = getch();
             if (confirmKey4 == 'y') {
