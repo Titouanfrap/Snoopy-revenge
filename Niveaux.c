@@ -81,7 +81,7 @@ void Lvl2(char *tempo) {
 
     tableau(matrice, &balle, &snoopy);
     BlocNiv2(matrice);
-    
+    matrice[7][7] = 10;
     while(game != 1){
         terrain(matrice);
         if (dix>=9){
@@ -141,7 +141,7 @@ void Lvl3(char *tempo) {
 
     tableau(matrice, &balle, &snoopy);
     BlocNiv3(matrice);
-
+    matrice[7][7] = 10;
     while(game != 1){
         terrain(matrice);
         if (dix>=9){
@@ -185,7 +185,7 @@ void Lvl4(char *tempo) {
     char matrice[14][24];
     int compteur = 0;
     int game = 0;
-
+    matrice[7][7] = 10;
     t.y=10;
     t.x=0;
     t.x += t.directx;
