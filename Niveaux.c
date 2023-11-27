@@ -23,9 +23,9 @@ void Lvl1() {
     int tempsd1 = 120;
     time_t debut, maintenant;
 
-    int nb_executions = 0;
+    int nb_defaites = 0;
 
-    while (nb_executions < 3) {
+    while (nb_defaites < 2) {
         time(&debut);
 
         tableau(matrice, &balle, &snoopy);
@@ -41,6 +41,7 @@ void Lvl1() {
             } else {
                 dix++;
             }
+
             if (kbhit()) {
                 key = getch();
                 if (key == 'p') {
@@ -53,13 +54,17 @@ void Lvl1() {
             }
 
             mouvballe(matrice, &balle, &tempo);
-            if (balle.x == snoopy.x && balle.y == snoopy.y) {
+
+
+            /*if (balle.x == snoopy.x && balle.y == snoopy.y) {
                 sleep(2);
                 GameOver();
                 sleep(5);
                 menu();
                 choix();
-            }
+                nb_defaites++;
+                break;
+            }*/
 
             if (compteur == 4) {
                 game = 1;
@@ -71,20 +76,20 @@ void Lvl1() {
             if (difftime(maintenant, debut) >= tempsd1) {
                 sleep(2);
                 system("cls");
-                defaite1();
+                defaite1(&key);
                 sleep(100);
-                nb_executions++;
+                nb_defaites++;
                 break;
             }
 
-            usleep(140000); // On attend 1,57 sec, produit en croix avec le nombre de cases pour avoir 2 minutes
+            usleep(140000); // Attendre 1,57 sec
             system("cls"); // Clear de l'écran pour préparer l'affichage de la matrice actualisée
         }
 
-        if (nb_executions == 2) {
+        if (nb_defaites == 2) {
+            printf("Deux parties perdues. Affichage du menu Game Over.\n");
             GameOver();
-        } else {
-            printf(" ");
+            break;
         }
     }
 }
@@ -98,6 +103,7 @@ void Lvl2(char *tempo) {
     int compteur = 0;
     int game = 0;
 
+    tableau(matrice, &balle, &snoopy);
     t.y=10;
     t.x=0;
     t.directx=0;
@@ -106,7 +112,7 @@ void Lvl2(char *tempo) {
 
 
 
-    tableau(matrice, &balle, &snoopy);
+
     BlocNiv2(matrice);
     matrice[7][7] = 10;
     while(game != 1){
@@ -163,6 +169,7 @@ void Lvl3(char *tempo) {
     char matrice[14][24];
     int compteur = 0;
     int game = 0;
+    tableau(matrice, &balle, &snoopy);
 
     t.y=10;
     t.x=0;
@@ -170,7 +177,7 @@ void Lvl3(char *tempo) {
     t.directy=1;
 
 
-    tableau(matrice, &balle, &snoopy);
+
     BlocNiv3(matrice);
     matrice[7][7] = 10;
     while(game != 1){
@@ -211,6 +218,7 @@ void Lvl3(char *tempo) {
 }
 
 void Lvl4(char *tempo) {
+    system("cls");
     int dix=0;
     char key;
     char matrice[14][24];
