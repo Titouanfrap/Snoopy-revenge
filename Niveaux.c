@@ -100,8 +100,8 @@ void Lvl2(char *tempo) {
 
     t.y=10;
     t.x=0;
-    t.x += t.directx;
-    t.y += t.directy;
+    t.directx=0;
+    t.directy=1;
 
 
 
@@ -166,8 +166,8 @@ void Lvl3(char *tempo) {
 
     t.y=10;
     t.x=0;
-    t.x += t.directx;
-    t.y += t.directy;
+    t.directx=0;
+    t.directy=1;
 
 
     tableau(matrice, &balle, &snoopy);
@@ -219,8 +219,8 @@ void Lvl4(char *tempo) {
     matrice[7][7] = 10;
     t.y=10;
     t.x=0;
-    t.x += t.directx;
-    t.y += t.directy;
+    t.directx=0;
+    t.directy=1;
 
 
     tableau(matrice, &balle, &snoopy);

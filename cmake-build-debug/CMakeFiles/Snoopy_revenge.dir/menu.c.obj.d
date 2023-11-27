@@ -1,5 +1,5 @@
 CMakeFiles/Snoopy_revenge.dir/menu.c.obj: \
- C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\menu.c \
+ C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\menu.c \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
@@ -34,5 +34,5 @@ CMakeFiles/Snoopy_revenge.dir/menu.c.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/sys/types.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/getopt.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h \
- C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\Niveaux.h \
- C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\balle.h
+ C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\Niveaux.h \
+ C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\balle.h

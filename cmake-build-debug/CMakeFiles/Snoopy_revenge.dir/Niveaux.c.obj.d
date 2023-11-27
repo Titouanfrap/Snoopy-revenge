@@ -1,10 +1,10 @@
 CMakeFiles/Snoopy_revenge.dir/Niveaux.c.obj: \
- C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\Niveaux.c \
- C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\temps.h \
- C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\terrain.h \
- C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\balle.h \
- C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\snoopy.h \
- C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\FinNiveaux.h \
+ C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\Niveaux.c \
+ C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\temps.h \
+ C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\terrain.h \
+ C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\balle.h \
+ C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\snoopy.h \
+ C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\FinNiveaux.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/unistd.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/io.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
@@ -30,7 +30,7 @@ CMakeFiles/Snoopy_revenge.dir/Niveaux.c.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/sec_api/conio_s.h \
- C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\menu.h \
+ C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\menu.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
@@ -40,7 +40,7 @@ CMakeFiles/Snoopy_revenge.dir/Niveaux.c.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/errno.h \
- C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\Niveaux.h \
+ C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\Niveaux.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/time.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \

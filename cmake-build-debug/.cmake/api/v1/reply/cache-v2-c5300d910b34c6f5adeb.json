@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug"
+			"value" : "c:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -475,7 +475,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -547,7 +547,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge"
+			"value" : "C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -591,11 +591,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-<<<<<<<< Updated upstream:cmake-build-debug/.cmake/api/v1/reply/cache-v2-f754f5528f01c664f09e.json
-			"value" : "C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/ninja/win/x64/ninja.exe"
-========
 			"value" : "C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe"
->>>>>>>> Stashed changes:cmake-build-debug/.cmake/api/v1/reply/cache-v2-9c6e1af439b1ef81c35b.json
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -1171,7 +1167,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug"
+			"value" : "C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug"
 		},
 		{
 			"name" : "Snoopy_revenge_IS_TOP_LEVEL",
@@ -1195,7 +1191,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge"
+			"value" : "C:/Users/balth/OneDrive/Documents/GitHub/Snoopy-revenge"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
