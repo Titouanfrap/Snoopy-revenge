@@ -77,7 +77,7 @@ void Lvl1() {
             if (difftime(maintenant, debut) >= tempsd1) {
                 sleep(2);
                 system("cls");
-                defaite1(&key);
+                defaite1();
                 sleep(100);
                 nb_defaites++;
                 break;
@@ -97,8 +97,63 @@ void Lvl1() {
     }
 }
 
-
 void Lvl2(char *tempo, char *tempos) {
+    system("cls");
+    int dix=0;
+    char key;
+    char matrice[14][24];
+    int compteur = 0;
+    int game = 0;
+    matrice[7][7] = 10;
+    t.y=10;
+    t.x=0;
+    t.directx=0;
+    t.directy=1;
+
+
+    tableau(matrice, &balle, &snoopy);
+    BlocNiv3(matrice);
+
+    while(game != 1){
+        terrain(matrice);
+        if (dix>=9){
+            timed(matrice, &t);
+            dix=0;
+        }
+        else {
+            dix++;
+        }
+        if (kbhit()){             //permet de lancer la boucle ssi une touche est pressée
+            key = getch();             // la touche pressée est récupérée et assignée a key
+            deplacement(matrice, &key, &snoopy, &compteur, tempos);                   // voir programme déplacement
+        }
+
+
+        mouvballe(matrice, &balle, tempo);
+        if (balle.x == snoopy.x && balle.y == snoopy.y) {
+            sleep(2);
+            GameOver();
+            sleep(5);
+            menu();
+            choix();
+        }
+
+        if (compteur == 4) {
+            game = 1;
+            sleep(2);
+            victoire2(tempo, tempos);
+            sleep(100);
+        }
+
+
+        usleep(140000);           // on attend 1,57 sec , produit en croix avec le nombre de cases pour avoir 2 minutes
+        system("cls");    //clear de l'écran pour préparer l'affichage de la matrice actualisée
+    }
+}
+
+
+
+void Lvl3(char *tempo, char *tempos) {
     system("cls");
     int dix=0;
     char key;
@@ -152,91 +207,34 @@ void Lvl2(char *tempo, char *tempos) {
         if (compteur == 4) {
             game = 1;
             sleep(2);
-            victoire2(tempo, tempos);
-            sleep(100);
-
-        }
-
-
-
-
-        usleep(140000);           // on attend 1,57 sec , produit en croix avec le nombre de cases pour avoir 2 minutes
-        system("cls");    //clear de l'écran pour préparer l'affichage de la matrice actualisée
-    }
-}
-
-
-void Lvl3(char *tempo, char *tempos) {
-    int dix=0;
-    char key;
-    char matrice[14][24];
-    int compteur = 0;
-    int game = 0;
-    tableau(matrice, &balle, &snoopy);
-
-    t.y=10;
-    t.x=0;
-    t.directx=0;
-    t.directy=1;
-
-
-
-    BlocNiv3(matrice);
-    matrice[7][7] = 10;
-    while(game != 1){
-        terrain(matrice);
-        if (dix>=9){
-            timed(matrice, &t);
-            dix=0;
-        }
-        else {
-            dix++;
-        }
-        if (kbhit()){             //permet de lancer la boucle ssi une touche est pressée
-            key = getch();             // la touche pressée est récupérée et assignée a key
-            deplacement(matrice, &key, &snoopy, &compteur, tempos);                   // voir programme déplacement
-        }
-
-
-        mouvballe(matrice, &balle, tempo);
-        if (balle.x == snoopy.x && balle.y == snoopy.y) {
-            sleep(2);
-            GameOver();
-            sleep(5);
-            menu();
-            choix();
-        }
-
-        if (compteur == 4) {
-            game = 1;
-            sleep(2);
             victoire3(tempo, tempos);
             sleep(100);
-        }
 
+        }
 
         usleep(140000);           // on attend 1,57 sec , produit en croix avec le nombre de cases pour avoir 2 minutes
         system("cls");    //clear de l'écran pour préparer l'affichage de la matrice actualisée
     }
 }
 
+
 void Lvl4(char *tempo, char *tempos) {
-    system("cls");
     int dix=0;
     char key;
     char matrice[14][24];
     int compteur = 0;
     int game = 0;
-    matrice[7][7] = 10;
+    tableau(matrice, &balle, &snoopy);
+
     t.y=10;
     t.x=0;
     t.directx=0;
     t.directy=1;
 
 
-    tableau(matrice, &balle, &snoopy);
-    BlocNiv3(matrice);
 
+    BlocNiv3(matrice);
+    matrice[7][7] = 10;
     while(game != 1){
         terrain(matrice);
         if (dix>=9){

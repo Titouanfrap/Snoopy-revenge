@@ -52,18 +52,19 @@ void password(char *tempo, char *tempos) {
     while (1) {
         scanf("%s", mot);
 
-       if (strcmp(mot, "ecemaths") == 0) {
-            printf("Lancement du niveau 2...\n");
-            sleep(3);
-            Lvl2(tempo, tempos);
-        }
-        else if (strcmp(mot, "ecejbtv") == 0) {
+
+        if (strcmp(mot, "ecemaths") == 0) {
             printf("Niveau indisponible...");
+        }
+       else if (strcmp(mot, "ecejbtv") == 0) {
+            printf("Lancement du niveau 3...\n");
+            sleep(3);
+            Lvl3(tempo, tempos);
         }
         else if (strcmp(mot, "champions") == 0) {
             printf("Lancement du niveau 4...");
             sleep(3);
-            Lvl3(tempo, tempos);
+            Lvl4(tempo, tempos);
         } else {
             printf("Mot invalide\n");
             tentatives++;
@@ -76,22 +77,6 @@ void password(char *tempo, char *tempos) {
             }
         }
     }
-}
-
-void parametre (){
-
-    printf("Vous etes dans le menu parametre:\n"
-           "\n"
-           "Touches mouvement:\n"
-           "\n"
-           "z: haut\n"
-           "s: bas\n"
-           "q: gauche\n"
-           "d: droite\n"
-           "a: casser les blocs\n"
-           "\n"
-           "Les blocs suivant:\n"
-           "");
 }
 
 int menu() {
@@ -115,12 +100,10 @@ int menu() {
            "\t\t\t\t||                                      ||\n"
            "\t\t\t\t||              ~~5.Score~~             ||\n"
            "\t\t\t\t||                                      ||\n"
-           "\t\t\t\t||             ~~6.Touches~~            ||\n"
-           "\t\t\t\t||                                      ||\n"
-           "\t\t\t\t||          ~~7.Deconnexion~~           ||\n"
+           "\t\t\t\t||          ~~6.Deconnexion~~           ||\n"
            "\t\t\t\t||                                      ||\n"
          "\t\t\t\t\\\\======================================//\n\n"
-           "Tapez un nombre entre 1 et 7 pour selectioner une action :");
+           "Tapez un nombre entre 1 et 6 pour selectioner une action :");
 }
 
 void handleDir(char *key, char *tempo, char *tempos);
@@ -184,17 +167,6 @@ void handleDir(char *key, char *tempo, char *tempos) {
                    "\n\t       Oui : y               Non : n");
             break;
         case '6':
-            printf("\n\n\n\n Voulez vous voir les touches ?"
-                   "\n\t       Oui : y               Non : n");
-            char confirmKey4 = getch();
-            if (confirmKey4 == 'y') {
-                system("cls");
-                parametre();
-
-            } else if (confirmKey2 == 'n') {
-                menu();
-            }
-        case '7':
             printf("\n\n\n\n Voulez vous vraiment quitter le jeu ?"
                    "\n\t       Oui : y               Non : n");
             char confirmKey5 = getch();

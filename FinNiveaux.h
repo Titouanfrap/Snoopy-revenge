@@ -10,6 +10,14 @@ void GameOver();
 
 void defaite1();
 
+void defaite2(char *tempo, char *tempos);
+
+void defaite3(char *tempo, char *tempos);
+
+void defaite4(char *tempo, char *tempos);
+
+
+
 void menuchoix(char *touche);
 
 void choice();
