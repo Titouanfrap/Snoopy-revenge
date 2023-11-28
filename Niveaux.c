@@ -112,7 +112,7 @@ void Lvl2(char *tempo, char *tempos) {
 
 
     tableau(matrice, &balle, &snoopy);
-    BlocNiv3(matrice);
+    BlocNiv2(matrice);
 
     while(game != 1){
         terrain(matrice);
@@ -171,7 +171,7 @@ void Lvl3(char *tempo, char *tempos) {
 
 
 
-    BlocNiv2(matrice);
+    BlocNiv3(matrice);
     matrice[7][7] = 10;
     while(game != 1){
         terrain(matrice);
@@ -233,7 +233,7 @@ void Lvl4(char *tempo, char *tempos) {
 
 
 
-    BlocNiv3(matrice);
+    BlocNiv4(matrice);
     matrice[7][7] = 10;
     while(game != 1){
         terrain(matrice);

@@ -170,7 +170,7 @@ void BlocNiv1(char tab[14][24]) {
 
 }
 
-void BlocNiv2(char tab[14][24]) {
+void BlocNiv3(char tab[14][24]) {
     tab[4][2] = 5;
     tab[5][2] = 5;
     tab[7][2] = 5;
@@ -225,7 +225,7 @@ void BlocNiv2(char tab[14][24]) {
 
 }
 
-void BlocNiv3(char tab[14][24]) {
+void BlocNiv4(char tab[14][24]) {
     tab[3][11] = 2;
     tab[6][4] = 3;
     tab[3][5] = 5;
@@ -314,62 +314,8 @@ void BlocNiv3(char tab[14][24]) {
 
 }
 
-void BlocNiv4(char tab[14][24]) {
 
-                tab[10][14] = 2; //bas droit
-                tab[10][15] = 2;
-                tab[10][16] = 2;
-                tab[10][17] = 14;
-                tab[10][18] = 2;
-                tab[10][19] = 2;
-                tab[10][20] = 2;
-                tab[10][21] = 2;
-                tab[11][17] = 5;
-                tab[11][18] = 12;
-
-                    tab[5][18] = 2; // mileu droit (tp) avec mur cassable
-                tab[5][19] = 2;
-                tab[5][20] = 2;
-                tab[5][21] = 2;
-                tab[7][18] = 2;
-                tab[7][19] = 2;
-                tab[7][20] = 2;
-                tab[7][21] = 2;
-                tab[6][19] = 13;
-                tab[6][21] = 12;
-
-                tab[7][5] = 6; //le tunnel de la mort
-                tab[7][2] = 13;
-                tab[7][4] = 13;
-                tab[7][3] = 2;
-                tab[8][5] = 5;
-                tab[9][5] = 5;
-                tab[10][5] = 5;
-                tab[7][7] = 2;
-                tab[9][8] = 2;
-                tab[9][9] = 2;
-                tab[9][10] = 4;
-                tab[8][10] = 5;
-                tab[7][10] = 5;
-                tab[6][10] = 6;
-                tab[5][13] = 5;
-                tab[4][13] = 7;
-                tab[4][12] = 2;
-                tab[4][11] = 2;
-                tab[4][10] = 2;
-                tab[4][9] = 2;
-                tab[4][8] = 6;
-                tab[5][8] = 5;
-                tab[7][8] = 4;
-                tab[6][8] = 5;
-                tab[6][11] = 2;
-                tab[6][12] = 2;
-                tab[6][13] = 4;
-                tab[9][7] = 6;
-                tab[10][7] = 5;
-                tab[7][6] = 2;
-}
-void BlocNiv2bis(char tab[14][24]) {
+void BlocNiv2(char tab[14][24]) {
     tab[2][3] = 5;
     tab[4][2] = 2;
     tab[4][3] = 2;
