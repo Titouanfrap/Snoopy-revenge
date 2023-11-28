@@ -314,7 +314,6 @@ void BlocNiv4(char tab[14][24]) {
 
 }
 
-
 void BlocNiv2(char tab[14][24]) {
     tab[2][3] = 5;
     tab[4][2] = 2;
