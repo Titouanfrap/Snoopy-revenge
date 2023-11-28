@@ -4,7 +4,7 @@
 #include "Niveaux.h"
 
 
-void victoire1(char *tempo) {
+void victoire1(char *tempo, char *tempos) {
     system("cls");
     printf("//==============================\\\\\n"
            "||          **********\t        ||\n"
@@ -25,10 +25,7 @@ void victoire1(char *tempo) {
            "||   ________________________   || \n"
            "||                              || \n"
            "||         Deconnexion          || \n"
-           "||   ________________________   ||\n"
            "||	                        ||\n"
-           "||    Mot de passe : eceinfo    ||\n"
-           "||                              ||\n"
            "\\==============================//\n");
 
     char touche = ' ';
@@ -44,7 +41,7 @@ void victoire1(char *tempo) {
             case '2':
                 printf("\n\nNiveau suivant...");
                 sleep(3);
-                Lvl2(tempo);
+                Lvl2(tempo, tempos);
                 break;
             case '3':
                 printf("\n\n Retour au Menu...");
@@ -63,7 +60,7 @@ void victoire1(char *tempo) {
 }
 
 
-void victoire2(char *tempo) {
+void victoire2(char *tempo, char *tempos) {
     system("cls");
     printf("//==============================\\\\\n"
            "||          **********\t        ||\n"
@@ -102,7 +99,7 @@ void victoire2(char *tempo) {
             case '2':
                 printf("\n\nNiveau suivant...");
                 sleep(3);
-                Lvl3(tempo);
+                Lvl3(tempo, tempos);
                 break;
             case '3':
                 printf("\n\n Retour au Menu...");
@@ -120,7 +117,7 @@ void victoire2(char *tempo) {
     }
 }
 
-void victoire3(char *tempo) {
+void victoire3(char *tempo, char *tempos) {
     system("cls");
     printf("//==============================\\\\\n"
            "||          **********\t        ||\n"
@@ -159,7 +156,7 @@ void victoire3(char *tempo) {
             case '2':
                 printf("\n\nNiveau suivant...");
                 sleep(3);
-                Lvl4(tempo);
+                Lvl4(tempo, tempos);
                 break;
             case '3':
                 printf("\n\n Retour au Menu...");
@@ -177,7 +174,7 @@ void victoire3(char *tempo) {
     }
 }
 
-void victoire4(char *tempo) {
+void victoire4(char *tempo, char *tempos) {
     system("cls");
     printf("//==============================\\\\\n"
            "||          **********\t        ||\n"

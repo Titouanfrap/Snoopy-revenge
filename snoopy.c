@@ -4,9 +4,13 @@
 #include "FinNiveaux.h"
 
 
-void deplacement(char tab[14][24], char *key, Snoopy *snoopy, int *compteur) {
+void deplacement(char tab[14][24], char *key, Snoopy *snoopy, int *compteur, char *tempos) {
 
     tab[snoopy->x][snoopy->y] = 0;
+
+    if (*tempos == 17 || *tempos == 16) {
+        tab[snoopy->x][snoopy->y] = *tempos;
+    }
 
     switch (*key) {
         case 'z':
@@ -95,6 +99,25 @@ void deplacement(char tab[14][24], char *key, Snoopy *snoopy, int *compteur) {
                 tab[snoopy->x][snoopy->y-1] = 0;
             }
 
+    }
+    *tempos = tab[snoopy->x][snoopy->y];
+
+
+
+    if ( tab[snoopy->x][snoopy->y] == tab[2][12] && tab[snoopy->x][snoopy->y] == 17 ) {
+        snoopy->y--;
+    }
+
+    if ( tab[snoopy->x][snoopy->y] == tab[2][11] && tab[snoopy->x][snoopy->y] == 17 ) {
+        snoopy->y--;
+    }
+
+    if ( tab[snoopy->x][snoopy->y] == tab[2][10] && tab[snoopy->x][snoopy->y] == 17) {
+        snoopy->x++;
+    }
+
+    if ( tab[snoopy->x][snoopy->y] == tab[3][10] && tab[snoopy->x][snoopy->y] == 17) {
+        snoopy->y--;
     }
 
 

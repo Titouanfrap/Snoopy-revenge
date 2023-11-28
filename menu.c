@@ -35,7 +35,7 @@ void leave() {
     sleep(3);
     system("cls");
 }
-void password(char *tempo) {
+void password(char *tempo, char *tempos) {
     printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  "
            "           ---------============THE REVENGE OF SNOOPY============---------\n\n\n\n"
            "Pour rappel, les differents mots de passe s'obtiennent en reussissant\n"
@@ -52,23 +52,18 @@ void password(char *tempo) {
     while (1) {
         scanf("%s", mot);
 
-        if (strcmp(mot, "eceinfo") == 0) {
-            printf("Lancement du niveau 1...\n");
-            sleep(3);
-            Lvl1();
-            break;
-        } else if (strcmp(mot, "ecemaths") == 0) {
+       if (strcmp(mot, "ecemaths") == 0) {
             printf("Lancement du niveau 2...\n");
             sleep(3);
-            Lvl2(tempo);
+            Lvl2(tempo, tempos);
         }
         else if (strcmp(mot, "ecejbtv") == 0) {
-            printf("Lancement du niveau 3...");
-            sleep(3);
-            Lvl3(tempo);
+            printf("Niveau indisponible...");
         }
         else if (strcmp(mot, "champions") == 0) {
-            printf("Niveau indisponible");
+            printf("Lancement du niveau 4...");
+            sleep(3);
+            Lvl3(tempo, tempos);
         } else {
             printf("Mot invalide\n");
             tentatives++;
@@ -128,10 +123,11 @@ int menu() {
            "Tapez un nombre entre 1 et 7 pour selectioner une action :");
 }
 
-void handleDir(char *key, char *tempo);
+void handleDir(char *key, char *tempo, char *tempos);
 void choix()
 {
     char tempo;
+    char tempos;
     char key = ' ';
 
     while (1)
@@ -139,11 +135,11 @@ void choix()
         if (kbhit()) {
             key = getch();
         }
-        handleDir(&key, &tempo);
+        handleDir(&key, &tempo, &tempos);
     }
 }
 
-void handleDir(char *key, char *tempo) {
+void handleDir(char *key, char *tempo, char *tempos) {
     switch (*key) {
         case '1':
             printf("\n\n\n\n Voulez vous lire les regles du jeu ?"
@@ -178,7 +174,7 @@ void handleDir(char *key, char *tempo) {
                    "\n\t       Oui : y               Non : n");
             char confirmKey2 = getch();
             if (confirmKey2 == 'y') {
-                password(tempo);
+                password(tempo,tempos);
             } else if (confirmKey2 == 'n') {
                 menu();
             }

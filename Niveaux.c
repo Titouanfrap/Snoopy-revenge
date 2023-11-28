@@ -15,12 +15,13 @@ Snoopy snoopy = {3, 11};
 
 void Lvl1() {
     int dix = 0;
-    char key, pause;
+    char key;
     char matrice[14][24];
     int compteur = 0;
     int game = 0;
     char tempo;
-    int tempsd1 = 3;
+    char tempos;
+    int tempsd1 = 120;
     time_t debut, maintenant;
 
     int nb_defaites;
@@ -50,7 +51,7 @@ void Lvl1() {
                         sleep(1);
                     }
                 }
-                deplacement(matrice, &key, &snoopy, &compteur);
+                deplacement(matrice, &key, &snoopy, &compteur, &tempos);
             }
 
             mouvballe(matrice, &balle, &tempo);
@@ -69,7 +70,7 @@ void Lvl1() {
             if (compteur == 4) {
                 game = 1;
                 sleep(2);
-                victoire1(&tempo);
+                victoire1(&tempo, &tempos);
                 sleep(100);
             }
 
@@ -97,7 +98,7 @@ void Lvl1() {
 }
 
 
-void Lvl2(char *tempo) {
+void Lvl2(char *tempo, char *tempos) {
     system("cls");
     int dix=0;
     char key;
@@ -135,7 +136,7 @@ void Lvl2(char *tempo) {
                     sleep(1);
                 }
             }
-            deplacement(matrice, &key, &snoopy, &compteur);                   // voir programme déplacement
+            deplacement(matrice, &key, &snoopy, &compteur, tempos);                   // voir programme déplacement
         }
 
 
@@ -151,7 +152,7 @@ void Lvl2(char *tempo) {
         if (compteur == 4) {
             game = 1;
             sleep(2);
-            victoire2(tempo);
+            victoire2(tempo, tempos);
             sleep(100);
 
         }
@@ -165,7 +166,7 @@ void Lvl2(char *tempo) {
 }
 
 
-void Lvl3(char *tempo) {
+void Lvl3(char *tempo, char *tempos) {
     int dix=0;
     char key;
     char matrice[14][24];
@@ -182,6 +183,7 @@ void Lvl3(char *tempo) {
 
     BlocNiv3(matrice);
     matrice[7][7] = 10;
+    matrice[4][11] = 9;
     while(game != 1){
         terrain(matrice);
         if (dix>=9){
@@ -193,7 +195,7 @@ void Lvl3(char *tempo) {
         }
         if (kbhit()){             //permet de lancer la boucle ssi une touche est pressée
             key = getch();             // la touche pressée est récupérée et assignée a key
-            deplacement(matrice, &key, &snoopy, &compteur);                   // voir programme déplacement
+            deplacement(matrice, &key, &snoopy, &compteur, tempos);                   // voir programme déplacement
         }
 
 
@@ -209,7 +211,7 @@ void Lvl3(char *tempo) {
         if (compteur == 4) {
             game = 1;
             sleep(2);
-            victoire3(tempo);
+            victoire3(tempo, tempos);
             sleep(100);
         }
 
@@ -219,7 +221,7 @@ void Lvl3(char *tempo) {
     }
 }
 
-void Lvl4(char *tempo) {
+void Lvl4(char *tempo, char *tempos) {
     system("cls");
     int dix=0;
     char key;
@@ -247,7 +249,7 @@ void Lvl4(char *tempo) {
         }
         if (kbhit()){             //permet de lancer la boucle ssi une touche est pressée
             key = getch();             // la touche pressée est récupérée et assignée a key
-            deplacement(matrice, &key, &snoopy, &compteur);                   // voir programme déplacement
+            deplacement(matrice, &key, &snoopy, &compteur, tempos);                   // voir programme déplacement
         }
 
 
@@ -263,7 +265,7 @@ void Lvl4(char *tempo) {
         if (compteur == 4) {
             game = 1;
             sleep(2);
-            victoire4(tempo);
+            victoire4(tempo, tempos);
             sleep(100);
         }
 
