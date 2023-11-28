@@ -434,4 +434,5 @@ void BlocNiv2bis(char tab[14][24]) {
     tab[10][18] = 4;
     tab[7][18] = 6;
     tab[4][18] = 6;
+    tab[6][18] = 13;
 }
