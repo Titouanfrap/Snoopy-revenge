@@ -8,13 +8,13 @@ void victoire4(char *tempo, char *tempos);
 
 void GameOver();
 
-void defaite1();
+void defaite1(int *nb_executions);
 
-void defaite2(char *tempo, char *tempos);
+void defaite2(char *tempo, char *tempos,int *nb_executions);
 
-void defaite3(char *tempo, char *tempos);
+void defaite3(char *tempo, char *tempos,int *nb_executions);
 
-void defaite4(char *tempo, char *tempos);
+void defaite4(char *tempo, char *tempos,int *nb_executions);
 
 
 

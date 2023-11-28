@@ -4,7 +4,7 @@
 #include "Niveaux.h"
 
 
-void victoire1(char *tempo, char *tempos) {
+void victoire1(char *tempo, char *tempos, int *nb_executions) {
     system("cls");
     printf("//==============================\\\\\n"
            "||          **********\t        ||\n"
@@ -41,7 +41,7 @@ void victoire1(char *tempo, char *tempos) {
             case '2':
                 printf("\n\nNiveau suivant...");
                 sleep(3);
-                Lvl2(tempo, tempos);
+                Lvl2(tempo, tempos, nb_executions);
                 break;
             case '3':
                 printf("\n\n Retour au Menu...");
@@ -60,7 +60,7 @@ void victoire1(char *tempo, char *tempos) {
 }
 
 
-void victoire2(char *tempo, char *tempos) {
+void victoire2(char *tempo, char *tempos, int *nb_executions) {
     system("cls");
     printf("//==============================\\\\\n"
            "||          **********\t        ||\n"
@@ -99,7 +99,7 @@ void victoire2(char *tempo, char *tempos) {
             case '2':
                 printf("\n\nNiveau suivant...");
                 sleep(3);
-                Lvl3(tempo, tempos);
+                Lvl3(tempo, tempos, nb_executions);
                 break;
             case '3':
                 printf("\n\n Retour au Menu...");
@@ -117,7 +117,7 @@ void victoire2(char *tempo, char *tempos) {
     }
 }
 
-void victoire3(char *tempo, char *tempos) {
+void victoire3(char *tempo, char *tempos,int *nb_executions) {
     system("cls");
     printf("//==============================\\\\\n"
            "||          **********\t        ||\n"
@@ -156,7 +156,7 @@ void victoire3(char *tempo, char *tempos) {
             case '2':
                 printf("\n\nNiveau suivant...");
                 sleep(3);
-                Lvl4(tempo, tempos);
+                Lvl4(tempo, tempos, nb_executions);
                 break;
             case '3':
                 printf("\n\n Retour au Menu...");
@@ -174,7 +174,7 @@ void victoire3(char *tempo, char *tempos) {
     }
 }
 
-void victoire4(char *tempo, char *tempos) {
+void victoire4(char *tempo, char *tempos, int *nb_executions) {
     system("cls");
     printf(""
            ""
@@ -210,7 +210,8 @@ void victoire4(char *tempo, char *tempos) {
 
 }
 
-void defaite1(){
+void defaite1(int *nb_executions){
+    if (*nb_executions<3){
     printf("//==============================\\\\\n"
            "||           *********          ||\n"
            "||      ---===Defaite===---     ||\n"
@@ -230,7 +231,7 @@ void defaite1(){
            "||                              ||\n"
            "\\\\==============================//");
     char touche = ' ';
-    while (1) {
+    while (*nb_executions<3) {
         if (kbhit()) {
             touche = getch();
         }
@@ -238,7 +239,7 @@ void defaite1(){
             case '1':
                 printf("\n\nBon courage...");
                 sleep(3);
-                Lvl1();
+                Lvl1(&*nb_executions);
                 break;
             case '2':
                 printf("\n\n Sauvegarde");
@@ -252,32 +253,80 @@ void defaite1(){
                 break;
         }
         touche = ' ';
-    }
+    }}else { Lvl1(nb_executions);}
+}
+
+
+void defaite2(char *tempo, char *tempos, int *nb_executions){
+    if (*nb_executions<6){
+        printf("//==============================\\\\\n"
+               "||           *********          ||\n"
+               "||      ---===Defaite===---     ||\n"
+               "||           *********          ||\n"
+               "||______________________________||\n"
+               "||                              ||\n"
+               "||      Retenter sa chance      ||\n"
+               "||   ________________________   ||\n"
+               "||                              ||\n"
+               "||\t   Sauvegarder\t        ||\n"
+               "||   ________________________   ||\n"
+               "||                              ||\n"
+               "||         Retour Menu          ||\n"
+               "||   ________________________   ||\n"
+               "||                              ||\n"
+               "||         Deconnexion          ||\n"
+               "||                              ||\n"
+               "\\\\==============================//");
+        char touche = ' ';
+        while (*nb_executions<6) {
+        if (kbhit()) {
+            touche = getch();
+        }
+        switch (touche) {
+            case '1':
+                printf("\n\nBon courage...");
+                sleep(3);
+                Lvl2(tempo, tempos, nb_executions);
+                break;
+            case '2':
+                printf("\n\n Sauvegarde");
+                break;
+            case '3':
+                printf("\n\nRetour au menu");
+                sleep(3);
+                menu();
+                break;
+            default:
+                break;
+        }
+        touche = ' ';
+        }}else { Lvl2(tempo,tempos,nb_executions);}
 
 }
 
 
-void defaite2(char *tempo, char *tempos){
-    printf("//==============================\\\\\n"
-           "||           *********          ||\n"
-           "||      ---===Defaite===---     ||\n"
-           "||           *********          ||\n"
-           "||______________________________||\n"
-           "||                              ||\n"
-           "||      Retenter sa chance      ||\n"
-           "||   ________________________   ||\n"
-           "||                              ||\n"
-           "||\t   Sauvegarder\t        ||\n"
-           "||   ________________________   ||\n"
-           "||                              ||\n"
-           "||         Retour Menu          ||\n"
-           "||   ________________________   ||\n"
-           "||                              ||\n"
-           "||         Deconnexion          ||\n"
-           "||                              ||\n"
-           "\\\\==============================//");
-    char touche = ' ';
-    while (1) {
+void defaite3(char *tempo, char *tempos, int *nb_executions){
+    if (*nb_executions<9||*nb_executions<3 ){
+        printf("//==============================\\\\\n"
+               "||           *********          ||\n"
+               "||      ---===Defaite===---     ||\n"
+               "||           *********          ||\n"
+               "||______________________________||\n"
+               "||                              ||\n"
+               "||      Retenter sa chance      ||\n"
+               "||   ________________________   ||\n"
+               "||                              ||\n"
+               "||\t   Sauvegarder\t        ||\n"
+               "||   ________________________   ||\n"
+               "||                              ||\n"
+               "||         Retour Menu          ||\n"
+               "||   ________________________   ||\n"
+               "||                              ||\n"
+               "||         Deconnexion          ||\n"
+               "||                              ||\n"
+               "\\\\==============================//");
+        char touche = ' ';
+        while (*nb_executions<9||*nb_executions<3) {
         if (kbhit()) {
             touche = getch();
         }
@@ -285,7 +334,7 @@ void defaite2(char *tempo, char *tempos){
             case '1':
                 printf("\n\nBon courage...");
                 sleep(3);
-                Lvl2(tempo, tempos);
+                Lvl3(tempo, tempos, nb_executions);
                 break;
             case '2':
                 printf("\n\n Sauvegarde");
@@ -298,33 +347,34 @@ void defaite2(char *tempo, char *tempos){
             default:
                 break;
         }
-        touche = ' ';
-    }
+            touche = ' ';
+        }}else { Lvl3(tempo,tempos,nb_executions);}
 
 }
 
 
-void defaite3(char *tempo, char *tempos){
-    printf("//==============================\\\\\n"
-           "||           *********          ||\n"
-           "||      ---===Defaite===---     ||\n"
-           "||           *********          ||\n"
-           "||______________________________||\n"
-           "||                              ||\n"
-           "||      Retenter sa chance      ||\n"
-           "||   ________________________   ||\n"
-           "||                              ||\n"
-           "||\t   Sauvegarder\t        ||\n"
-           "||   ________________________   ||\n"
-           "||                              ||\n"
-           "||         Retour Menu          ||\n"
-           "||   ________________________   ||\n"
-           "||                              ||\n"
-           "||         Deconnexion          ||\n"
-           "||                              ||\n"
-           "\\\\==============================//");
-    char touche = ' ';
-    while (1) {
+void defaite4(char *tempo, char *tempos, int *nb_executions){
+    if (*nb_executions<9||*nb_executions<3 ){
+        printf("//==============================\\\\\n"
+               "||           *********          ||\n"
+               "||      ---===Defaite===---     ||\n"
+               "||           *********          ||\n"
+               "||______________________________||\n"
+               "||                              ||\n"
+               "||      Retenter sa chance      ||\n"
+               "||   ________________________   ||\n"
+               "||                              ||\n"
+               "||\t   Sauvegarder\t        ||\n"
+               "||   ________________________   ||\n"
+               "||                              ||\n"
+               "||         Retour Menu          ||\n"
+               "||   ________________________   ||\n"
+               "||                              ||\n"
+               "||         Deconnexion          ||\n"
+               "||                              ||\n"
+               "\\\\==============================//");
+        char touche = ' ';
+        while (*nb_executions<12||*nb_executions<3) {
         if (kbhit()) {
             touche = getch();
         }
@@ -332,7 +382,7 @@ void defaite3(char *tempo, char *tempos){
             case '1':
                 printf("\n\nBon courage...");
                 sleep(3);
-                Lvl3(tempo, tempos);
+                Lvl4(tempo, tempos, nb_executions);
                 break;
             case '2':
                 printf("\n\n Sauvegarde");
@@ -345,55 +395,8 @@ void defaite3(char *tempo, char *tempos){
             default:
                 break;
         }
-        touche = ' ';
-    }
-
-}
-
-
-void defaite4(char *tempo, char *tempos){
-    printf("//==============================\\\\\n"
-           "||           *********          ||\n"
-           "||      ---===Defaite===---     ||\n"
-           "||           *********          ||\n"
-           "||______________________________||\n"
-           "||                              ||\n"
-           "||      Retenter sa chance      ||\n"
-           "||   ________________________   ||\n"
-           "||                              ||\n"
-           "||\t   Sauvegarder\t        ||\n"
-           "||   ________________________   ||\n"
-           "||                              ||\n"
-           "||         Retour Menu          ||\n"
-           "||   ________________________   ||\n"
-           "||                              ||\n"
-           "||         Deconnexion          ||\n"
-           "||                              ||\n"
-           "\\\\==============================//");
-    char touche = ' ';
-    while (1) {
-        if (kbhit()) {
-            touche = getch();
-        }
-        switch (touche) {
-            case '1':
-                printf("\n\nBon courage...");
-                sleep(3);
-                Lvl4(tempo, tempos);
-                break;
-            case '2':
-                printf("\n\n Sauvegarde");
-                break;
-            case '3':
-                printf("\n\nRetour au menu");
-                sleep(3);
-                menu();
-                break;
-            default:
-                break;
-        }
-        touche = ' ';
-    }
+            touche = ' ';
+        }}else { Lvl4(tempo,tempos,nb_executions);}
 
 }
 
