@@ -1,3 +1,9 @@
+<<<<<<< Updated upstream
 C:/Users/marcv/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug/CMakeFiles/Snoopy_revenge.dir
 C:/Users/marcv/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/marcv/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+=======
+C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug/CMakeFiles/Snoopy_revenge.dir
+C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+>>>>>>> Stashed changes

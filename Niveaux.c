@@ -12,6 +12,11 @@
 Time t = {120, 0, 0, 10, 1}; // raccourcit vers la structure du timer
 Balle balle = {7,7,1,1};
 Snoopy snoopy = {4, 11};
+int gamepaused=0;
+
+void gamepause(){
+    gamepaused=1;
+}
 
 void Lvl1() {
     int dix = 0;
@@ -21,7 +26,8 @@ void Lvl1() {
     int game = 0;
     char tempo;
     char tempos;
-    int tempsd1 = 120;
+    int tempsd1 = 2;
+
     time_t debut, maintenant;
 
     int nb_defaites;

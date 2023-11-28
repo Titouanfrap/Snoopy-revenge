@@ -54,7 +54,9 @@ void password(char *tempo, char *tempos) {
 
 
         if (strcmp(mot, "ecemaths") == 0) {
-            printf("Niveau indisponible...");
+            printf("Lancment du niveau 2...");
+            sleep(3);
+            Lvl2(tempo,tempos);
         }
        else if (strcmp(mot, "ecejbtv") == 0) {
             printf("Lancement du niveau 3...\n");
@@ -62,9 +64,8 @@ void password(char *tempo, char *tempos) {
             Lvl3(tempo, tempos);
         }
         else if (strcmp(mot, "champions") == 0) {
-            printf("Lancement du niveau 4...");
+            Lvl4(tempo,tempos);
             sleep(3);
-            Lvl4(tempo, tempos);
         } else {
             printf("Mot invalide\n");
             tentatives++;

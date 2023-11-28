@@ -43,19 +43,33 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
+<<<<<<< Updated upstream
 CMAKE_COMMAND = "C:\Users\marcv\AppData\Local\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
 RM = "C:\Users\marcv\AppData\Local\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+=======
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe"
+
+# The command to remove a file.
+RM = "C:\Program Files\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+>>>>>>> Stashed changes
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< Updated upstream
 CMAKE_SOURCE_DIR = C:\Users\marcv\OneDrive\Documents\GitHub\Snoopy-revenge
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = C:\Users\marcv\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug
+=======
+CMAKE_SOURCE_DIR = C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug
+>>>>>>> Stashed changes
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Snoopy_revenge.dir/depend.make
@@ -69,6 +83,7 @@ include CMakeFiles/Snoopy_revenge.dir/progress.make
 include CMakeFiles/Snoopy_revenge.dir/flags.make
 
 CMakeFiles/Snoopy_revenge.dir/main.c.obj: CMakeFiles/Snoopy_revenge.dir/flags.make
+<<<<<<< Updated upstream
 CMakeFiles/Snoopy_revenge.dir/main.c.obj: C:/Users/marcv/OneDrive/Documents/GitHub/Snoopy-revenge/main.c
 CMakeFiles/Snoopy_revenge.dir/main.c.obj: CMakeFiles/Snoopy_revenge.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\marcv\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Snoopy_revenge.dir/main.c.obj"
@@ -179,6 +194,118 @@ CMakeFiles/Snoopy_revenge.dir/Niveaux.c.i: cmake_force
 CMakeFiles/Snoopy_revenge.dir/Niveaux.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Snoopy_revenge.dir/Niveaux.c.s"
 	C:\Users\marcv\AppData\Local\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\marcv\OneDrive\Documents\GitHub\Snoopy-revenge\Niveaux.c -o CMakeFiles\Snoopy_revenge.dir\Niveaux.c.s
+=======
+CMakeFiles/Snoopy_revenge.dir/main.c.obj: C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/main.c
+CMakeFiles/Snoopy_revenge.dir/main.c.obj: CMakeFiles/Snoopy_revenge.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Snoopy_revenge.dir/main.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Snoopy_revenge.dir/main.c.obj -MF CMakeFiles\Snoopy_revenge.dir\main.c.obj.d -o CMakeFiles\Snoopy_revenge.dir\main.c.obj -c C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\main.c
+
+CMakeFiles/Snoopy_revenge.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Snoopy_revenge.dir/main.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\main.c > CMakeFiles\Snoopy_revenge.dir\main.c.i
+
+CMakeFiles/Snoopy_revenge.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Snoopy_revenge.dir/main.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\main.c -o CMakeFiles\Snoopy_revenge.dir\main.c.s
+
+CMakeFiles/Snoopy_revenge.dir/temps.c.obj: CMakeFiles/Snoopy_revenge.dir/flags.make
+CMakeFiles/Snoopy_revenge.dir/temps.c.obj: C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/temps.c
+CMakeFiles/Snoopy_revenge.dir/temps.c.obj: CMakeFiles/Snoopy_revenge.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Snoopy_revenge.dir/temps.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Snoopy_revenge.dir/temps.c.obj -MF CMakeFiles\Snoopy_revenge.dir\temps.c.obj.d -o CMakeFiles\Snoopy_revenge.dir\temps.c.obj -c C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\temps.c
+
+CMakeFiles/Snoopy_revenge.dir/temps.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Snoopy_revenge.dir/temps.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\temps.c > CMakeFiles\Snoopy_revenge.dir\temps.c.i
+
+CMakeFiles/Snoopy_revenge.dir/temps.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Snoopy_revenge.dir/temps.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\temps.c -o CMakeFiles\Snoopy_revenge.dir\temps.c.s
+
+CMakeFiles/Snoopy_revenge.dir/balle.c.obj: CMakeFiles/Snoopy_revenge.dir/flags.make
+CMakeFiles/Snoopy_revenge.dir/balle.c.obj: C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/balle.c
+CMakeFiles/Snoopy_revenge.dir/balle.c.obj: CMakeFiles/Snoopy_revenge.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Snoopy_revenge.dir/balle.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Snoopy_revenge.dir/balle.c.obj -MF CMakeFiles\Snoopy_revenge.dir\balle.c.obj.d -o CMakeFiles\Snoopy_revenge.dir\balle.c.obj -c C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\balle.c
+
+CMakeFiles/Snoopy_revenge.dir/balle.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Snoopy_revenge.dir/balle.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\balle.c > CMakeFiles\Snoopy_revenge.dir\balle.c.i
+
+CMakeFiles/Snoopy_revenge.dir/balle.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Snoopy_revenge.dir/balle.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\balle.c -o CMakeFiles\Snoopy_revenge.dir\balle.c.s
+
+CMakeFiles/Snoopy_revenge.dir/snoopy.c.obj: CMakeFiles/Snoopy_revenge.dir/flags.make
+CMakeFiles/Snoopy_revenge.dir/snoopy.c.obj: C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/snoopy.c
+CMakeFiles/Snoopy_revenge.dir/snoopy.c.obj: CMakeFiles/Snoopy_revenge.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Snoopy_revenge.dir/snoopy.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Snoopy_revenge.dir/snoopy.c.obj -MF CMakeFiles\Snoopy_revenge.dir\snoopy.c.obj.d -o CMakeFiles\Snoopy_revenge.dir\snoopy.c.obj -c C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\snoopy.c
+
+CMakeFiles/Snoopy_revenge.dir/snoopy.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Snoopy_revenge.dir/snoopy.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\snoopy.c > CMakeFiles\Snoopy_revenge.dir\snoopy.c.i
+
+CMakeFiles/Snoopy_revenge.dir/snoopy.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Snoopy_revenge.dir/snoopy.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\snoopy.c -o CMakeFiles\Snoopy_revenge.dir\snoopy.c.s
+
+CMakeFiles/Snoopy_revenge.dir/terrain.c.obj: CMakeFiles/Snoopy_revenge.dir/flags.make
+CMakeFiles/Snoopy_revenge.dir/terrain.c.obj: C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/terrain.c
+CMakeFiles/Snoopy_revenge.dir/terrain.c.obj: CMakeFiles/Snoopy_revenge.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Snoopy_revenge.dir/terrain.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Snoopy_revenge.dir/terrain.c.obj -MF CMakeFiles\Snoopy_revenge.dir\terrain.c.obj.d -o CMakeFiles\Snoopy_revenge.dir\terrain.c.obj -c C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\terrain.c
+
+CMakeFiles/Snoopy_revenge.dir/terrain.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Snoopy_revenge.dir/terrain.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\terrain.c > CMakeFiles\Snoopy_revenge.dir\terrain.c.i
+
+CMakeFiles/Snoopy_revenge.dir/terrain.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Snoopy_revenge.dir/terrain.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\terrain.c -o CMakeFiles\Snoopy_revenge.dir\terrain.c.s
+
+CMakeFiles/Snoopy_revenge.dir/menu.c.obj: CMakeFiles/Snoopy_revenge.dir/flags.make
+CMakeFiles/Snoopy_revenge.dir/menu.c.obj: C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/menu.c
+CMakeFiles/Snoopy_revenge.dir/menu.c.obj: CMakeFiles/Snoopy_revenge.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Snoopy_revenge.dir/menu.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Snoopy_revenge.dir/menu.c.obj -MF CMakeFiles\Snoopy_revenge.dir\menu.c.obj.d -o CMakeFiles\Snoopy_revenge.dir\menu.c.obj -c C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\menu.c
+
+CMakeFiles/Snoopy_revenge.dir/menu.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Snoopy_revenge.dir/menu.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\menu.c > CMakeFiles\Snoopy_revenge.dir\menu.c.i
+
+CMakeFiles/Snoopy_revenge.dir/menu.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Snoopy_revenge.dir/menu.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\menu.c -o CMakeFiles\Snoopy_revenge.dir\menu.c.s
+
+CMakeFiles/Snoopy_revenge.dir/FinNiveaux.c.obj: CMakeFiles/Snoopy_revenge.dir/flags.make
+CMakeFiles/Snoopy_revenge.dir/FinNiveaux.c.obj: C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/FinNiveaux.c
+CMakeFiles/Snoopy_revenge.dir/FinNiveaux.c.obj: CMakeFiles/Snoopy_revenge.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Snoopy_revenge.dir/FinNiveaux.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Snoopy_revenge.dir/FinNiveaux.c.obj -MF CMakeFiles\Snoopy_revenge.dir\FinNiveaux.c.obj.d -o CMakeFiles\Snoopy_revenge.dir\FinNiveaux.c.obj -c C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\FinNiveaux.c
+
+CMakeFiles/Snoopy_revenge.dir/FinNiveaux.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Snoopy_revenge.dir/FinNiveaux.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\FinNiveaux.c > CMakeFiles\Snoopy_revenge.dir\FinNiveaux.c.i
+
+CMakeFiles/Snoopy_revenge.dir/FinNiveaux.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Snoopy_revenge.dir/FinNiveaux.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\FinNiveaux.c -o CMakeFiles\Snoopy_revenge.dir\FinNiveaux.c.s
+
+CMakeFiles/Snoopy_revenge.dir/Niveaux.c.obj: CMakeFiles/Snoopy_revenge.dir/flags.make
+CMakeFiles/Snoopy_revenge.dir/Niveaux.c.obj: C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/Niveaux.c
+CMakeFiles/Snoopy_revenge.dir/Niveaux.c.obj: CMakeFiles/Snoopy_revenge.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Snoopy_revenge.dir/Niveaux.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Snoopy_revenge.dir/Niveaux.c.obj -MF CMakeFiles\Snoopy_revenge.dir\Niveaux.c.obj.d -o CMakeFiles\Snoopy_revenge.dir\Niveaux.c.obj -c C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\Niveaux.c
+
+CMakeFiles/Snoopy_revenge.dir/Niveaux.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Snoopy_revenge.dir/Niveaux.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\Niveaux.c > CMakeFiles\Snoopy_revenge.dir\Niveaux.c.i
+
+CMakeFiles/Snoopy_revenge.dir/Niveaux.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Snoopy_revenge.dir/Niveaux.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\Niveaux.c -o CMakeFiles\Snoopy_revenge.dir\Niveaux.c.s
+>>>>>>> Stashed changes
 
 # Object files for target Snoopy_revenge
 Snoopy_revenge_OBJECTS = \
@@ -206,7 +333,11 @@ Snoopy_revenge.exe: CMakeFiles/Snoopy_revenge.dir/build.make
 Snoopy_revenge.exe: CMakeFiles/Snoopy_revenge.dir/linkLibs.rsp
 Snoopy_revenge.exe: CMakeFiles/Snoopy_revenge.dir/objects1.rsp
 Snoopy_revenge.exe: CMakeFiles/Snoopy_revenge.dir/link.txt
+<<<<<<< Updated upstream
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\marcv\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable Snoopy_revenge.exe"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable Snoopy_revenge.exe"
+>>>>>>> Stashed changes
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Snoopy_revenge.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -218,6 +349,10 @@ CMakeFiles/Snoopy_revenge.dir/clean:
 .PHONY : CMakeFiles/Snoopy_revenge.dir/clean
 
 CMakeFiles/Snoopy_revenge.dir/depend:
+<<<<<<< Updated upstream
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\marcv\OneDrive\Documents\GitHub\Snoopy-revenge C:\Users\marcv\OneDrive\Documents\GitHub\Snoopy-revenge C:\Users\marcv\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug C:\Users\marcv\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug C:\Users\marcv\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles\Snoopy_revenge.dir\DependInfo.cmake --color=$(COLOR)
+=======
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles\Snoopy_revenge.dir\DependInfo.cmake --color=$(COLOR)
+>>>>>>> Stashed changes
 .PHONY : CMakeFiles/Snoopy_revenge.dir/depend
 
