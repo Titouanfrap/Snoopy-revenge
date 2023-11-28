@@ -54,7 +54,7 @@ void password(char *tempo, char *tempos) {
 
 
         if (strcmp(mot, "ecemaths") == 0) {
-            printf("Lancment du niveau 2...");
+            printf("Lancement du niveau 2...");
             sleep(3);
             Lvl2(tempo,tempos);
         }
