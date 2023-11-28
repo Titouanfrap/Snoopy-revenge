@@ -20,12 +20,12 @@ void Lvl1() {
     int compteur = 0;
     int game = 0;
     char tempo;
-    int tempsd1 = 120;
+    int tempsd1 = 3;
     time_t debut, maintenant;
 
-    int nb_defaites = 0;
+    int nb_defaites;
 
-    while (nb_defaites < 2) {
+    while (nb_defaites < 4) {
         time(&debut);
 
         tableau(matrice, &balle, &snoopy);
@@ -82,14 +82,17 @@ void Lvl1() {
                 break;
             }
 
+            if (nb_defaites == 3) {
+                GameOver();
+                break;
+            }
+
+
             usleep(140000); // Attendre 1,57 sec
             system("cls"); // Clear de l'écran pour préparer l'affichage de la matrice actualisée
         }
 
-        if (nb_defaites == 2) {
-            GameOver();
-            break;
-        }
+
     }
 }
 

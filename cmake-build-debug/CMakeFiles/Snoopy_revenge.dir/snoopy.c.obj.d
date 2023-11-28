@@ -1,6 +1,6 @@
 CMakeFiles/Snoopy_revenge.dir/snoopy.c.obj: \
- C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\snoopy.c \
- C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\snoopy.h \
+ C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\snoopy.c \
+ C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\snoopy.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
@@ -22,4 +22,4 @@ CMakeFiles/Snoopy_revenge.dir/snoopy.c.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/sys/types.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/getopt.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h \
- C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\FinNiveaux.h
+ C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\FinNiveaux.h
