@@ -64,8 +64,9 @@ void password(char *tempo, char *tempos) {
             Lvl3(tempo, tempos);
         }
         else if (strcmp(mot, "champions") == 0) {
-            Lvl4(tempo,tempos);
+            printf("Lancement du niveau 4...\n");
             sleep(3);
+            Lvl4(tempo,tempos);
         } else {
             printf("Mot invalide\n");
             tentatives++;

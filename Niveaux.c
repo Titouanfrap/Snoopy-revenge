@@ -26,7 +26,7 @@ void Lvl1() {
     int game = 0;
     char tempo;
     char tempos;
-    int tempsd1 = 2;
+    int tempsd1 = 120;
 
     time_t debut, maintenant;
 
@@ -61,17 +61,13 @@ void Lvl1() {
             }
 
             mouvballe(matrice, &balle, &tempo);
-
-
-            /*if (balle.x == snoopy.x && balle.y == snoopy.y) {
+            if (balle.x == snoopy.x && balle.y == snoopy.y) {
                 sleep(2);
                 GameOver();
                 sleep(5);
                 menu();
                 choix();
-                nb_defaites++;
-                break;
-            }*/
+            }
 
             if (compteur == 4) {
                 game = 1;
