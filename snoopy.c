@@ -22,9 +22,10 @@ void deplacement(char tab[14][24], char *key, Snoopy *snoopy, int *compteur, cha
                                 if (tab[snoopy->x-1][snoopy->y] != 3 ){
                                     if (tab[snoopy->x-1][snoopy->y] != 13) {
                                         if (tab[snoopy->x-1][snoopy->y] != 1) {
+                                            if(tab[snoopy->x-1][snoopy->y]!= 15){
             if (snoopy->x > 2) {
                 snoopy->x--;
-            }}}}}}}}}
+            }}}}}}}}}}
             if (tab[snoopy->x-1][snoopy->y] == 1) {
                 if (tab[snoopy->x-2][snoopy->y] == 0) {
                     if (snoopy->x > 2) {
