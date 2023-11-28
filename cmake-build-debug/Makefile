@@ -47,33 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-<<<<<<< Updated upstream
 CMAKE_COMMAND = "C:\Users\marcv\AppData\Local\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
 RM = "C:\Users\marcv\AppData\Local\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
-=======
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe"
-
-# The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
->>>>>>> Stashed changes
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< Updated upstream
 CMAKE_SOURCE_DIR = C:\Users\marcv\OneDrive\Documents\GitHub\Snoopy-revenge
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = C:\Users\marcv\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug
-=======
-CMAKE_SOURCE_DIR = C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug
->>>>>>> Stashed changes
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -81,11 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-<<<<<<< Updated upstream
 	"C:\Users\marcv\AppData\Local\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-=======
-	"C:\Program Files\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
->>>>>>> Stashed changes
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -95,11 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-<<<<<<< Updated upstream
 	"C:\Users\marcv\AppData\Local\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-=======
-	"C:\Program Files\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
->>>>>>> Stashed changes
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -108,15 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-<<<<<<< Updated upstream
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\marcv\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles C:\Users\marcv\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\marcv\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles 0
-=======
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\\CMakeFiles\progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\cmake-build-debug\CMakeFiles 0
->>>>>>> Stashed changes
 .PHONY : all
 
 # The main clean target

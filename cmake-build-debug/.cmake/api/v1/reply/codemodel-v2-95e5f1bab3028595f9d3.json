@@ -49,13 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-<<<<<<<< Updated upstream:cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-95e5f1bab3028595f9d3.json
 		"build" : "C:/Users/marcv/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug",
 		"source" : "C:/Users/marcv/OneDrive/Documents/GitHub/Snoopy-revenge"
-========
-		"build" : "C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug",
-		"source" : "C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge"
->>>>>>>> Stashed changes:cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-d8dc07662e5efd85fdd1.json
 	},
 	"version" : 
 	{

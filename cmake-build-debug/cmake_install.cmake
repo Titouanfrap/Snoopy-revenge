@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
 # Install script for directory: C:/Users/marcv/OneDrive/Documents/GitHub/Snoopy-revenge
-=======
-# Install script for directory: C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge
->>>>>>> Stashed changes
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -49,9 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-<<<<<<< Updated upstream
 file(WRITE "C:/Users/marcv/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
-=======
-file(WRITE "C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
->>>>>>> Stashed changes
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -55,11 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-<<<<<<<< Updated upstream:cmake-build-debug/.cmake/api/v1/reply/cache-v2-893d2a3ececbb5b357e2.json
 			"value" : "c:/Users/marcv/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug"
-========
-			"value" : "c:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug"
->>>>>>>> Stashed changes:cmake-build-debug/.cmake/api/v1/reply/cache-v2-9c6e1af439b1ef81c35b.json
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -467,11 +463,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-<<<<<<<< Updated upstream:cmake-build-debug/.cmake/api/v1/reply/cache-v2-893d2a3ececbb5b357e2.json
 			"value" : "C:/Users/marcv/AppData/Local/JetBrains/CLion 2023.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/Users/marcv/AppData/Local/JetBrains/CLion 2023.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include;C:/Users/marcv/AppData/Local/JetBrains/CLion 2023.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/Users/marcv/AppData/Local/JetBrains/CLion 2023.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
-========
-			"value" : "C:/Program Files/JetBrains/CLion 2023.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/Program Files/JetBrains/CLion 2023.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include;C:/Program Files/JetBrains/CLion 2023.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/Program Files/JetBrains/CLion 2023.2.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
->>>>>>>> Stashed changes:cmake-build-debug/.cmake/api/v1/reply/cache-v2-9c6e1af439b1ef81c35b.json
 		},
 		{
 			"name" : "CMAKE_FIND_PACKAGE_REDIRECTS_DIR",
@@ -483,11 +475,7 @@
 				}
 			],
 			"type" : "STATIC",
-<<<<<<<< Updated upstream:cmake-build-debug/.cmake/api/v1/reply/cache-v2-893d2a3ececbb5b357e2.json
 			"value" : "C:/Users/marcv/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug/CMakeFiles/pkgRedirects"
-========
-			"value" : "C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug/CMakeFiles/pkgRedirects"
->>>>>>>> Stashed changes:cmake-build-debug/.cmake/api/v1/reply/cache-v2-9c6e1af439b1ef81c35b.json
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -559,11 +547,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-<<<<<<<< Updated upstream:cmake-build-debug/.cmake/api/v1/reply/cache-v2-893d2a3ececbb5b357e2.json
 			"value" : "C:/Users/marcv/OneDrive/Documents/GitHub/Snoopy-revenge"
-========
-			"value" : "C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge"
->>>>>>>> Stashed changes:cmake-build-debug/.cmake/api/v1/reply/cache-v2-9c6e1af439b1ef81c35b.json
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -607,11 +591,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-<<<<<<<< Updated upstream:cmake-build-debug/.cmake/api/v1/reply/cache-v2-893d2a3ececbb5b357e2.json
 			"value" : "C:/Users/marcv/AppData/Local/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe"
-========
-			"value" : "C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe"
->>>>>>>> Stashed changes:cmake-build-debug/.cmake/api/v1/reply/cache-v2-9c6e1af439b1ef81c35b.json
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -1187,11 +1167,7 @@
 				}
 			],
 			"type" : "STATIC",
-<<<<<<<< Updated upstream:cmake-build-debug/.cmake/api/v1/reply/cache-v2-893d2a3ececbb5b357e2.json
 			"value" : "C:/Users/marcv/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug"
-========
-			"value" : "C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/cmake-build-debug"
->>>>>>>> Stashed changes:cmake-build-debug/.cmake/api/v1/reply/cache-v2-9c6e1af439b1ef81c35b.json
 		},
 		{
 			"name" : "Snoopy_revenge_IS_TOP_LEVEL",
@@ -1215,11 +1191,7 @@
 				}
 			],
 			"type" : "STATIC",
-<<<<<<<< Updated upstream:cmake-build-debug/.cmake/api/v1/reply/cache-v2-893d2a3ececbb5b357e2.json
 			"value" : "C:/Users/marcv/OneDrive/Documents/GitHub/Snoopy-revenge"
-========
-			"value" : "C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge"
->>>>>>>> Stashed changes:cmake-build-debug/.cmake/api/v1/reply/cache-v2-9c6e1af439b1ef81c35b.json
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
