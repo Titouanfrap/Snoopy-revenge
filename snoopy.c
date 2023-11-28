@@ -8,7 +8,7 @@ void deplacement(char tab[14][24], char *key, Snoopy *snoopy, int *compteur, cha
 
     tab[snoopy->x][snoopy->y] = 0;
 
-    if (*tempos == 17 || *tempos == 16) {
+    if (*tempos != 0) {
         tab[snoopy->x][snoopy->y] = *tempos;
     }
 
@@ -119,6 +119,25 @@ void deplacement(char tab[14][24], char *key, Snoopy *snoopy, int *compteur, cha
     if ( tab[snoopy->x][snoopy->y] == tab[3][10] && tab[snoopy->x][snoopy->y] == 17) {
         snoopy->y--;
     }
+    tab[3][9] = 0;
+    tab[3][8] = 0;
+
+    if ( tab[snoopy->x][snoopy->y] == tab[8][11] && tab[snoopy->x][snoopy->y] == 16 ) {
+        snoopy->y++;
+    }
+
+    if ( tab[snoopy->x][snoopy->y] == tab[8][12] && tab[snoopy->x][snoopy->y] == 16 ) {
+        snoopy->x--;
+    }
+
+    if ( tab[snoopy->x][snoopy->y] == tab[7][12] && tab[snoopy->x][snoopy->y] == 16) {
+        snoopy->y++;
+    }
+
+    if ( tab[snoopy->x][snoopy->y] == tab[7][13] && tab[snoopy->x][snoopy->y] == 16) {
+        snoopy->y++;
+    }
+    tab[7][14] = 0;
 
 
     if (tab[snoopy->x][snoopy->y] == 1){

@@ -11,7 +11,7 @@
 
 Time t = {120, 0, 0, 10, 1}; // raccourcit vers la structure du timer
 Balle balle = {7,7,1,1};
-Snoopy snoopy = {3, 11};
+Snoopy snoopy = {4, 11};
 
 void Lvl1() {
     int dix = 0;
@@ -46,7 +46,7 @@ void Lvl1() {
             if (kbhit()) {
                 key = getch();
                 if (key == 'p') {
-                    printf("Pressez une touche pour quitter le menu pause");
+                    printf("Pressez la touche o pour quitter le menu pause");
                     while (!kbhit()) {
                         sleep(1);
                     }
@@ -183,7 +183,6 @@ void Lvl3(char *tempo, char *tempos) {
 
     BlocNiv3(matrice);
     matrice[7][7] = 10;
-    matrice[4][11] = 9;
     while(game != 1){
         terrain(matrice);
         if (dix>=9){

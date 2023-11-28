@@ -111,7 +111,7 @@ void tableau(char tab[14][24], Balle *balle, Snoopy *snoopy) {
         } // fait apparaitre toutes les cases or plateau pour le défilement du temps
         // c'est un set de départ et ne s'éxecute qu'une seule fois
     }
-    snoopy->x = 3; snoopy->y = 11;
+    snoopy->x = 4; snoopy->y = 11;
     tab[snoopy->x][snoopy->y] = 9;
 
     balle->x = 7; balle->y = 7;
@@ -192,7 +192,6 @@ void BlocNiv2(char tab[14][24]) {
     tab[3][9] = 5;
     tab[4][9] = 3;
     tab[4][10] = 2;
-    tab[4][11] = 7;
     tab[5][11]=5;
     tab[3][12]= 5;
     tab[4][12]=4;
@@ -228,6 +227,7 @@ void BlocNiv2(char tab[14][24]) {
 }
 
 void BlocNiv3(char tab[14][24]) {
+    tab[3][11] = 2;
     tab[6][4] = 3;
     tab[3][5] = 5;
     tab[2][4] = 1;
@@ -249,7 +249,7 @@ void BlocNiv3(char tab[14][24]) {
     tab[10][4] = 1;
     tab[11][3] = 5;
     tab[2][9] = 5;
-    tab[3][12] = 5;
+    tab[3][12] = 7;
     tab[4][10] = 1;
     tab[4][12] = 5;
     tab[5][12] = 5;
@@ -302,10 +302,12 @@ void BlocNiv3(char tab[14][24]) {
     tab[11][17] = 5;
     tab[10][20] = 5;
     tab[11][19] = 1;
-    tab[7][12] = 16;
-    tab[7][13] = 16;
+
     tab[8][11] = 16;
     tab[8][12] = 16;
+    tab[7][12] = 16;
+    tab[7][13] = 16;
+
     tab[2][10] = 17;
     tab[2][11] = 17;
     tab[2][12] = 17;
