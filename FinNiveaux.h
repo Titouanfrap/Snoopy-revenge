@@ -1,10 +1,10 @@
-void victoire1(char *tempo, char *tempos);
+void victoire1(char *tempo, char *tempos, int *nb_executions);
 
-void victoire2(char *tempo, char *tempos);
+void victoire2(char *tempo, char *tempos, int *nb_executions);
 
-void victoire3(char *tempo, char *tempos);
+void victoire3(char *tempo, char *tempos, int *nb_executions);
 
-void victoire4(char *tempo, char *tempos);
+void victoire4();
 
 void GameOver();
 

@@ -174,7 +174,7 @@ void victoire3(char *tempo, char *tempos,int *nb_executions) {
     }
 }
 
-void victoire4(char *tempo, char *tempos, int *nb_executions) {
+void victoire4() {
     system("cls");
     printf(""
            ""
@@ -210,7 +210,7 @@ void victoire4(char *tempo, char *tempos, int *nb_executions) {
 
 }
 
-void defaite1(int *nb_executions){
+void defaite1(int *nb_executions, char *tempo, char *tempos){
     if (*nb_executions<3){
     printf("//==============================\\\\\n"
            "||           *********          ||\n"
@@ -239,7 +239,7 @@ void defaite1(int *nb_executions){
             case '1':
                 printf("\n\nBon courage...");
                 sleep(3);
-                Lvl1(&*nb_executions);
+                Lvl1(nb_executions, tempo, tempos);
                 break;
             case '2':
                 printf("\n\n Sauvegarde");
@@ -253,7 +253,7 @@ void defaite1(int *nb_executions){
                 break;
         }
         touche = ' ';
-    }}else { Lvl1(nb_executions);}
+    }}else { Lvl1(nb_executions,tempo, tempos);}
 }
 
 

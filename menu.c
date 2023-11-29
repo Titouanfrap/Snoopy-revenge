@@ -64,13 +64,9 @@ void password(char *tempo, char *tempos, int *nb_executions) {
             Lvl3(tempo, tempos, nb_executions);
         }
         else if (strcmp(mot, "champions") == 0) {
-<<<<<<< Updated upstream
             printf("Lancement du niveau 4...\n");
-=======
-            Lvl4(tempo,tempos,nb_executions);
->>>>>>> Stashed changes
             sleep(3);
-            Lvl4(tempo,tempos);
+            Lvl4(tempo,tempos,nb_executions);
         } else {
             printf("Mot invalide\n");
             tentatives++;
@@ -150,7 +146,7 @@ void handleDir(char *key, char *tempo, char *tempos) {
                    "\n\t       Oui : y               Non : n");
             char confirmKey3 = getch();
             if (confirmKey3 == 'y') {
-                Lvl1(&nb_executions);
+                Lvl1(&nb_executions, tempo, tempos);
             } else if (confirmKey3 == 'n') {
                 menu();
             }

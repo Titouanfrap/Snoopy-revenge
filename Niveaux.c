@@ -14,20 +14,14 @@ Time t = {120, 0, 0, 10, 1}; // raccourcit vers la structure du timer
 Balle balle = {7,7,1,1};
 Snoopy snoopy = {4, 11};
 
-void Lvl1(int *nb_executions) {
+void Lvl1(int *nb_executions, char *tempo, char *tempos) {
     int dix = 0;
-    char key, pause;
+    char key;
     char matrice[14][24];
     int compteur = 0;
     int game = 0;
-    char tempo;
-<<<<<<< Updated upstream
-    char tempos;
     int tempsd1 = 120;
 
-=======
-    int tempsd1 = 120;
->>>>>>> Stashed changes
     time_t debut, maintenant;
 
     while (*nb_executions < 3) {
@@ -50,7 +44,7 @@ void Lvl1(int *nb_executions) {
                 key = getch();
                 if (key == 'p') {
                     time_t pause_debut = time (NULL);
-                    printf("Pressez une touche pour quitter le menu pause");
+                    printf("Pressez la touche o pour quitter le menu pause");
                     while (!kbhit()) {
                         usleep(1);
                     }
@@ -59,10 +53,10 @@ void Lvl1(int *nb_executions) {
                     unsigned long secondes = (unsigned long) difftime( pause_fin, pause_debut );
                     tempsd1+=secondes;
                 }
-                deplacement(matrice, &key, &snoopy, &compteur, &tempo);
+                deplacement(matrice, &key, &snoopy, &compteur, tempos);
             }
 
-            mouvballe(matrice, &balle, &tempo);
+            mouvballe(matrice, &balle, tempo);
             if (balle.x == snoopy.x && balle.y == snoopy.y) {
                 sleep(2);
                 GameOver();
@@ -74,7 +68,7 @@ void Lvl1(int *nb_executions) {
             if (compteur == 4) {
                 game = 1;
                 sleep(2);
-                victoire1(&tempo, &tempo);
+                victoire1(tempo, tempos, nb_executions);
                 sleep(100);
             }
 
@@ -103,11 +97,11 @@ void Lvl1(int *nb_executions) {
 void Lvl2(char *tempo, char *tempos, int *nb_executions) {
     system("cls");
     int dix = 0;
-    char key, pause;
+    char key;
     char matrice[14][24];
     int compteur = 0;
     int game = 0;
-    int tempsd1 = 2;
+    int tempsd1 = 120;
     time_t debut, maintenant;
 
     matrice[7][7] = 10;
@@ -120,7 +114,7 @@ void Lvl2(char *tempo, char *tempos, int *nb_executions) {
         time(&debut);
 
         tableau(matrice, &balle, &snoopy);
-        BlocNiv1(matrice);
+        BlocNiv2(matrice);
 
         while (game != 1) {
             terrain(matrice);
@@ -136,7 +130,7 @@ void Lvl2(char *tempo, char *tempos, int *nb_executions) {
                 key = getch();
                 if (key == 'p') {
                     time_t pause_debut = time (NULL);
-                    printf("Pressez une touche pour quitter le menu pause");
+                    printf("Pressez la touche o pour quitter le menu pause");
                     while (!kbhit()) {
                         usleep(1);
                     }
@@ -145,10 +139,10 @@ void Lvl2(char *tempo, char *tempos, int *nb_executions) {
                     unsigned long secondes = (unsigned long) difftime( pause_fin, pause_debut );
                     tempsd1+=secondes;
                 }
-                deplacement(matrice, &key, &snoopy, &compteur, &tempo);
+                deplacement(matrice, &key, &snoopy, &compteur, tempos);
             }
 
-            mouvballe(matrice, &balle, &tempo);
+            mouvballe(matrice, &balle, tempo);
             if (balle.x == snoopy.x && balle.y == snoopy.y) {
                 sleep(2);
                 GameOver();
@@ -160,7 +154,7 @@ void Lvl2(char *tempo, char *tempos, int *nb_executions) {
             if (compteur == 4) {
                 game = 1;
                 sleep(2);
-                victoire2(&tempo, &tempo);
+                victoire2(tempo, tempos, nb_executions);
                 sleep(100);
             }
 
@@ -190,11 +184,11 @@ void Lvl2(char *tempo, char *tempos, int *nb_executions) {
 void Lvl3(char *tempo, char *tempos, int *nb_executions) {
     system("cls");
     int dix = 0;
-    char key, pause;
+    char key;
     char matrice[14][24];
     int compteur = 0;
     int game = 0;
-    int tempsd1 = 5;
+    int tempsd1 = 120;
     time_t debut, maintenant;
 
     tableau(matrice, &balle, &snoopy);
@@ -207,7 +201,7 @@ void Lvl3(char *tempo, char *tempos, int *nb_executions) {
         time(&debut);
 
         tableau(matrice, &balle, &snoopy);
-        BlocNiv1(matrice);
+        BlocNiv3(matrice);
 
         while (game != 1) {
             terrain(matrice);
@@ -223,7 +217,7 @@ void Lvl3(char *tempo, char *tempos, int *nb_executions) {
                 key = getch();
                 if (key == 'p') {
                     time_t pause_debut = time (NULL);
-                    printf("Pressez une touche pour quitter le menu pause");
+                    printf("Pressez la touche o pour quitter le menu pause");
                     while (!kbhit()) {
                         usleep(1);
                     }
@@ -232,10 +226,10 @@ void Lvl3(char *tempo, char *tempos, int *nb_executions) {
                     unsigned long secondes = (unsigned long) difftime( pause_fin, pause_debut );
                     tempsd1+=secondes;
                 }
-                deplacement(matrice, &key, &snoopy, &compteur, &tempo);
+                deplacement(matrice, &key, &snoopy, &compteur, tempos);
             }
 
-            mouvballe(matrice, &balle, &tempo);
+            mouvballe(matrice, &balle, tempo);
             if (balle.x == snoopy.x && balle.y == snoopy.y) {
                 sleep(2);
                 GameOver();
@@ -247,7 +241,7 @@ void Lvl3(char *tempo, char *tempos, int *nb_executions) {
             if (compteur == 4) {
                 game = 1;
                 sleep(2);
-                victoire3(&tempo, &tempo);
+                victoire3(tempo, tempos, nb_executions);
                 sleep(100);
             }
 
@@ -279,7 +273,7 @@ void Lvl3(char *tempo, char *tempos, int *nb_executions) {
 void Lvl4(char *tempo, char *tempos, int *nb_executions) {
     system("cls");
     int dix = 0;
-    char key, pause;
+    char key;
     char matrice[14][24];
     int compteur = 0;
     int game = 0;
@@ -296,7 +290,7 @@ void Lvl4(char *tempo, char *tempos, int *nb_executions) {
         time(&debut);
 
         tableau(matrice, &balle, &snoopy);
-        BlocNiv1(matrice);
+        BlocNiv4(matrice);
 
         while (game != 1) {
             terrain(matrice);
@@ -312,7 +306,7 @@ void Lvl4(char *tempo, char *tempos, int *nb_executions) {
                 key = getch();
                 if (key == 'p') {
                     time_t pause_debut = time (NULL);
-                    printf("Pressez une touche pour quitter le menu pause");
+                    printf("Pressez la touche o pour quitter le menu pause");
                     while (!kbhit()) {
                         usleep(1);
                     }
@@ -321,10 +315,10 @@ void Lvl4(char *tempo, char *tempos, int *nb_executions) {
                     unsigned long secondes = (unsigned long) difftime( pause_fin, pause_debut );
                     tempsd1+=secondes;
                 }
-                deplacement(matrice, &key, &snoopy, &compteur, &tempo);
+                deplacement(matrice, &key, &snoopy, &compteur, tempos);
             }
 
-            mouvballe(matrice, &balle, &tempo);
+            mouvballe(matrice, &balle, tempo);
             if (balle.x == snoopy.x && balle.y == snoopy.y) {
                 sleep(2);
                 GameOver();
@@ -336,7 +330,7 @@ void Lvl4(char *tempo, char *tempos, int *nb_executions) {
             if (compteur == 4) {
                 game = 1;
                 sleep(2);
-                victoire4(&tempo, &tempo);
+                victoire4(tempo, tempos);
                 sleep(100);
             }
 

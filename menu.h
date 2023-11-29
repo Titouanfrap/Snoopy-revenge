@@ -6,7 +6,7 @@
 
 void regles();
 void leave();
-void password(char *tempo, char *tempos);
+void password(char *tempo, char *tempos, int *nb_executions);
 void menu();
 void handleDir(char *key, char *tempo, char *tempos);
 void choix();
