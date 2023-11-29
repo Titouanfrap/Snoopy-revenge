@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <windows.h>
 #include "terrain.h"
 #define wall 0xFE //1
