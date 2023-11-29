@@ -21,6 +21,7 @@ void Lvl1(int *nb_executions, char *tempo, char *tempos) {
     int compteur = 0;
     int game = 0;
     int tempsd1 = 120;
+    int scoretempo ;
 
     time_t debut, maintenant;
 
@@ -83,7 +84,8 @@ void Lvl1(int *nb_executions, char *tempo, char *tempos) {
             }
 
 
-
+            scoretempo = 100*(120-difftime(maintenant, debut)+tempsd1);
+            
 
             usleep(140000); // Attendre 1,57 sec, produit en croix avec le nombre de cases pour avoir 2 minutes
             system("cls"); // Clear de l'écran pour préparer l'affichage de la matrice actualisée
