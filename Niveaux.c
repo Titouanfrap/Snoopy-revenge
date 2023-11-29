@@ -23,6 +23,7 @@ void Lvl1(int *nb_executions, char *tempo, char *tempos) {
     int tempsd1 = 120;
     int scoretempo ;
 
+
     time_t debut, maintenant;
 
     while (*nb_executions < 3) {
@@ -53,6 +54,7 @@ void Lvl1(int *nb_executions, char *tempo, char *tempos) {
                     time_t pause_fin=time (NULL);
                     unsigned long secondes = (unsigned long) difftime( pause_fin, pause_debut );
                     tempsd1+=secondes;
+
                 }
                 deplacement(matrice, &key, &snoopy, &compteur, tempos);
             }
@@ -84,8 +86,8 @@ void Lvl1(int *nb_executions, char *tempo, char *tempos) {
             }
 
 
-            scoretempo = 100*(120-difftime(maintenant, debut)+tempsd1);
-            
+            scoretempo = (120-((difftime(maintenant,debut)-tempsd1+120)));
+            printf("%d",scoretempo);
 
             usleep(140000); // Attendre 1,57 sec, produit en croix avec le nombre de cases pour avoir 2 minutes
             system("cls"); // Clear de l'écran pour préparer l'affichage de la matrice actualisée
