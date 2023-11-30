@@ -12,7 +12,7 @@ void victoire1(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
            "||          **********          ||\n"
            "||______________________________||\n"
            "||                              ||\n"
-           "||   Score :\t      %d       ||\n"
+           "||   Score :\t      %d      ||\n"
            "||   ________________________   ||\n"
            "||                              ||\n"
            "||\t   Sauvegarder\t\t||\n"
