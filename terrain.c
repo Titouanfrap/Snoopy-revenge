@@ -68,7 +68,9 @@ void terrain(char tab[14][24]){
                     Color(15,0);
                     break;
                 case 12:
+                    Color(13,0);
                     printf("%c",tp);
+                    Color(15,0);
                     break;
                 case 13:
                     printf("%c",cassable);
