@@ -14,7 +14,7 @@ Time t = {120, 0, 0, 10, 1}; // raccourcit vers la structure du timer
 Balle balle = {7,7,1,1};
 Snoopy snoopy = {4, 11};
 
-void Lvl1(int *nb_executions, char *tempo, char *tempos,int *scoretempo) {
+void Lvl1(int *nb_executions, char *tempo, char *tempos,int *scoretempo,int *scorefinal) {
     *scoretempo =0;
     int dix = 0;
     char key;
@@ -66,13 +66,13 @@ void Lvl1(int *nb_executions, char *tempo, char *tempos,int *scoretempo) {
                 GameOver();
                 sleep(5);
                 menu();
-                choix(scoretempo);
+                choix(scoretempo,scorefinal);
             }
 
             if (compteur == 4) {
                 game = 1;
                 sleep(2);
-                victoire1(tempo, tempos, nb_executions,scoretempo);
+                victoire1(tempo, tempos, nb_executions,scoretempo,scorefinal);
                 sleep(100);
             }
 
@@ -80,7 +80,7 @@ void Lvl1(int *nb_executions, char *tempo, char *tempos,int *scoretempo) {
                 sleep(2);
                 system("cls");
                 *nb_executions+=1;
-                defaite1(&*nb_executions,*scoretempo); // Passer la touche 'key' à la fonction defaite1
+                defaite1(&*nb_executions,tempo,tempos,scoretempo,scorefinal); // Passer la touche 'key' à la fonction defaite1
                 sleep(100);
                 sleep(5);
                 break;
@@ -98,7 +98,7 @@ void Lvl1(int *nb_executions, char *tempo, char *tempos,int *scoretempo) {
     }    }
 
 
-void Lvl2(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
+void Lvl2(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *scorefinal) {
     *scoretempo=0;
     system("cls");
     int dix = 0;
@@ -153,13 +153,13 @@ void Lvl2(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
                 GameOver();
                 sleep(5);
                 menu();
-                choix(scoretempo);
+                choix(scoretempo,scorefinal);
             }
 
             if (compteur == 4) {
                 game = 1;
                 sleep(2);
-                victoire2(tempo, tempos, nb_executions);
+                victoire2(tempo, tempos, nb_executions,scoretempo,scorefinal);
                 sleep(100);
             }
 
@@ -167,7 +167,7 @@ void Lvl2(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
                 sleep(2);
                 system("cls");
                 *nb_executions+=1;
-                defaite2(tempo,tempos,&*nb_executions); // Passer la touche 'key' à la fonction defaite1
+                defaite2(tempo,tempos,&*nb_executions,scoretempo,scorefinal); // Passer la touche 'key' à la fonction defaite1
                 sleep(100);
                 sleep(5);
                 break;
@@ -186,7 +186,7 @@ void Lvl2(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
 
 
 
-void Lvl3(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
+void Lvl3(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *scorefinal) {
     *scoretempo=0;
     system("cls");
     int dix = 0;
@@ -241,13 +241,13 @@ void Lvl3(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
                 GameOver();
                 sleep(5);
                 menu();
-                choix(scoretempo);
+                choix(scoretempo,scorefinal);
             }
 
             if (compteur == 4) {
                 game = 1;
                 sleep(2);
-                victoire3(tempo, tempos, nb_executions);
+                victoire3(tempo, tempos, nb_executions,scoretempo,scorefinal);
                 sleep(100);
             }
 
@@ -257,7 +257,7 @@ void Lvl3(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
                 *nb_executions+=1;
                 printf("%d",*nb_executions);
                 sleep(2);
-                defaite3(tempo,tempos,&*nb_executions); // Passer la touche 'key' à la fonction defaite1
+                defaite3(tempo,tempos,&*nb_executions,scoretempo,scorefinal); // Passer la touche 'key' à la fonction defaite1
                 sleep(100);
                 sleep(5);
                 break;
@@ -276,7 +276,7 @@ void Lvl3(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
 
 
 
-void Lvl4(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
+void Lvl4(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *scorefinal) {
     *scoretempo=0;
     system("cls");
     int dix = 0;
@@ -332,13 +332,13 @@ void Lvl4(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
                 GameOver();
                 sleep(5);
                 menu();
-                choix(scoretempo);
+                choix(scoretempo,scorefinal);
             }
 
             if (compteur == 4) {
                 game = 1;
                 sleep(2);
-                victoire4(tempo, tempos);
+                victoire4(tempo, tempos,&*nb_executions,scoretempo,scorefinal);
                 sleep(100);
             }
 
@@ -346,7 +346,7 @@ void Lvl4(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
                 sleep(2);
                 system("cls");
                 *nb_executions+=1;
-                defaite4(tempo,tempos,&*nb_executions); // Passer la touche 'key' à la fonction defaite1
+                defaite4(tempo,tempos,&*nb_executions,scoretempo,scorefinal); // Passer la touche 'key' à la fonction defaite1
                 sleep(100);
                 sleep(5);
                 break;

@@ -4,7 +4,8 @@
 #include "Niveaux.h"
 
 
-void victoire1(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
+void victoire1(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *scorefinal) {
+    *scorefinal += *scoretempo;
     system("cls");
     printf("//==============================\\\\\n"
            "||          **********\t        ||\n"
@@ -41,7 +42,7 @@ void victoire1(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
             case '2':
                 printf("\n\nNiveau suivant...");
                 sleep(3);
-                Lvl2(tempo, tempos, nb_executions,scoretempo);
+                Lvl2(tempo, tempos, nb_executions,scoretempo,scorefinal);
                 break;
             case '3':
                 printf("\n\n Retour au Menu...");
@@ -60,7 +61,8 @@ void victoire1(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
 }
 
 
-void victoire2(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
+void victoire2(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *scorefinal) {
+    *scorefinal += *scoretempo;
     system("cls");
     printf("//==============================\\\\\n"
            "||          **********\t        ||\n"
@@ -68,7 +70,7 @@ void victoire2(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
            "||          **********          ||\n"
            "||______________________________||\n"
            "||                              ||\n"
-           "||   Score :\t                ||\n"
+           "||   Score :\t     %d           ||\n"
            "||   ________________________   ||\n"
            "||                              ||\n"
            "||\t   Sauvegarder\t\t||\n"
@@ -85,7 +87,7 @@ void victoire2(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
            "||	                        ||\n"
            "||    Mot de passe : ecemaths   ||\n"
            "||                              ||\n"
-           "\\==============================//\n");
+           "\\==============================//\n",*scoretempo);
     char touche = ' ';
 
     while (1) {
@@ -99,7 +101,7 @@ void victoire2(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
             case '2':
                 printf("\n\nNiveau suivant...");
                 sleep(3);
-                Lvl3(tempo, tempos, nb_executions,scoretempo);
+                Lvl3(tempo, tempos, nb_executions,scoretempo,scorefinal);
                 break;
             case '3':
                 printf("\n\n Retour au Menu...");
@@ -117,7 +119,8 @@ void victoire2(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
     }
 }
 
-void victoire3(char *tempo, char *tempos,int *nb_executions,int *scoretempo) {
+void victoire3(char *tempo, char *tempos,int *nb_executions,int *scoretempo,int *scorefinal) {
+    *scorefinal += *scoretempo ;
     system("cls");
     printf("//==============================\\\\\n"
            "||          **********\t        ||\n"
@@ -125,7 +128,7 @@ void victoire3(char *tempo, char *tempos,int *nb_executions,int *scoretempo) {
            "||          **********          ||\n"
            "||______________________________||\n"
            "||                              ||\n"
-           "||   Score :\t                ||\n"
+           "||   Score :\t      %d          ||\n"
            "||   ________________________   ||\n"
            "||                              ||\n"
            "||\t   Sauvegarder\t\t||\n"
@@ -142,7 +145,7 @@ void victoire3(char *tempo, char *tempos,int *nb_executions,int *scoretempo) {
            "||	                        ||\n"
            "||    Mot de passe : ecejbtv    ||\n"
            "||                              ||\n"
-           "\\==============================//\n");
+           "\\==============================//\n",*scoretempo);
     char touche = ' ';
 
     while (1) {
@@ -156,7 +159,7 @@ void victoire3(char *tempo, char *tempos,int *nb_executions,int *scoretempo) {
             case '2':
                 printf("\n\nNiveau suivant...");
                 sleep(3);
-                Lvl4(tempo, tempos, nb_executions,scoretempo);
+                Lvl4(tempo, tempos, nb_executions,scoretempo,scorefinal);
                 break;
             case '3':
                 printf("\n\n Retour au Menu...");
@@ -174,7 +177,8 @@ void victoire3(char *tempo, char *tempos,int *nb_executions,int *scoretempo) {
     }
 }
 
-void victoire4() {
+void victoire4(char *tempo,char *tempos,int *nb_executions,int *scoretempo,int *scorefinal) {
+    *scorefinal += *scoretempo;
     system("cls");
     printf(""
            ""
@@ -183,7 +187,7 @@ void victoire4() {
            "(  V  )        (  V  )   VICTORY !!!   (  V  )       (  V  )\n"
            "--m-m------------m-m---------------------m-m-----------m-m------\n\n\n"
            "Felicitation !! Vous etes venus a bout de nos 4 niveaux !!\n\n\n"
-           "\t\t\t SCORE FINAL : %d\n\n\n");
+           "\t\t\t SCORE FINAL : %d\n\n\n",*scorefinal);
     char touche = ' ';
     while (1) {
         if (kbhit()) {
@@ -210,7 +214,7 @@ void victoire4() {
 
 }
 
-void defaite1(int *nb_executions, char *tempo, char *tempos,int *scoretempo){
+void defaite1(int *nb_executions, char *tempo, char *tempos,int *scoretempo,int *scorefinal){
     if (*nb_executions<3){
     printf("//==============================\\\\\n"
            "||           *********          ||\n"
@@ -239,7 +243,7 @@ void defaite1(int *nb_executions, char *tempo, char *tempos,int *scoretempo){
             case '1':
                 printf("\n\nBon courage...");
                 sleep(3);
-                Lvl1(nb_executions, tempo, tempos,scoretempo);
+                Lvl1(nb_executions, tempo, tempos,scoretempo,scorefinal);
                 break;
             case '2':
                 printf("\n\n Sauvegarde");
@@ -253,11 +257,11 @@ void defaite1(int *nb_executions, char *tempo, char *tempos,int *scoretempo){
                 break;
         }
         touche = ' ';
-    }}else { Lvl1(nb_executions,tempo, tempos,scoretempo);}
+    }}else { Lvl1(nb_executions,tempo, tempos,scoretempo,scorefinal);}
 }
 
 
-void defaite2(char *tempo, char *tempos, int *nb_executions,int *scoretempo){
+void defaite2(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *scorefinal){
     if (*nb_executions<6){
         printf("//==============================\\\\\n"
                "||           *********          ||\n"
@@ -286,7 +290,7 @@ void defaite2(char *tempo, char *tempos, int *nb_executions,int *scoretempo){
             case '1':
                 printf("\n\nBon courage...");
                 sleep(3);
-                Lvl2(tempo, tempos, nb_executions,scoretempo);
+                Lvl2(tempo, tempos, nb_executions,scoretempo,scorefinal);
                 break;
             case '2':
                 printf("\n\n Sauvegarde");
@@ -300,12 +304,12 @@ void defaite2(char *tempo, char *tempos, int *nb_executions,int *scoretempo){
                 break;
         }
         touche = ' ';
-        }}else { Lvl2(tempo,tempos,nb_executions,scoretempo);}
+        }}else { Lvl2(tempo,tempos,nb_executions,scoretempo,scorefinal);}
 
 }
 
 
-void defaite3(char *tempo, char *tempos, int *nb_executions,int *scoretempo){
+void defaite3(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *scorefinal){
     if (*nb_executions<9||*nb_executions<3 ){
         printf("//==============================\\\\\n"
                "||           *********          ||\n"
@@ -334,7 +338,7 @@ void defaite3(char *tempo, char *tempos, int *nb_executions,int *scoretempo){
             case '1':
                 printf("\n\nBon courage...");
                 sleep(3);
-                Lvl3(tempo, tempos, nb_executions,scoretempo);
+                Lvl3(tempo, tempos, nb_executions,scoretempo,scorefinal);
                 break;
             case '2':
                 printf("\n\n Sauvegarde");
@@ -348,12 +352,12 @@ void defaite3(char *tempo, char *tempos, int *nb_executions,int *scoretempo){
                 break;
         }
             touche = ' ';
-        }}else { Lvl3(tempo,tempos,nb_executions,scoretempo);}
+        }}else { Lvl3(tempo,tempos,nb_executions,scoretempo,scorefinal);}
 
 }
 
 
-void defaite4(char *tempo, char *tempos, int *nb_executions,int *scoretempo){
+void defaite4(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *scorefinal){
     if (*nb_executions<9||*nb_executions<3 ){
         printf("//==============================\\\\\n"
                "||           *********          ||\n"
@@ -382,7 +386,7 @@ void defaite4(char *tempo, char *tempos, int *nb_executions,int *scoretempo){
             case '1':
                 printf("\n\nBon courage...");
                 sleep(3);
-                Lvl4(tempo, tempos, nb_executions,scoretempo);
+                Lvl4(tempo, tempos, nb_executions,scoretempo,scorefinal);
                 break;
             case '2':
                 printf("\n\n Sauvegarde");
@@ -396,7 +400,7 @@ void defaite4(char *tempo, char *tempos, int *nb_executions,int *scoretempo){
                 break;
         }
             touche = ' ';
-        }}else { Lvl4(tempo,tempos,nb_executions,scoretempo);}
+        }}else { Lvl4(tempo,tempos,nb_executions,scoretempo,scorefinal);}
 
 }
 
