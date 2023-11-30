@@ -20,7 +20,7 @@ void Lvl1(int *nb_executions, char *tempo, char *tempos,int *scoretempo) {
     char matrice[14][24];
     int compteur = 0;
     int game = 0;
-    int tempsd1 = 5;
+    int tempsd1 = 120;
 
 
 
@@ -278,7 +278,7 @@ void Lvl4(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
     int dix = 0;
     char key;
     char matrice[14][24];
-    int compteur = 4;
+    int compteur = 0;
     int game = 0;
     int tempsd1 = 120;
     time_t debut, maintenant;
