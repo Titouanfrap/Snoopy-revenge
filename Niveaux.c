@@ -15,6 +15,7 @@ Balle balle = {7,7,1,1};
 Snoopy snoopy = {4, 11};
 
 void Lvl1(int *nb_executions, char *tempo, char *tempos,int *scoretempo) {
+    *scoretempo =0;
     int dix = 0;
     char key;
     char matrice[14][24];
@@ -98,6 +99,7 @@ void Lvl1(int *nb_executions, char *tempo, char *tempos,int *scoretempo) {
 
 
 void Lvl2(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
+    *scoretempo=0;
     system("cls");
     int dix = 0;
     char key;
@@ -185,6 +187,7 @@ void Lvl2(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
 
 
 void Lvl3(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
+    *scoretempo=0;
     system("cls");
     int dix = 0;
     char key;
@@ -274,6 +277,7 @@ void Lvl3(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
 
 
 void Lvl4(char *tempo, char *tempos, int *nb_executions,int *scoretempo) {
+    *scoretempo=0;
     system("cls");
     int dix = 0;
     char key;
