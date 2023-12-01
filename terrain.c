@@ -149,216 +149,38 @@ void BlocNiv1(char tab[14][24]) {
     }
 }
 void BlocNiv2(char tab[14][24]) {
-    tab[2][3] = 5;
-    tab[4][2] = 2;
-    tab[4][3] = 2;
-    tab[4][4] = 2;
-    tab[3][5] = 5;
-    tab[4][5] = 4;
-    tab[2][5] = 13;
-    tab[6][5] = 2;
-    tab[6][3] = 2;
-    tab[6][2] = 2;
-    tab[6][6] = 2;
-    tab[6][4] = 13;
-    tab[6][7] = 4;
-    tab[3][7] = 5;
-    tab[2][7] = 5;
-    tab[4][7] = 5;
-    tab[5][7] = 5;
-    tab[9][3] = 1;
-    tab[9][2] = 5;
-    tab[10][2] = 4;
-    tab[10][4] = 3;
-    tab[11][5] = 5;
-    tab[10][5] = 7;
-    tab[10][9] = 5;
-    tab[11][9] = 5;
-    tab[11][5] = 5;
-    tab[10][10] = 13;
-    tab[2][10] = 13;
-    tab[3][10] = 5;
-    tab[4][10] = 5;
-    tab[3][12] = 5;
-    tab[2][12] = 13;
-    tab[4][12] = 5;
-    tab[5][11] = 14;
-    tab[5][10] = 3;
-    tab[5][12] = 4;
-    tab[6][11] = 5;
-    tab[7][11] = 5;
-    tab[8][11] = 5;
-    tab[9][11] = 5;
-    tab[10][11] = 5;
-    tab[11][11] = 5;
-    tab[5][15] = 5;
-    tab[6][15] = 13;
-    tab[7][15] = 5;
-    tab[8][15] = 5;
-    tab[9][15] = 5;
-    tab[10][15] = 5;
-    tab[11][15] = 5;
-    tab[2][15] = 5;
-    tab[3][15] = 5;
-    tab[4][15] = 5;
-    tab[3][20] = 5;
-    tab[8][18] = 5;
-    tab[9][18] = 5;
-    tab[5][19] = 5;
-    tab[7][19] = 15;
-    tab[7][20] = 2;
-    tab[7][21] = 13;
-    tab[4][20] = 4;
-    tab[10][18] = 4;
-    tab[7][18] = 6;
-    tab[4][19] = 6;
-    tab[6][19] = 5;
-    tab[11][20] = 5;
-    tab[2][20] = 13;
-    tab[11][10] = 12;
+    int xtempo, ytempo, bloctempo;
+    FILE *BlocNiv2 = fopen("../BlocNiv2", "r");
+    if (BlocNiv2 == NULL) {
+        printf("Erreur d'ouverture de fichier.");
+    }
+    for (int i=0;i<=66;i++) {
+        fscanf(BlocNiv2, "%d %d %d", &xtempo, &ytempo, &bloctempo);
+        tab[xtempo][ytempo] = bloctempo;
+    }
 }
 
 
 void BlocNiv3(char tab[14][24]) {
-    tab[4][2] = 5;
-    tab[5][2] = 5;
-    tab[7][2] = 5;
-    tab[10][2]=2;
-    tab[2][4] = 5;
-    tab[3][4] = 5;
-    tab[4][4] = 5;
-    tab[5][4] = 5;
-    tab[7][4] = 5;
-    tab[9][3]=1;
-    tab[9][4]=1;
-    tab[7][5] = 2;
-    tab[5][6] = 5;
-    tab[6][6] = 5;
-    tab[7][6]=4;
-    tab[10][5] = 5;
-    tab[11][5] =5;
-    tab[3][9] = 5;
-    tab[4][9] = 3;
-    tab[4][10] = 2;
-    tab[5][11]=5;
-    tab[3][12]= 5;
-    tab[4][12]=4;
-    tab[5][14]=2;
-    tab[8][14]=2;
-    tab[8][15] =2;
-    tab[3][16]=2;
-    tab[6][16] = 5;
-    tab[7][16] = 5;
-    tab[8][16] = 4;
-    tab[2][18]=5;
-    tab[3][18]=4;
-    tab[5][18]=6;
-    tab[6][18]=5;
-    tab[5][19]=2;
-    tab[5][20]=2;
-    tab[5][21]=2;
-    tab[5][3]=13;
-    tab[6][3]=1;
-    tab[3][15] = 13;
-    tab[4][15]=1;
-    tab[5][15] =13;
-    tab[3][17] = 13;
-    tab[4][17]=1;
-    tab[5][17] =13;
-    tab[9][21]=2;
-    tab[9][19]=1;
-    tab[9][18]=1;
-    tab[8][19]=1;
-    tab[11][17]=5;
-    tab[10][17]=5;
-
+    int xtempo, ytempo, bloctempo;
+    FILE *BlocNiv3 = fopen("../BlocNiv3", "r");
+    if (BlocNiv3 == NULL) {
+        printf("Erreur d'ouverture de fichier.");
+    }
+    for (int i=0;i<=66;i++) {
+        fscanf(BlocNiv3, "%d %d %d", &xtempo, &ytempo, &bloctempo);
+        tab[xtempo][ytempo] = bloctempo;
+    }
 }
 
 void BlocNiv4(char tab[14][24]) {
-    tab[3][11] = 2;
-    tab[6][4] = 3;
-    tab[3][5] = 5;
-    tab[2][4] = 1;
-    tab[3][3] = 13;
-    tab[4][3] = 3;
-    tab[4][4] = 14;
-    tab[4][5] = 4;
-    tab[5][4] = 5;
-    tab[5][2] = 1;
-    tab[7][5] = 5;
-    tab[6][5] = 7;
-    tab[8][5] = 15;
-    tab[8][6] = 7;
-    tab[8][4] = 2;
-    tab[8][3] = 6;
-    tab[9][3] = 5;
-    tab[9][6] = 5;
-    tab[9][4] = 13;
-    tab[10][4] = 1;
-    tab[11][3] = 5;
-    tab[2][9] = 5;
-    tab[3][12] = 7;
-    tab[4][10] = 1;
-    tab[4][12] = 5;
-    tab[5][12] = 5;
-    tab[5][9] = 2;
-    tab[5][10] = 7;
-    tab[6][8] = 1;
-    tab[6][10] = 13;
-    tab[6][12] = 3;
-    tab[6][13] = 2;
-    tab[7][9] = 2;
-    tab[7][10] = 13;
-    tab[7][11] = 2;
-    tab[8][9] = 1;
-    tab[8][13] = 5;
-    tab[9][13] = 4;
-    tab[9][10] = 6;
-    tab[9][11] = 14;
-    tab[9][12] = 2;
-    tab[10][9] = 2;
-    tab[10][10] = 15;
-    tab[10][11] = 4;
-    tab[11][11] = 5;
-    tab[2][16] = 5;
-    tab[3][16] = 13;
-    tab[4][16] = 5;
-    tab[5][16] = 5;
-    tab[6][16] = 5;
-    tab[7][16] = 3;
-    tab[7][17] = 2;
-    tab[7][18] = 2;
-    tab[7][19] = 2;
-    tab[7][20] = 2;
-    tab[7][21] = 2;
-    tab[2][18] = 5;
-    tab[3][18] = 5;
-    tab[4][18] = 5;
-    tab[5][18] = 3;
-    tab[5][19] = 2;
-    tab[5][20] = 13;
-    tab[5][21] = 2;
-    tab[4][20] = 1;
-    tab[2][20] = 13;
-    tab[3][21] = 2;
-    tab[9][17] = 6;
-    tab[9][18] = 2;
-    tab[9][19] = 2;
-    tab[9][20] = 7;
-    tab[10][17] = 13;
-    tab[10][18] = 13;
-    tab[11][17] = 5;
-    tab[10][20] = 5;
-    tab[11][19] = 1;
-
-    tab[8][11] = 16;
-    tab[8][12] = 16;
-    tab[7][12] = 16;
-    tab[7][13] = 16;
-
-    tab[2][10] = 17;
-    tab[2][11] = 17;
-    tab[2][12] = 17;
-    tab[3][10] = 17;
-
+    int xtempo, ytempo, bloctempo;
+    FILE *BlocNiv4 = fopen("../BlocNiv4", "r");
+    if (BlocNiv4 == NULL) {
+        printf("Erreur d'ouverture de fichier.");
+    }
+    for (int i=0;i<=66;i++) {
+        fscanf(BlocNiv4, "%d %d %d", &xtempo, &ytempo, &bloctempo);
+        tab[xtempo][ytempo] = bloctempo;
+    }
 }
