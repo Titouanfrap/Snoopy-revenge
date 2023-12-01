@@ -8,5 +8,5 @@ void regles();
 void leave();
 void password(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *scorefinal);
 void menu();
-void handleDir(char *key, char *tempo, char *tempos,int *scoretempo);
+void handleDir(char *key, char *tempo, char *tempos,int *scoretempo,int *scorefinal);
 void choix(int *scoretempo,int *scorefinal);

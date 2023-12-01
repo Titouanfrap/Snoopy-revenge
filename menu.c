@@ -166,8 +166,8 @@ void handleDir(char *key, char *tempo, char *tempos,int *scoretempo,int *scorefi
             }
             break;
         case '5':
-            printf("\n\n\n\n Voulez vous afficher les scores ?"
-                   "\n\t       Oui : y               Non : n");
+            printf("\n\n\n\n SCORE : %d",*scorefinal);
+
             break;
         case '6':
             printf("\n\n\n\n Voulez vous vraiment quitter le jeu ?"

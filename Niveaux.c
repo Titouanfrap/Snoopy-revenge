@@ -352,7 +352,7 @@ void Lvl4(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *sco
                 break;
             }
 
-
+            *scoretempo = (120-((difftime(maintenant,debut)-tempsd1+120)))*100;
 
 
             usleep(140000); // Attendre 1,57 sec, produit en croix avec le nombre de cases pour avoir 2 minutes
