@@ -139,7 +139,7 @@ SetConsoleTextAttribute(H,couleurDeFond*16+couleurDuTexte);
 
 void BlocNiv1(char tab[14][24]) {
     int xtempo, ytempo, bloctempo;
-    FILE *BlocNiv1 = fopen("../BlocNiv1", "r");
+    FILE *BlocNiv1 = fopen("../BlocNiv1.txt", "r");
     if (BlocNiv1 == NULL) {
         printf("Erreur d'ouverture de fichier.");
     }
@@ -150,7 +150,7 @@ void BlocNiv1(char tab[14][24]) {
 }
 void BlocNiv2(char tab[14][24]) {
     int xtempo, ytempo, bloctempo;
-    FILE *BlocNiv2 = fopen("../BlocNiv2", "r");
+    FILE *BlocNiv2 = fopen("../BlocNiv2.txt", "r");
     if (BlocNiv2 == NULL) {
         printf("Erreur d'ouverture de fichier.");
     }
@@ -163,11 +163,11 @@ void BlocNiv2(char tab[14][24]) {
 
 void BlocNiv3(char tab[14][24]) {
     int xtempo, ytempo, bloctempo;
-    FILE *BlocNiv3 = fopen("../BlocNiv3", "r");
+    FILE *BlocNiv3 = fopen("../BlocNiv3.txt", "r");
     if (BlocNiv3 == NULL) {
         printf("Erreur d'ouverture de fichier.");
     }
-    for (int i=0;i<=66;i++) {
+    for (int i=0;i<=50;i++) {
         fscanf(BlocNiv3, "%d %d %d", &xtempo, &ytempo, &bloctempo);
         tab[xtempo][ytempo] = bloctempo;
     }
@@ -175,11 +175,11 @@ void BlocNiv3(char tab[14][24]) {
 
 void BlocNiv4(char tab[14][24]) {
     int xtempo, ytempo, bloctempo;
-    FILE *BlocNiv4 = fopen("../BlocNiv4", "r");
+    FILE *BlocNiv4 = fopen("../BlocNiv4.txt", "r");
     if (BlocNiv4 == NULL) {
         printf("Erreur d'ouverture de fichier.");
     }
-    for (int i=0;i<=66;i++) {
+    for (int i=0;i<=82;i++) {
         fscanf(BlocNiv4, "%d %d %d", &xtempo, &ytempo, &bloctempo);
         tab[xtempo][ytempo] = bloctempo;
     }
