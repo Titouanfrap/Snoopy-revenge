@@ -138,39 +138,16 @@ SetConsoleTextAttribute(H,couleurDeFond*16+couleurDuTexte);
 
 
 void BlocNiv1(char tab[14][24]) {
-    tab[2][3] = 5;
-    tab[3][3] = 5;
-    tab[4][3] = 5;
-    tab[9][4] = 5;
-    tab[8][4] = 5;
-    tab[7][4] = 5;
-    tab[10][5] = 2;
-    tab[10][4] = 15;
-    tab[10][3] = 2;
-    tab[10][2] = 2;
-    tab[6][10] = 3;
-    tab[5][10] = 5;
-    tab[4][10] = 5;
-    tab[3][10] = 6;
-    tab[6][11] = 2;
-    tab[3][11] = 2;
-    tab[9][12] = 2;
-    tab[9][13] = 7;
-    tab[10][13] = 5;
-    tab[2][14] = 5;
-    tab[3][14] = 5;
-    tab[4][14] = 5;
-    tab[7][19] = 2;
-    tab[7][20] = 2;
-    tab[7][18] = 3;
-    tab[7][21] = 2;
-    tab[4][19] = 2;
-    tab[4][18] = 3;
-    tab[3][18] = 5;
-    tab[6][18] = 5;
-
+    int xtempo, ytempo, bloctempo;
+    FILE *BlocNiv1 = fopen("../BlocNiv1", "r");
+    if (BlocNiv1 == NULL) {
+        printf("Erreur d'ouverture de fichier.");
+    }
+    for (int i=0;i<=30;i++) {
+        fscanf(BlocNiv1, "%d %d %d", &xtempo, &ytempo, &bloctempo);
+        tab[xtempo][ytempo] = bloctempo;
+    }
 }
-
 void BlocNiv2(char tab[14][24]) {
     tab[2][3] = 5;
     tab[4][2] = 2;
