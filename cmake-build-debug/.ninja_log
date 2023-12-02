@@ -22,3 +22,12 @@
 1460	1620	7232319367293014	Snoopy_revenge.exe	d185e3a8b4a3b0cd
 6	180	7232319893736370	CMakeFiles/Snoopy_revenge.dir/GameManagement/snoopy.c.obj	6b6a9cda3244871c
 180	376	7232319895621908	Snoopy_revenge.exe	d185e3a8b4a3b0cd
+5	125	7232320936934901	CMakeFiles/Snoopy_revenge.dir/Sauvegarde.c.obj	6f1f5aa2984084ef
+125	289	7232320938525951	Snoopy_revenge.exe	d185e3a8b4a3b0cd
+7	134	7232321056565909	CMakeFiles/Snoopy_revenge.dir/Sauvegarde.c.obj	6f1f5aa2984084ef
+135	321	7232321058385617	Snoopy_revenge.exe	d185e3a8b4a3b0cd
+26	479	7232350571832421	CMakeFiles/Snoopy_revenge.dir/menu.c.obj	2a56808b1affdd44
+52	481	7232350573157699	CMakeFiles/Snoopy_revenge.dir/Sauvegarde.c.obj	6f1f5aa2984084ef
+43	481	7232350573097782	CMakeFiles/Snoopy_revenge.dir/LevelManagement/FinNiveaux.c.obj	d67644dc43dfd6b
+37	529	7232350573812978	CMakeFiles/Snoopy_revenge.dir/LevelManagement/Niveaux.c.obj	9157a545e974ef97
+529	740	7232350575841168	Snoopy_revenge.exe	d185e3a8b4a3b0cd
