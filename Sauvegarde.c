@@ -12,7 +12,10 @@ void saveGame(const Snoopy *snoopy, Balle *balle, Time *t, int *oiseaux, int *vi
         fwrite(t, sizeof(Time), 1, file);
         fwrite(vies, sizeof(int), 1, file);
         fwrite(scoretempo, sizeof(int), 1, file);
-        fwrite(tab, sizeof(int), 1, file);
+        for (int i=0; i<14; i++){
+            for (int j=0; j<24; j++){
+                fwrite(&tab[i][j], sizeof(int), 1, file);
+            }}
         fwrite(level, sizeof(int), 1, file);
         fclose(file);
     } else {

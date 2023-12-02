@@ -7,6 +7,7 @@
 #include "../menu.h"
 #include "Niveaux.h"
 #include "time.h"
+#include "../Sauvegarde.h"
 #define player 0x850E8 //9                   //raccourcit avec le code hexa associé a Snoopy
 
 Time t = {120, 0, 0, 10, 1}; // raccourcit vers la structure du timer
@@ -126,6 +127,7 @@ void Lvl2(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefinal, 
     t.directy=1;
 
     while (*vies < 3) {
+
         time(&debut);
 
         tableau(tab, &balle, &snoopy);
