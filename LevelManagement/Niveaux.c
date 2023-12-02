@@ -103,7 +103,7 @@ void Lvl1(int *nb_executions, char *tempo, char *tempos,int *scoretempo,int *sco
 
 
     if (*nb_executions == 3) {
-        GameOvert();
+        GameOver();
     }
 }
 
@@ -202,7 +202,7 @@ void Lvl2(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *sco
 
 
     if (*nb_executions == 3) {
-        GameOvert();
+        GameOver();
     }
 }
 
@@ -303,7 +303,7 @@ void Lvl3(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *sco
 
 
     if (*nb_executions == 3) {
-        GameOvert();
+        GameOver();
     }
 }
 
@@ -316,7 +316,7 @@ void Lvl4(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *sco
     char matrice[14][24];
     int compteur = 0;
     int game = 0;
-    int tempsd1 = 120;
+    int tempsd1 = 1;
     time_t debut, maintenant;
 
     tableau(matrice, &balle, &snoopy);
@@ -405,6 +405,6 @@ void Lvl4(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *sco
 
 
     if (*nb_executions == 3) {
-        GameOvert();
+        GameOver();
     }
 }
