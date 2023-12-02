@@ -76,22 +76,46 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/FinNiveaux.c">
+		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/GameManagement/balle.c">
 			<Option target="Snoopy_revenge"/>
 		</Unit>
-		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/FinNiveaux.h">
+		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/GameManagement/balle.h">
 			<Option target="Snoopy_revenge"/>
 		</Unit>
-		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/Niveaux.c">
+		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/GameManagement/snoopy.c">
 			<Option target="Snoopy_revenge"/>
 		</Unit>
-		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/Niveaux.h">
+		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/GameManagement/snoopy.h">
 			<Option target="Snoopy_revenge"/>
 		</Unit>
-		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/balle.c">
+		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/GameManagement/temps.c">
 			<Option target="Snoopy_revenge"/>
 		</Unit>
-		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/balle.h">
+		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/GameManagement/temps.h">
+			<Option target="Snoopy_revenge"/>
+		</Unit>
+		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/GameManagement/terrain.c">
+			<Option target="Snoopy_revenge"/>
+		</Unit>
+		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/GameManagement/terrain.h">
+			<Option target="Snoopy_revenge"/>
+		</Unit>
+		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/LevelManagement/FinNiveaux.c">
+			<Option target="Snoopy_revenge"/>
+		</Unit>
+		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/LevelManagement/FinNiveaux.h">
+			<Option target="Snoopy_revenge"/>
+		</Unit>
+		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/LevelManagement/Niveaux.c">
+			<Option target="Snoopy_revenge"/>
+		</Unit>
+		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/LevelManagement/Niveaux.h">
+			<Option target="Snoopy_revenge"/>
+		</Unit>
+		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/Sauvegarde.c">
+			<Option target="Snoopy_revenge"/>
+		</Unit>
+		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/Sauvegarde.h">
 			<Option target="Snoopy_revenge"/>
 		</Unit>
 		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/main.c">
@@ -101,24 +125,6 @@
 			<Option target="Snoopy_revenge"/>
 		</Unit>
 		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/menu.h">
-			<Option target="Snoopy_revenge"/>
-		</Unit>
-		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/snoopy.c">
-			<Option target="Snoopy_revenge"/>
-		</Unit>
-		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/snoopy.h">
-			<Option target="Snoopy_revenge"/>
-		</Unit>
-		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/temps.c">
-			<Option target="Snoopy_revenge"/>
-		</Unit>
-		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/temps.h">
-			<Option target="Snoopy_revenge"/>
-		</Unit>
-		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/terrain.c">
-			<Option target="Snoopy_revenge"/>
-		</Unit>
-		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/terrain.h">
 			<Option target="Snoopy_revenge"/>
 		</Unit>
 		<Unit filename="C:/Users/etaix/OneDrive/Documents/GitHub/Snoopy-revenge/CMakeLists.txt">

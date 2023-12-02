@@ -21,7 +21,7 @@ void Lvl1(int *nb_executions, char *tempo, char *tempos,int *scoretempo,int *sco
     char matrice[14][24];
     int compteur = 0;
     int game = 0;
-    int tempsd1 = 3;
+    int tempsd1 = 120;
 
 
 
@@ -101,14 +101,13 @@ void Lvl1(int *nb_executions, char *tempo, char *tempos,int *scoretempo,int *sco
 }
 
 void Lvl2(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *scorefinal) {
-    *scoretempo=0;
     system("cls");
     int dix = 0;
     char key;
     char matrice[14][24];
     int compteur = 0;
     int game = 0;
-    int tempsd1 = 3;
+    int tempsd1 =120;
     time_t debut, maintenant;
 
     matrice[7][7] = 10;
@@ -117,7 +116,7 @@ void Lvl2(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *sco
     t.directx=0;
     t.directy=1;
 
-    while (*nb_executions <= 2) {
+    while (*nb_executions < 3) {
         time(&debut);
 
         tableau(matrice, &balle, &snoopy);
@@ -166,11 +165,9 @@ void Lvl2(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *sco
             }
 
             if (difftime(maintenant, debut) >= tempsd1) {
+                *nb_executions+=1;
                 sleep(2);
                 system("cls");
-                *nb_executions+=1;
-                printf("%d",*nb_executions);
-                sleep(2);
                 defaite2(tempo,tempos,&*nb_executions,scoretempo,scorefinal); // Passer la touche 'key' à la fonction defaite1
                 sleep(100);
                 sleep(5);
@@ -183,15 +180,17 @@ void Lvl2(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *sco
             usleep(140000); // Attendre 1,57 sec, produit en croix avec le nombre de cases pour avoir 2 minutes
             system("cls"); // Clear de l'écran pour préparer l'affichage de la matrice actualisée
         }
-    } if (*nb_executions==3){
-        GameOvert();
+    }
 
+
+    if (*nb_executions == 3) {
+        GameOver();
     }
 }
 
 
 void Lvl3(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *scorefinal) {
-    *scoretempo=0;
+
     system("cls");
     int dix = 0;
     char key;
@@ -207,7 +206,7 @@ void Lvl3(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *sco
     t.directx=0;
     t.directy=1;
 
-    while (*nb_executions < 3 || *nb_executions<9) {
+    while (*nb_executions < 3) {
         time(&debut);
 
         tableau(matrice, &balle, &snoopy);
@@ -271,18 +270,18 @@ void Lvl3(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *sco
             usleep(140000); // Attendre 1,57 sec, produit en croix avec le nombre de cases pour avoir 2 minutes
             system("cls"); // Clear de l'écran pour préparer l'affichage de la matrice actualisée
         }
-        *nb_executions+=1;
-        if (nb_executions == 3 || nb_executions == 6) {
-            GameOvert();
-            break;
-        }
+    }
+
+
+    if (*nb_executions == 3) {
+        GameOver();
     }
 }
 
 
 
 void Lvl4(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *scorefinal) {
-    *scoretempo=0;
+
     system("cls");
     int dix = 0;
     char key;
@@ -298,7 +297,7 @@ void Lvl4(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *sco
     t.directx=0;
     t.directy=1;
 
-    while (*nb_executions < 6||*nb_executions==3) {
+    while (*nb_executions < 3) {
 
         time(&debut);
 
@@ -359,12 +358,13 @@ void Lvl4(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *sco
 
             *scoretempo = (120-((difftime(maintenant,debut)-tempsd1+120)))*100;
 
-
             usleep(140000); // Attendre 1,57 sec, produit en croix avec le nombre de cases pour avoir 2 minutes
             system("cls"); // Clear de l'écran pour préparer l'affichage de la matrice actualisée
         }
-    } if (*nb_executions==6||*nb_executions==3){
-        GameOvert();
+    }
 
-    }    }
 
+    if (*nb_executions == 3) {
+        GameOver();
+    }
+}

@@ -128,77 +128,173 @@ Snoopy_revenge/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/build
 .PHONY : Snoopy_revenge/fast
 
-FinNiveaux.obj: FinNiveaux.c.obj
-.PHONY : FinNiveaux.obj
+GameManagement/balle.obj: GameManagement/balle.c.obj
+.PHONY : GameManagement/balle.obj
 
 # target to build an object file
-FinNiveaux.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/FinNiveaux.c.obj
-.PHONY : FinNiveaux.c.obj
+GameManagement/balle.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/GameManagement/balle.c.obj
+.PHONY : GameManagement/balle.c.obj
 
-FinNiveaux.i: FinNiveaux.c.i
-.PHONY : FinNiveaux.i
+GameManagement/balle.i: GameManagement/balle.c.i
+.PHONY : GameManagement/balle.i
 
 # target to preprocess a source file
-FinNiveaux.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/FinNiveaux.c.i
-.PHONY : FinNiveaux.c.i
+GameManagement/balle.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/GameManagement/balle.c.i
+.PHONY : GameManagement/balle.c.i
 
-FinNiveaux.s: FinNiveaux.c.s
-.PHONY : FinNiveaux.s
+GameManagement/balle.s: GameManagement/balle.c.s
+.PHONY : GameManagement/balle.s
 
 # target to generate assembly for a file
-FinNiveaux.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/FinNiveaux.c.s
-.PHONY : FinNiveaux.c.s
+GameManagement/balle.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/GameManagement/balle.c.s
+.PHONY : GameManagement/balle.c.s
 
-Niveaux.obj: Niveaux.c.obj
-.PHONY : Niveaux.obj
+GameManagement/snoopy.obj: GameManagement/snoopy.c.obj
+.PHONY : GameManagement/snoopy.obj
 
 # target to build an object file
-Niveaux.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Niveaux.c.obj
-.PHONY : Niveaux.c.obj
+GameManagement/snoopy.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/GameManagement/snoopy.c.obj
+.PHONY : GameManagement/snoopy.c.obj
 
-Niveaux.i: Niveaux.c.i
-.PHONY : Niveaux.i
+GameManagement/snoopy.i: GameManagement/snoopy.c.i
+.PHONY : GameManagement/snoopy.i
 
 # target to preprocess a source file
-Niveaux.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Niveaux.c.i
-.PHONY : Niveaux.c.i
+GameManagement/snoopy.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/GameManagement/snoopy.c.i
+.PHONY : GameManagement/snoopy.c.i
 
-Niveaux.s: Niveaux.c.s
-.PHONY : Niveaux.s
+GameManagement/snoopy.s: GameManagement/snoopy.c.s
+.PHONY : GameManagement/snoopy.s
 
 # target to generate assembly for a file
-Niveaux.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Niveaux.c.s
-.PHONY : Niveaux.c.s
+GameManagement/snoopy.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/GameManagement/snoopy.c.s
+.PHONY : GameManagement/snoopy.c.s
 
-balle.obj: balle.c.obj
-.PHONY : balle.obj
+GameManagement/temps.obj: GameManagement/temps.c.obj
+.PHONY : GameManagement/temps.obj
 
 # target to build an object file
-balle.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/balle.c.obj
-.PHONY : balle.c.obj
+GameManagement/temps.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/GameManagement/temps.c.obj
+.PHONY : GameManagement/temps.c.obj
 
-balle.i: balle.c.i
-.PHONY : balle.i
+GameManagement/temps.i: GameManagement/temps.c.i
+.PHONY : GameManagement/temps.i
 
 # target to preprocess a source file
-balle.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/balle.c.i
-.PHONY : balle.c.i
+GameManagement/temps.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/GameManagement/temps.c.i
+.PHONY : GameManagement/temps.c.i
 
-balle.s: balle.c.s
-.PHONY : balle.s
+GameManagement/temps.s: GameManagement/temps.c.s
+.PHONY : GameManagement/temps.s
 
 # target to generate assembly for a file
-balle.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/balle.c.s
-.PHONY : balle.c.s
+GameManagement/temps.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/GameManagement/temps.c.s
+.PHONY : GameManagement/temps.c.s
+
+GameManagement/terrain.obj: GameManagement/terrain.c.obj
+.PHONY : GameManagement/terrain.obj
+
+# target to build an object file
+GameManagement/terrain.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/GameManagement/terrain.c.obj
+.PHONY : GameManagement/terrain.c.obj
+
+GameManagement/terrain.i: GameManagement/terrain.c.i
+.PHONY : GameManagement/terrain.i
+
+# target to preprocess a source file
+GameManagement/terrain.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/GameManagement/terrain.c.i
+.PHONY : GameManagement/terrain.c.i
+
+GameManagement/terrain.s: GameManagement/terrain.c.s
+.PHONY : GameManagement/terrain.s
+
+# target to generate assembly for a file
+GameManagement/terrain.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/GameManagement/terrain.c.s
+.PHONY : GameManagement/terrain.c.s
+
+LevelManagement/FinNiveaux.obj: LevelManagement/FinNiveaux.c.obj
+.PHONY : LevelManagement/FinNiveaux.obj
+
+# target to build an object file
+LevelManagement/FinNiveaux.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/LevelManagement/FinNiveaux.c.obj
+.PHONY : LevelManagement/FinNiveaux.c.obj
+
+LevelManagement/FinNiveaux.i: LevelManagement/FinNiveaux.c.i
+.PHONY : LevelManagement/FinNiveaux.i
+
+# target to preprocess a source file
+LevelManagement/FinNiveaux.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/LevelManagement/FinNiveaux.c.i
+.PHONY : LevelManagement/FinNiveaux.c.i
+
+LevelManagement/FinNiveaux.s: LevelManagement/FinNiveaux.c.s
+.PHONY : LevelManagement/FinNiveaux.s
+
+# target to generate assembly for a file
+LevelManagement/FinNiveaux.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/LevelManagement/FinNiveaux.c.s
+.PHONY : LevelManagement/FinNiveaux.c.s
+
+LevelManagement/Niveaux.obj: LevelManagement/Niveaux.c.obj
+.PHONY : LevelManagement/Niveaux.obj
+
+# target to build an object file
+LevelManagement/Niveaux.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/LevelManagement/Niveaux.c.obj
+.PHONY : LevelManagement/Niveaux.c.obj
+
+LevelManagement/Niveaux.i: LevelManagement/Niveaux.c.i
+.PHONY : LevelManagement/Niveaux.i
+
+# target to preprocess a source file
+LevelManagement/Niveaux.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/LevelManagement/Niveaux.c.i
+.PHONY : LevelManagement/Niveaux.c.i
+
+LevelManagement/Niveaux.s: LevelManagement/Niveaux.c.s
+.PHONY : LevelManagement/Niveaux.s
+
+# target to generate assembly for a file
+LevelManagement/Niveaux.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/LevelManagement/Niveaux.c.s
+.PHONY : LevelManagement/Niveaux.c.s
+
+Sauvegarde.obj: Sauvegarde.c.obj
+.PHONY : Sauvegarde.obj
+
+# target to build an object file
+Sauvegarde.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Sauvegarde.c.obj
+.PHONY : Sauvegarde.c.obj
+
+Sauvegarde.i: Sauvegarde.c.i
+.PHONY : Sauvegarde.i
+
+# target to preprocess a source file
+Sauvegarde.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Sauvegarde.c.i
+.PHONY : Sauvegarde.c.i
+
+Sauvegarde.s: Sauvegarde.c.s
+.PHONY : Sauvegarde.s
+
+# target to generate assembly for a file
+Sauvegarde.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/Sauvegarde.c.s
+.PHONY : Sauvegarde.c.s
 
 main.obj: main.c.obj
 .PHONY : main.obj
@@ -248,78 +344,6 @@ menu.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/menu.c.s
 .PHONY : menu.c.s
 
-snoopy.obj: snoopy.c.obj
-.PHONY : snoopy.obj
-
-# target to build an object file
-snoopy.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/snoopy.c.obj
-.PHONY : snoopy.c.obj
-
-snoopy.i: snoopy.c.i
-.PHONY : snoopy.i
-
-# target to preprocess a source file
-snoopy.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/snoopy.c.i
-.PHONY : snoopy.c.i
-
-snoopy.s: snoopy.c.s
-.PHONY : snoopy.s
-
-# target to generate assembly for a file
-snoopy.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/snoopy.c.s
-.PHONY : snoopy.c.s
-
-temps.obj: temps.c.obj
-.PHONY : temps.obj
-
-# target to build an object file
-temps.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/temps.c.obj
-.PHONY : temps.c.obj
-
-temps.i: temps.c.i
-.PHONY : temps.i
-
-# target to preprocess a source file
-temps.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/temps.c.i
-.PHONY : temps.c.i
-
-temps.s: temps.c.s
-.PHONY : temps.s
-
-# target to generate assembly for a file
-temps.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/temps.c.s
-.PHONY : temps.c.s
-
-terrain.obj: terrain.c.obj
-.PHONY : terrain.obj
-
-# target to build an object file
-terrain.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/terrain.c.obj
-.PHONY : terrain.c.obj
-
-terrain.i: terrain.c.i
-.PHONY : terrain.i
-
-# target to preprocess a source file
-terrain.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/terrain.c.i
-.PHONY : terrain.c.i
-
-terrain.s: terrain.c.s
-.PHONY : terrain.s
-
-# target to generate assembly for a file
-terrain.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Snoopy_revenge.dir\build.make CMakeFiles/Snoopy_revenge.dir/terrain.c.s
-.PHONY : terrain.c.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -329,30 +353,33 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Snoopy_revenge
-	@echo ... FinNiveaux.obj
-	@echo ... FinNiveaux.i
-	@echo ... FinNiveaux.s
-	@echo ... Niveaux.obj
-	@echo ... Niveaux.i
-	@echo ... Niveaux.s
-	@echo ... balle.obj
-	@echo ... balle.i
-	@echo ... balle.s
+	@echo ... GameManagement/balle.obj
+	@echo ... GameManagement/balle.i
+	@echo ... GameManagement/balle.s
+	@echo ... GameManagement/snoopy.obj
+	@echo ... GameManagement/snoopy.i
+	@echo ... GameManagement/snoopy.s
+	@echo ... GameManagement/temps.obj
+	@echo ... GameManagement/temps.i
+	@echo ... GameManagement/temps.s
+	@echo ... GameManagement/terrain.obj
+	@echo ... GameManagement/terrain.i
+	@echo ... GameManagement/terrain.s
+	@echo ... LevelManagement/FinNiveaux.obj
+	@echo ... LevelManagement/FinNiveaux.i
+	@echo ... LevelManagement/FinNiveaux.s
+	@echo ... LevelManagement/Niveaux.obj
+	@echo ... LevelManagement/Niveaux.i
+	@echo ... LevelManagement/Niveaux.s
+	@echo ... Sauvegarde.obj
+	@echo ... Sauvegarde.i
+	@echo ... Sauvegarde.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
 	@echo ... menu.obj
 	@echo ... menu.i
 	@echo ... menu.s
-	@echo ... snoopy.obj
-	@echo ... snoopy.i
-	@echo ... snoopy.s
-	@echo ... temps.obj
-	@echo ... temps.i
-	@echo ... temps.s
-	@echo ... terrain.obj
-	@echo ... terrain.i
-	@echo ... terrain.s
 .PHONY : help
 
 

@@ -42,6 +42,7 @@ void victoire1(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int
             case '2':
                 printf("\n\nNiveau suivant...");
                 sleep(3);
+                *nb_executions=0;
                 Lvl2(tempo, tempos, nb_executions,scoretempo,scorefinal);
                 break;
             case '3':
@@ -101,6 +102,7 @@ void victoire2(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int
             case '2':
                 printf("\n\nNiveau suivant...");
                 sleep(3);
+                *nb_executions=0;
                 Lvl3(tempo, tempos, nb_executions,scoretempo,scorefinal);
                 break;
             case '3':
@@ -159,6 +161,7 @@ void victoire3(char *tempo, char *tempos,int *nb_executions,int *scoretempo,int 
             case '2':
                 printf("\n\nNiveau suivant...");
                 sleep(3);
+                *nb_executions=0;
                 Lvl4(tempo, tempos, nb_executions,scoretempo,scorefinal);
                 break;
             case '3':
