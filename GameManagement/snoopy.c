@@ -4,7 +4,7 @@
 #include "../LevelManagement/FinNiveaux.h"
 
 
-void deplacement(char tab[14][24], char *key, Snoopy *snoopy, int *compteur, char *tempos) {
+void deplacement(char tab[14][24], char *key, Snoopy *snoopy, int *oiseaux, char *tempos) {
 
     tab[snoopy->x][snoopy->y] = 0;
 
@@ -178,7 +178,7 @@ void deplacement(char tab[14][24], char *key, Snoopy *snoopy, int *compteur, cha
         }
     }
     if (tab[snoopy->x][snoopy->y] == 11) {
-        (*compteur)++;
+        (*oiseaux)++;
     }
     tab[snoopy->x][snoopy->y] = 9;
 }
