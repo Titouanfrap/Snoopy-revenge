@@ -1,16 +1,22 @@
 #include <stdio.h>
+#include "GameManagement/terrain.h"
+#include "GameManagement/temps.h"
 
 typedef struct {
     int SnoopyX;
     int SnoopyY;
     int BalleX;
     int BalleY;
-    int temps;
+    int dBalleX;
+    int dBalleY;
+    int tempsx;
+    int tempsy;
+    int tempsdirectx;
+    int tempsdirecty;
     int vies;
-    int oiseaux;
+    int Noiseaux;
     int currentLevel;
     int terrain;
-    int score;
 } GameState;
 
 void saveGame(const GameState *state) {
@@ -30,10 +36,17 @@ void loadGame(GameState *state) {
         fclose(file);
     }
 }
-void playGame(GameState *state) {
-    state->SnoopyX = 100;
-    state->SnoopyY = 50;
-    state->currentLevel = 2;
-    state->vies--;
-}
 
+void savestruct(Balle *balle, Snoopy *snoopy, Time *t, GameState *state, int *nb_executions) {
+    state->SnoopyX = snoopy->x;
+    state->SnoopyY = snoopy->y;
+    state->tempsx = t->x;
+    state->tempsy = t->y;
+    state->tempsdirectx = t->directx;
+    state->tempsdirecty = t->directy;
+    state->BalleX = balle->x;
+    state->BalleY = balle->y;
+    state->dBalleX = balle->dx;
+    state->dBalleY = balle->dy;
+    state->vies = *nb_executions;
+}
