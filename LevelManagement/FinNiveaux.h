@@ -10,11 +10,11 @@ void GameOver();
 
 void defaite1(int *nb_executions, char *tempo, char *tempos,int *scoretempo,int *scorefinal);
 
-void defaite2(char *tempo, char *tempos,int *nb_executions,int *scoretempo,int *scorefinal);
+void defaite2(int *nb_executions, char *tempo, char *tempos,int *scoretempo,int *scorefinal);
 
-void defaite3(char *tempo, char *tempos,int *nb_executions,int *scoretempo,int *scorefinal);
+void defaite3(int *nb_executions, char *tempo, char *tempos,int *scoretempo,int *scorefinal);
 
-void defaite4(char *tempo, char *tempos,int *nb_executions,int *scoretempo,int *scorefinal);
+void defaite4(int *nb_executions, char *tempo, char *tempos,int *scoretempo,int *scorefinal);
 
 void GameOvert();
 

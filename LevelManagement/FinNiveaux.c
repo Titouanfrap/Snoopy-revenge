@@ -264,7 +264,7 @@ void defaite1(int *nb_executions, char *tempo, char *tempos,int *scoretempo,int 
 }
 
 
-void defaite2(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *scorefinal){
+void defaite2(int *nb_executions, char *tempo, char *tempos,int *scoretempo,int *scorefinal){
     if (*nb_executions<6){
         printf("//==============================\\\\\n"
                "||           *********          ||\n"
@@ -312,7 +312,7 @@ void defaite2(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int 
 }
 
 
-void defaite3(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *scorefinal){
+void defaite3(int *nb_executions, char *tempo, char *tempos,int *scoretempo,int *scorefinal){
     if (*nb_executions<9||*nb_executions<3 ){
         printf("//==============================\\\\\n"
                "||           *********          ||\n"
@@ -360,7 +360,7 @@ void defaite3(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int 
 }
 
 
-void defaite4(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *scorefinal){
+void defaite4(int *nb_executions, char *tempo, char *tempos,int *scoretempo,int *scorefinal){
     if (*nb_executions<9||*nb_executions<3 ){
         printf("//==============================\\\\\n"
                "||           *********          ||\n"
