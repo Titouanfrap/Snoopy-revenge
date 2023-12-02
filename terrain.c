@@ -18,6 +18,7 @@
 #define lienh 0x850CA //15
 #define tapisd 0x850AF  //16
 #define tapisg 0x850AE  //17
+#define vie 0x85003 //18
 
 
 
@@ -86,6 +87,9 @@ void terrain(char tab[14][24]){
                     break;
                 case 17:
                     printf("%c",tapisg);
+                    break;
+                case 18:
+                    printf("%c",vie);
                     break;
             }  //Pour chaque case on cherche le cas correspondant puis on le print, en revenant a la ligne a chaque itération de i pour l'aspect tableau
         }

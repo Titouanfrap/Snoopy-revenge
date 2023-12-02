@@ -1,6 +1,6 @@
 CMakeFiles/Snoopy_revenge.dir/main.c.obj: \
- C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\main.c \
- C:\Users\balth\OneDrive\Documents\GitHub\Snoopy-revenge\menu.h \
+ C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\main.c \
+ C:\Users\etaix\OneDrive\Documents\GitHub\Snoopy-revenge\menu.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \

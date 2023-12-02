@@ -16,7 +16,7 @@ void defaite3(char *tempo, char *tempos,int *nb_executions,int *scoretempo,int *
 
 void defaite4(char *tempo, char *tempos,int *nb_executions,int *scoretempo,int *scorefinal);
 
-
+void GameOvert();
 
 void menuchoix(char *touche);
 

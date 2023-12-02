@@ -21,7 +21,7 @@ void Lvl1(int *nb_executions, char *tempo, char *tempos,int *scoretempo,int *sco
     char matrice[14][24];
     int compteur = 0;
     int game = 0;
-    int tempsd1 = 120;
+    int tempsd1 = 3;
 
 
 
@@ -92,11 +92,13 @@ void Lvl1(int *nb_executions, char *tempo, char *tempos,int *scoretempo,int *sco
             usleep(140000); // Attendre 1,57 sec, produit en croix avec le nombre de cases pour avoir 2 minutes
             system("cls"); // Clear de l'écran pour préparer l'affichage de la matrice actualisée
         }
-} if (*nb_executions==3){
+    }
+
+
+    if (*nb_executions == 3) {
         GameOver();
-
-    }    }
-
+    }
+}
 
 void Lvl2(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *scorefinal) {
     *scoretempo=0;
@@ -106,7 +108,7 @@ void Lvl2(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *sco
     char matrice[14][24];
     int compteur = 0;
     int game = 0;
-    int tempsd1 = 120;
+    int tempsd1 = 3;
     time_t debut, maintenant;
 
     matrice[7][7] = 10;
@@ -115,7 +117,7 @@ void Lvl2(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *sco
     t.directx=0;
     t.directy=1;
 
-    while (*nb_executions < 6||*nb_executions==3) {
+    while (*nb_executions <= 2) {
         time(&debut);
 
         tableau(matrice, &balle, &snoopy);
@@ -167,6 +169,8 @@ void Lvl2(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *sco
                 sleep(2);
                 system("cls");
                 *nb_executions+=1;
+                printf("%d",*nb_executions);
+                sleep(2);
                 defaite2(tempo,tempos,&*nb_executions,scoretempo,scorefinal); // Passer la touche 'key' à la fonction defaite1
                 sleep(100);
                 sleep(5);
@@ -179,11 +183,11 @@ void Lvl2(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *sco
             usleep(140000); // Attendre 1,57 sec, produit en croix avec le nombre de cases pour avoir 2 minutes
             system("cls"); // Clear de l'écran pour préparer l'affichage de la matrice actualisée
         }
-    } if (*nb_executions==6||*nb_executions==3){
-        GameOver();
+    } if (*nb_executions==3){
+        GameOvert();
 
-    }    }
-
+    }
+}
 
 
 void Lvl3(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *scorefinal) {
@@ -194,7 +198,7 @@ void Lvl3(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *sco
     char matrice[14][24];
     int compteur = 0;
     int game = 0;
-    int tempsd1 = 120;
+    int tempsd1 = 3;
     time_t debut, maintenant;
 
     tableau(matrice, &balle, &snoopy);
@@ -254,10 +258,8 @@ void Lvl3(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *sco
             if (difftime(maintenant, debut) >= tempsd1) {
                 sleep(2);
                 system("cls");
-                *nb_executions+=1;
-                printf("%d",*nb_executions);
-                sleep(2);
                 defaite3(tempo,tempos,&*nb_executions,scoretempo,scorefinal); // Passer la touche 'key' à la fonction defaite1
+                *nb_executions++;
                 sleep(100);
                 sleep(5);
                 break;
@@ -269,10 +271,13 @@ void Lvl3(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *sco
             usleep(140000); // Attendre 1,57 sec, produit en croix avec le nombre de cases pour avoir 2 minutes
             system("cls"); // Clear de l'écran pour préparer l'affichage de la matrice actualisée
         }
-    } if (*nb_executions==9||*nb_executions==3){
-        GameOver();
-
-    }    }
+        *nb_executions+=1;
+        if (nb_executions == 3 || nb_executions == 6) {
+            GameOvert();
+            break;
+        }
+    }
+}
 
 
 
@@ -359,7 +364,7 @@ void Lvl4(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *sco
             system("cls"); // Clear de l'écran pour préparer l'affichage de la matrice actualisée
         }
     } if (*nb_executions==6||*nb_executions==3){
-        GameOver();
+        GameOvert();
 
     }    }
 
