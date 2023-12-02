@@ -5,18 +5,21 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(Snoopy_revenge
         main.c
-        temps.c
-        terrain.h
+        GameManagement/temps.c
+        GameManagement/terrain.h
         menu.h
-        balle.c
-        balle.h
-        snoopy.c
-        snoopy.h
-        terrain.c
+        GameManagement/balle.c
+        GameManagement/balle.h
+        GameManagement/snoopy.c
+        GameManagement/snoopy.h
+        GameManagement/terrain.c
         menu.c
-        FinNiveaux.c
-        FinNiveaux.h
-        Niveaux.c
-        Niveaux.h
+        LevelManagement/FinNiveaux.c
+        LevelManagement/FinNiveaux.h
+        LevelManagement/Niveaux.c
+        LevelManagement/Niveaux.h
+        Sauvegarde.c
+        Sauvegarde.h
+        Sauvegarde.h
 )
 

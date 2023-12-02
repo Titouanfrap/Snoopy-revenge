@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <unistd.h>
-#include "Niveaux.h"
-#include "balle.h"
+#include "LevelManagement/Niveaux.h"
+#include "GameManagement/balle.h"
 
 void regles() {
     system("cls");
