@@ -3,7 +3,8 @@
 #include <conio.h>
 #include <unistd.h>
 #include "LevelManagement/Niveaux.h"
-#include "GameManagement/balle.h"
+#include "Sauvegarde.h"
+
 
 void regles() {
     system("cls");
@@ -35,7 +36,7 @@ void leave() {
     sleep(3);
     system("cls");
 }
-void password(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *scorefinal, int *oiseaux, int *level) {
+void password(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefinal, int *oiseaux, int *level) {
     printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  "
            "           ---------============THE REVENGE OF SNOOPY============---------\n\n\n\n"
            "Pour rappel, les differents mots de passe s'obtiennent en reussissant\n"
@@ -56,17 +57,17 @@ void password(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int 
         if (strcmp(mot, "ecemaths") == 0) {
             printf("Lancement du niveau 2...");
             sleep(3);
-            Lvl2(tempo,tempos,nb_executions,scoretempo,scorefinal, oiseaux, level);
+            Lvl2(tempo,tempos,vies,scoretempo,scorefinal, oiseaux, level);
         }
        else if (strcmp(mot, "ecejbtv") == 0) {
             printf("Lancement du niveau 3...\n");
             sleep(3);
-            Lvl3(tempo, tempos, nb_executions,scoretempo,scorefinal, oiseaux, level);
+            Lvl3(tempo, tempos, vies,scoretempo,scorefinal, oiseaux, level);
         }
         else if (strcmp(mot, "champions") == 0) {
             printf("Lancement du niveau 4...\n");
             sleep(3);
-            Lvl4(tempo,tempos,nb_executions,scoretempo,scorefinal,oiseaux, level);
+            Lvl4(tempo,tempos,vies,scoretempo,scorefinal,oiseaux, level);
         } else {
             printf("Mot invalide\n");
             tentatives++;
@@ -109,6 +110,7 @@ int menu() {
 }
 
 void handleDir(char *key, char *tempo, char *tempos,int *scoretempo,int *scorefinal, int *oiseaux, int *level);
+
 void choix(int *scoretempo,int *scorefinal,int *oiseaux, int *level)
 {
     char tempo;
@@ -125,7 +127,12 @@ void choix(int *scoretempo,int *scorefinal,int *oiseaux, int *level)
 }
 
 void handleDir(char *key, char *tempo, char *tempos,int *scoretempo,int *scorefinal, int *oiseaux, int *level) {
-    int nb_executions=0;
+    char tab[14][24];
+    int vies=0;
+    Snoopy *snoopy;
+    Balle *balle;
+    Time *t;
+
     switch (*key) {
         case '1':
             printf("\n\n\n\n Voulez vous lire les regles du jeu ?"
@@ -146,7 +153,7 @@ void handleDir(char *key, char *tempo, char *tempos,int *scoretempo,int *scorefi
                    "\n\t       Oui : y               Non : n");
             char confirmKey3 = getch();
             if (confirmKey3 == 'y') {
-                Lvl1(&nb_executions, tempo, tempos,scoretempo,scorefinal, oiseaux, level);
+                Lvl1(&vies, tempo, tempos,scoretempo,scorefinal, oiseaux, level);
             } else if (confirmKey3 == 'n') {
                 menu();
             }
@@ -154,13 +161,19 @@ void handleDir(char *key, char *tempo, char *tempos,int *scoretempo,int *scorefi
         case '3':
             printf("\n\n\n\n Voulez vous charger une partie ?"
                    "\n\t       Oui : y               Non : n");
+            char confirmKey1 = getch();
+            if (confirmKey1 == 'y') {
+                loadGame(&snoopy, &balle, &t, oiseaux, &vies, scoretempo, tab, level, tempo, tempos, scorefinal);
+            } else if (confirmKey1 == 'n') {
+                menu();
+            }
             break;
         case '4':
             printf("\n\n\n\n Voulez vous rejoindre un niveau a l'aide d'un mot de passe ?"
                    "\n\t       Oui : y               Non : n");
             char confirmKey2 = getch();
             if (confirmKey2 == 'y') {
-                password(tempo,tempos, &nb_executions,scoretempo,scorefinal, oiseaux, level);
+                password(tempo,tempos, &vies,scoretempo,scorefinal, oiseaux, level);
             } else if (confirmKey2 == 'n') {
                 menu();
             }

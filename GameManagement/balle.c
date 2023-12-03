@@ -1,5 +1,4 @@
-#include "terrain.h"
-
+#include "balle.h"
 
 void mouvballe(char tab[14][24], Balle *balle, char *tempo) {
 

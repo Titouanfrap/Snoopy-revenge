@@ -1,5 +1,7 @@
 #include "balle.h"
 #include "snoopy.h"
+#include "../LevelManagement/Niveaux.h"
+
 
 
 void Color(int couleurDuTexte,int couleurDeFond);

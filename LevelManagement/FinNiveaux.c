@@ -264,8 +264,8 @@ void defaite1(int *vies, char *tempo, char *tempos,int *scoretempo,int *scorefin
     }}else { Lvl1(vies,tempo, tempos,scoretempo,scorefinal, oiseaux, level);}
 }
 
-void defaite2(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int *scorefinal, int *oiseaux, int *level){
-    if (*nb_executions<6){
+void defaite2(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefinal, int *oiseaux, int *level){
+    if (*vies<6){
         printf("//==============================\\\\\n"
                "||           *********          ||\n"
                "||      ---===Defaite===---     ||\n"
@@ -285,7 +285,7 @@ void defaite2(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int 
                "||                              ||\n"
                "\\\\==============================//");
         char touche = ' ';
-        while (*nb_executions<6) {
+        while (*vies<6) {
         if (kbhit()) {
             touche = getch();
         }
@@ -293,7 +293,7 @@ void defaite2(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int 
             case '1':
                 printf("\n\nBon courage...");
                 sleep(3);
-                Lvl2(tempo, tempos, nb_executions,scoretempo,scorefinal, oiseaux, level);
+                Lvl2(tempo, tempos,vies,scoretempo,scorefinal, oiseaux, level);
                 break;
             case '2':
                 printf("\n\n Sauvegarde");
@@ -307,7 +307,7 @@ void defaite2(char *tempo, char *tempos, int *nb_executions,int *scoretempo,int 
                 break;
         }
         touche = ' ';
-        }}else { Lvl2(tempo,tempos,nb_executions,scoretempo,scorefinal, oiseaux, level);}
+        }}else { Lvl2(tempo,tempos,vies,scoretempo,scorefinal, oiseaux, level);}
 
 }
 
@@ -417,7 +417,7 @@ void GameOver() {
     printf("\t\t| | |__| |  / ____ \\  | |  | | | |____    | |__| |    \\  /    | |____  | | \\ \\ |\n");
     printf("\t\t|  \\_____| /_/    \\_\\ |_|  |_| |______|    \\____/      \\/     |______| |_|  \\_\\|\n");
     printf("\t\t--------------------------------------------------------------------------------\n");
-    printf("\n \t\t\t\t---=====Dommage !=====---");
+    printf("\n \t\t\t\t     ---=====Dommage!=====---");
     printf("\n\n\n\nRetour au menu...");
     sleep(5);
     menu();

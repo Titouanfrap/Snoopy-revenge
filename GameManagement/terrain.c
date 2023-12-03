@@ -152,6 +152,7 @@ void BlocNiv1(char tab[14][24]) {
         tab[xtempo][ytempo] = bloctempo;
     }
 }
+
 void BlocNiv2(char tab[14][24]) {
     int xtempo, ytempo, bloctempo;
     FILE *BlocNiv2 = fopen("../LevelManagement/BlocNiv2.txt", "r");
