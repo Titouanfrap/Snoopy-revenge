@@ -47,7 +47,8 @@ void victoire1(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefi
             case '2':
                 printf("\n\n Retour au Menu...");
                 sleep(3);
-                menu();    // Appel du menu
+                menu();   // Appel du menu
+                choix(scoretempo,scorefinal, oiseaux, level);
                 break;
             case '3':
                 printf("\n\nDeconnexion...");
