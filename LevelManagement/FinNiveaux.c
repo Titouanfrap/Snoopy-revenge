@@ -454,7 +454,8 @@ void information(){
            "\"d\": avancer vers la droite\n"
            "\n"
            "\"p\": mettre le jeux en pause\n"
-           "\"a\": permet de casser les blocks grises");
+           "\"a\": permet de casser les blocks grises\n"
+           "\"f\": permet de sauvegarder le jeu");
 }
 
 

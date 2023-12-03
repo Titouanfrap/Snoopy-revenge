@@ -53,8 +53,8 @@ void loadGame(Snoopy *snoopy, Balle *balle, Time *t, int *oiseaux, int *vies, in
                 Lvl4(tempo, tempos, vies, scoretempo,scorefinal, oiseaux, level);
         }
 
-
-
         fclose(file);
+    } else {
+        printf("Erreur lors du chargement de la sauvegarde");
     }
 }

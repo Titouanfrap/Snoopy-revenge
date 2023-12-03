@@ -27,18 +27,6 @@ void Lvl1(int *vies, char *tempo, char *tempos,int *scoretempo,int *scorefinal, 
 
     while (*vies < 3) {
 
-
-        if (kbhit()) {
-            key = getch();
-            if (key == 'f') {
-                system("cls");
-                printf("Sauvegarde en cours...");
-                saveGame(&snoopy, &balle, &t, oiseaux, vies, scoretempo, tab, level);
-                sleep(3);
-                printf("Sauvegarde termine ! Vous pouvez quitter le jeu");
-            }
-        }
-
         time(&debut);
 
         tableau(tab, &balle, &snoopy);
@@ -67,7 +55,9 @@ void Lvl1(int *vies, char *tempo, char *tempos,int *scoretempo,int *scorefinal, 
             }
 
             if (kbhit()) {
+
                 key = getch();
+
                 if (key == 'p') {
                     time_t pause_debut = time (NULL);
                     printf("Pressez la touche o pour quitter le menu pause");
@@ -79,6 +69,15 @@ void Lvl1(int *vies, char *tempo, char *tempos,int *scoretempo,int *scorefinal, 
                     unsigned long secondes = (unsigned long) difftime( pause_fin, pause_debut );
                     tempsd1+=secondes;
 
+                } else if ( key == 'f') {
+                    system("cls");
+                    printf("Sauvegarde en cours...");
+                    saveGame(&snoopy, &balle, &t, oiseaux, vies, scoretempo, tab, level);
+                    sleep(3);
+                    printf("Sauvegarde termine ! Retour au menu...");
+                    sleep(2);
+                    menu();
+                    choix(scoretempo,scorefinal, oiseaux, level);
                 }
                 deplacement(tab, &key, &snoopy, oiseaux, tempos);
             }
@@ -142,17 +141,6 @@ void Lvl2(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefinal, 
 
     while (*vies < 3) {
 
-        if (kbhit()) {
-            key = getch();
-            if (key == 'f') {
-                system("cls");
-                printf("Sauvegarde en cours...");
-                saveGame(&snoopy, &balle, &t, oiseaux, vies, scoretempo, tab, level);
-                sleep(3);
-                printf("Sauvegarde termine ! Vous pouvez quitter le jeu");
-            }
-        }
-
         time(&debut);
 
         tableau(tab, &balle, &snoopy);
@@ -178,8 +166,11 @@ void Lvl2(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefinal, 
             } else {
                 dix++;
             }
+
             if (kbhit()) {
+
                 key = getch();
+
                 if (key == 'p') {
                     time_t pause_debut = time (NULL);
                     printf("Pressez la touche o pour quitter le menu pause");
@@ -191,6 +182,15 @@ void Lvl2(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefinal, 
                     unsigned long secondes = (unsigned long) difftime( pause_fin, pause_debut );
                     tempsd1+=secondes;
 
+                } else if ( key == 'f') {
+                    system("cls");
+                    printf("Sauvegarde en cours...");
+                    saveGame(&snoopy, &balle, &t, oiseaux, vies, scoretempo, tab, level);
+                    sleep(3);
+                    printf("Sauvegarde termine ! Retour au menu...");
+                    sleep(2);
+                    menu();
+                    choix(scoretempo,scorefinal, oiseaux, level);
                 }
                 deplacement(tab, &key, &snoopy, oiseaux, tempos);
             }
@@ -201,7 +201,7 @@ void Lvl2(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefinal, 
                 GameOver();
                 sleep(5);
                 menu();
-                choix(scoretempo,scorefinal, level, oiseaux);
+                choix(scoretempo,scorefinal, oiseaux, level);
             }
 
             if (*oiseaux == 4) {
@@ -262,17 +262,6 @@ void Lvl3(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefinal, 
 
     while (*vies < 3) {
 
-        if (kbhit()) {
-            key = getch();
-            if (key == 'f') {
-                system("cls");
-                printf("Sauvegarde en cours...");
-                saveGame(&snoopy, &balle, &t, oiseaux, vies, scoretempo, tab, level);
-                sleep(3);
-                printf("Sauvegarde termine ! Vous pouvez quitter le jeu");
-            }
-        }
-
         time(&debut);
 
         tableau(tab, &balle, &snoopy);
@@ -298,8 +287,12 @@ void Lvl3(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefinal, 
             } else {
                 dix++;
             }
+
+
             if (kbhit()) {
+
                 key = getch();
+
                 if (key == 'p') {
                     time_t pause_debut = time (NULL);
                     printf("Pressez la touche o pour quitter le menu pause");
@@ -311,9 +304,19 @@ void Lvl3(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefinal, 
                     unsigned long secondes = (unsigned long) difftime( pause_fin, pause_debut );
                     tempsd1+=secondes;
 
+                } else if ( key == 'f') {
+                    system("cls");
+                    printf("Sauvegarde en cours...");
+                    saveGame(&snoopy, &balle, &t, oiseaux, vies, scoretempo, tab, level);
+                    sleep(3);
+                    printf("Sauvegarde termine ! Retour au menu...");
+                    sleep(2);
+                    menu();
+                    choix(scoretempo,scorefinal, oiseaux, level);
                 }
                 deplacement(tab, &key, &snoopy, oiseaux, tempos);
             }
+
 
             mouvballe(tab, &balle, tempo);
             if (balle.x == snoopy.x && balle.y == snoopy.y) {
@@ -377,17 +380,6 @@ void Lvl4(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefinal, 
 
     while (*vies < 3) {
 
-        if (kbhit()) {
-            key = getch();
-            if (key == 'f') {
-                system("cls");
-                printf("Sauvegarde en cours...");
-                saveGame(&snoopy, &balle, &t, oiseaux, vies, scoretempo, tab, level);
-                sleep(3);
-                printf("Sauvegarde termine ! Vous pouvez quitter le jeu");
-            }
-        }
-
         time(&debut);
 
         tableau(tab, &balle, &snoopy);
@@ -414,8 +406,11 @@ void Lvl4(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefinal, 
             } else {
                 dix++;
             }
+
             if (kbhit()) {
+
                 key = getch();
+
                 if (key == 'p') {
                     time_t pause_debut = time (NULL);
                     printf("Pressez la touche o pour quitter le menu pause");
@@ -427,6 +422,15 @@ void Lvl4(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefinal, 
                     unsigned long secondes = (unsigned long) difftime( pause_fin, pause_debut );
                     tempsd1+=secondes;
 
+                } else if ( key == 'f') {
+                    system("cls");
+                    printf("Sauvegarde en cours...");
+                    saveGame(&snoopy, &balle, &t, oiseaux, vies, scoretempo, tab, level);
+                    sleep(3);
+                    printf("Sauvegarde termine ! Retour au menu...");
+                    sleep(2);
+                    menu();
+                    choix(scoretempo,scorefinal, oiseaux, level);
                 }
                 deplacement(tab, &key, &snoopy, oiseaux, tempos);
             }
