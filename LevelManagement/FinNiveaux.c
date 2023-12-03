@@ -16,16 +16,16 @@ void victoire1(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefi
            "||   Score :\t      %d      ||\n"
            "||   ________________________   ||\n"
            "||                              ||\n"
-           "||\t   Sauvegarder\t\t||\n"
+           "||         1.Sauvegarder        ||\n"
            "||   ________________________   ||\n"
            "||\t\t \t\t||\n"
-           "||       1.Niveau Suivant       ||\n"
+           "||       2.Niveau Suivant       ||\n"
            "||   ________________________   ||\n"
            "||                              ||\t\t\n"
-           "||        2.Retour Menu         ||\n"
+           "||        3.Retour Menu         ||\n"
            "||   ________________________   || \n"
            "||                              || \n"
-           "||        3.Deconnexion         || \n"
+           "||        4.Deconnexion         || \n"
            "||	                        ||\n"
            "\\==============================//\n",*scoretempo);
 
@@ -43,6 +43,11 @@ void victoire1(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefi
                 printf("\n\nNiveau suivant...");
                 sleep(3);
                 *vies=0;
+                system("cls");
+                sleep(1);
+                information();
+                sleep(5);
+                printf("c'est parti !");
                 Lvl2(tempo, tempos, vies,scoretempo,scorefinal, oiseaux, level);
                 break;
             case '3':
@@ -52,7 +57,7 @@ void victoire1(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefi
                 break;
             case '4':
                 printf("\n\nDeconnexion...");
-                sleep(3);
+                leave();
                 break;
             default:
                 break;
@@ -71,23 +76,20 @@ void victoire2(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefi
            "||          **********          ||\n"
            "||______________________________||\n"
            "||                              ||\n"
-           "||   Score :\t     %d           ||\n"
+           "||   Score :\t      %d      ||\n"
            "||   ________________________   ||\n"
            "||                              ||\n"
-           "||\t   Sauvegarder\t\t||\n"
+           "||         1.Sauvegarder        ||\n"
            "||   ________________________   ||\n"
            "||\t\t \t\t||\n"
-           "||        Niveau Suivant        ||\n"
+           "||       2.Niveau Suivant       ||\n"
            "||   ________________________   ||\n"
            "||                              ||\t\t\n"
-           "||         Retour Menu          ||\n"
+           "||        3.Retour Menu         ||\n"
            "||   ________________________   || \n"
            "||                              || \n"
-           "||         Deconnexion          || \n"
-           "||   ________________________   ||\n"
+           "||        4.Deconnexion         || \n"
            "||	                        ||\n"
-           "||    Mot de passe : ecemaths   ||\n"
-           "||                              ||\n"
            "\\==============================//\n",*scoretempo);
     char touche = ' ';
 
@@ -103,6 +105,11 @@ void victoire2(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefi
                 printf("\n\nNiveau suivant...");
                 sleep(3);
                 *vies=0;
+                system("cls");
+                sleep(1);
+                information();
+                sleep(5);
+                printf("c'est parti !");
                 Lvl3(tempo, tempos, vies,scoretempo,scorefinal, oiseaux, level);
                 break;
             case '3':
@@ -112,7 +119,7 @@ void victoire2(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefi
                 break;
             case '4':
                 printf("\n\nDeconnexion...");
-                sleep(3);
+                leave();
                 break;
             default:
                 break;
@@ -130,23 +137,20 @@ void victoire3(char *tempo, char *tempos,int *vies,int *scoretempo,int *scorefin
            "||          **********          ||\n"
            "||______________________________||\n"
            "||                              ||\n"
-           "||   Score :\t      %d          ||\n"
+           "||   Score :\t      %d      ||\n"
            "||   ________________________   ||\n"
            "||                              ||\n"
-           "||\t   Sauvegarder\t\t||\n"
+           "||         1.Sauvegarder        ||\n"
            "||   ________________________   ||\n"
            "||\t\t \t\t||\n"
-           "||        Niveau Suivant        ||\n"
+           "||       2.Niveau Suivant       ||\n"
            "||   ________________________   ||\n"
            "||                              ||\t\t\n"
-           "||         Retour Menu          ||\n"
+           "||        3.Retour Menu         ||\n"
            "||   ________________________   || \n"
            "||                              || \n"
-           "||         Deconnexion          || \n"
-           "||   ________________________   ||\n"
+           "||        4.Deconnexion         || \n"
            "||	                        ||\n"
-           "||    Mot de passe : ecejbtv    ||\n"
-           "||                              ||\n"
            "\\==============================//\n",*scoretempo);
     char touche = ' ';
 
@@ -162,6 +166,11 @@ void victoire3(char *tempo, char *tempos,int *vies,int *scoretempo,int *scorefin
                 printf("\n\nNiveau suivant...");
                 sleep(3);
                 *vies=0;
+                system("cls");
+                sleep(1);
+                information();
+                sleep(5);
+                printf("c'est parti !");
                 Lvl4(tempo, tempos, vies,scoretempo,scorefinal, oiseaux, level);
                 break;
             case '3':
@@ -171,7 +180,7 @@ void victoire3(char *tempo, char *tempos,int *vies,int *scoretempo,int *scorefin
                 break;
             case '4':
                 printf("\n\nDeconnexion...");
-                sleep(3);
+                leave();
                 break;
             default:
                 break;
@@ -208,7 +217,7 @@ void victoire4(int *scoretempo,int *scorefinal) {
                 break;
             case '3':
                 printf("\n\nDeconnexion...");
-                sleep(3);
+                leave();
                 break;
             default:
                 break;
@@ -226,16 +235,16 @@ void defaite1(int *vies, char *tempo, char *tempos,int *scoretempo,int *scorefin
            "||           *********          ||\n"
            "||______________________________||\n"
            "||                              ||\n"
-           "||      Retenter sa chance      ||\n"
+           "||     1.Retenter sa chance     ||\n"
            "||   ________________________   ||\n"
            "||                              ||\n"
-           "||\t   Sauvegarder\t        ||\n"
+           "||\t  2.Sauvegarder\t        ||\n"
            "||   ________________________   ||\n"
            "||                              ||\n"
-           "||         Retour Menu          ||\n"
+           "||        3.Retour Menu         ||\n"
            "||   ________________________   ||\n"
            "||                              ||\n"
-           "||         Deconnexion          ||\n"
+           "||        4.Deconnexion         ||\n"
            "||                              ||\n"
            "\\\\==============================//");
     char touche = ' ';
@@ -257,6 +266,9 @@ void defaite1(int *vies, char *tempo, char *tempos,int *scoretempo,int *scorefin
                 sleep(3);
                 menu();
                 break;
+            case '4':
+                printf("Deconnexion");
+                leave();
             default:
                 break;
         }
@@ -275,13 +287,13 @@ void defaite2(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefin
                "||     1.Retenter sa chance     ||\n"
                "||   ________________________   ||\n"
                "||                              ||\n"
-               "||\t   Sauvegarder\t        ||\n"
+               "||\t  2.Sauvegarder\t        ||\n"
                "||   ________________________   ||\n"
                "||                              ||\n"
-               "||        2.Retour Menu         ||\n"
+               "||        3.Retour Menu         ||\n"
                "||   ________________________   ||\n"
                "||                              ||\n"
-               "||        3.Deconnexion         ||\n"
+               "||        4.Deconnexion         ||\n"
                "||                              ||\n"
                "\\\\==============================//");
         char touche = ' ';
@@ -303,6 +315,9 @@ void defaite2(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefin
                 sleep(3);
                 menu();
                 break;
+            case '4':
+                printf("Deconnexion");
+                leave();
             default:
                 break;
         }
@@ -323,13 +338,13 @@ void defaite3(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefin
                "||     1.Retenter sa chance     ||\n"
                "||   ________________________   ||\n"
                "||                              ||\n"
-               "||\t   Sauvegarder\t        ||\n"
+               "||\t  2.Sauvegarder\t        ||\n"
                "||   ________________________   ||\n"
                "||                              ||\n"
-               "||        2.Retour Menu         ||\n"
+               "||        3.Retour Menu         ||\n"
                "||   ________________________   ||\n"
                "||                              ||\n"
-               "||        3.Deconnexion         ||\n"
+               "||        4.Deconnexion         ||\n"
                "||                              ||\n"
                "\\\\==============================//");
         char touche = ' ';
@@ -351,6 +366,9 @@ void defaite3(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefin
                 sleep(3);
                 menu();
                 break;
+            case '4':
+                printf("Deconnexion");
+                leave();
             default:
                 break;
         }
@@ -369,13 +387,13 @@ void defaite4(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefin
                "||     1.Retenter sa chance     ||\n"
                "||   ________________________   ||\n"
                "||                              ||\n"
-               "||\t   Sauvegarder\t        ||\n"
+               "||\t  2.Sauvegarder\t        ||\n"
                "||   ________________________   ||\n"
                "||                              ||\n"
-               "||        2.Retour Menu         ||\n"
+               "||        3.Retour Menu         ||\n"
                "||   ________________________   ||\n"
                "||                              ||\n"
-               "||        3.Deconnexion         ||\n"
+               "||        4.Deconnexion         ||\n"
                "||                              ||\n"
                "\\\\==============================//");
         char touche = ' ';
@@ -397,6 +415,9 @@ void defaite4(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefin
                 sleep(3);
                 menu();
                 break;
+            case '4':
+                printf("Deconnexion");
+                leave();
             default:
                 break;
         }
@@ -417,13 +438,23 @@ void GameOver() {
     printf("\t\t| | |__| |  / ____ \\  | |  | | | |____    | |__| |    \\  /    | |____  | | \\ \\ |\n");
     printf("\t\t|  \\_____| /_/    \\_\\ |_|  |_| |______|    \\____/      \\/     |______| |_|  \\_\\|\n");
     printf("\t\t--------------------------------------------------------------------------------\n");
-    printf("\n \t\t\t\t     ---=====Dommage!=====---");
+    printf("\n \t\t\t\t\t     ---=====Dommage!=====---");
     printf("\n\n\n\nRetour au menu...");
     sleep(5);
     menu();
 
 }
 
-
+void information(){
+    printf("Les touches de jeux sont les suivantes:\n"
+           "\n"
+           "\"z\": avancer vers le haut\n"
+           "\"s\": avancer vers le bas\n"
+           "\"q\": avancer vers la gauche\n"
+           "\"d\": avancer vers la droite\n"
+           "\n"
+           "\"p\": mettre le jeux en pause\n"
+           "\"a\": permet de casser les blocks grises");
+}
 
 

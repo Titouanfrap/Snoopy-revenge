@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include "LevelManagement/Niveaux.h"
 #include "Sauvegarde.h"
+#include "LevelManagement/FinNiveaux.h"
 
 
 void regles() {
@@ -33,7 +34,7 @@ void leave() {
            "\t\t\t*       super jeu video !        *\n"
            "\t\t\t*                                *\n"
            "\t\t\t********** A bientot ! ***********\n");
-    sleep(3);
+    sleep(5);
     system("cls");
 }
 void password(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefinal, int *oiseaux, int *level) {
@@ -56,24 +57,36 @@ void password(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefin
 
         if (strcmp(mot, "ecemaths") == 0) {
             printf("Lancement du niveau 2...");
-            sleep(3);
+            system("cls");
+            sleep(1);
+            information();
+            sleep(7);
+            printf("c'est parti !");
             Lvl2(tempo,tempos,vies,scoretempo,scorefinal, oiseaux, level);
         }
        else if (strcmp(mot, "ecejbtv") == 0) {
             printf("Lancement du niveau 3...\n");
-            sleep(3);
+            system("cls");
+            sleep(1);
+            information();
+            sleep(5);
+            printf("c'est parti !");
             Lvl3(tempo, tempos, vies,scoretempo,scorefinal, oiseaux, level);
         }
         else if (strcmp(mot, "champions") == 0) {
             printf("Lancement du niveau 4...\n");
-            sleep(3);
+            system("cls");
+            sleep(1);
+            information();
+            sleep(7);
+            printf("c'est parti !");
             Lvl4(tempo,tempos,vies,scoretempo,scorefinal,oiseaux, level);
         } else {
             printf("Mot invalide\n");
             tentatives++;
 
             if (tentatives == 5) {
-                printf("Trop de tentatives. Deconnexion Force..\n");
+                printf("Trop de tentatives. Deconnexion force..\n");
                 sleep(3);
                 system("cls");
                 break;
@@ -153,6 +166,9 @@ void handleDir(char *key, char *tempo, char *tempos,int *scoretempo,int *scorefi
                    "\n\t       Oui : y               Non : n");
             char confirmKey3 = getch();
             if (confirmKey3 == 'y') {
+                system("cls");
+                information();
+                sleep(7);
                 Lvl1(&vies, tempo, tempos,scoretempo,scorefinal, oiseaux, level);
             } else if (confirmKey3 == 'n') {
                 menu();

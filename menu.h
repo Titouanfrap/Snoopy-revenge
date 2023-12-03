@@ -9,3 +9,5 @@ void password(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefin
 void menu();
 void handleDir(char *key, char *tempo, char *tempos,int *scoretempo,int *scorefinal, int *oiseaux, int *level);
 void choix(int *scoretempo,int *scorefinal,int *oiseaux, int *level);
+void information();
+void leave();

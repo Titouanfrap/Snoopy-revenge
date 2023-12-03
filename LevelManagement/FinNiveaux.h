@@ -20,4 +20,5 @@ void menuchoix(char *touche);
 
 void choice();
 
+void information();
 
