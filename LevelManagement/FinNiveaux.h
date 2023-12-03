@@ -16,9 +16,5 @@ void defaite3(char *tempo, char *tempos,int *vies,int *scoretempo,int *scorefina
 
 void defaite4(char *tempo, char *tempos,int *vies,int *scoretempo,int *scorefinal, int *oiseaux, int *level);
 
-void menuchoix(char *touche);
-
-void choice();
-
 void information();
 
