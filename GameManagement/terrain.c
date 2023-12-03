@@ -91,7 +91,9 @@ void terrain(char tab[14][24]){// c'est la fonction qui remplace les valeurs des
                     printf("%c",vie);
                     break;
                 case 19:
+                    Color(12,0);
                     printf("%c",piege);
+                    Color(15,0);
                     break;
             }  //Pour chaque case on cherche le cas correspondant puis on le print, en revenant a la ligne a chaque itération de i pour l'aspect tableau
         }
