@@ -20,15 +20,13 @@
 #define tapisg 0x850AE  //17
 #define vie 0x85003 //18
 #define piege 0x850AD//19
-
-
-
+// on place des macros pour assigner les valeurs a des noms et des codes 850
 // on assigne des blocs a des valeurs pour faire un switch case afin d'aller plus vite et d'éviter les erreurs
 
-void terrain(char tab[14][24]){
+void terrain(char tab[14][24]){// c'est la fonction qui remplace les valeurs des blocs par les caracteres
     for (int i=0; i<14; i++){
-        for (int j=0; j<24; j++){                   //boucle classique pour couvrir toutes les valeurs du tableau
-            switch (tab[i][j]) {
+        for (int j=0; j<24; j++){      //boucle classique pour couvrir toutes les valeurs du tableau
+            switch (tab[i][j]) {//pour chacun des blocs on fait un switch sur sa valeur pour assigner le bloc
                 case 0 :
                     printf("%c", vide);
                     break;
@@ -60,9 +58,9 @@ void terrain(char tab[14][24]){
                     printf("%c", player);
                     break;
                 case 10 :
-                    Color(12,0);
+                    Color(12,0); //on change la couleur de la balle
                     printf("o");
-                    Color(15,0);
+                    Color(15,0); // on rétablit la couleur pour les autres blocs
                     break;
                 case 11 :
                     Color(14,0);
@@ -117,8 +115,8 @@ void tableau(char tab[14][24], Balle *balle, Snoopy *snoopy) {
             } else {
                 tab[i][j] = 0;
             }
-        } // fait apparaitre toutes les cases or plateau pour le défilement du temps
-        // c'est un set de départ et ne s'éxecute qu'une seule fois
+        } // fait apparaitre toutes les cases du plateau pour le défilement du temps
+        // c'est une fonction de départ et ne s'éxecute qu'une seule fois
     }
     snoopy->x = 4; snoopy->y = 11;
     tab[snoopy->x][snoopy->y] = 9;
@@ -126,7 +124,7 @@ void tableau(char tab[14][24], Balle *balle, Snoopy *snoopy) {
     balle->x = 7; balle->y = 7;
     tab[balle->x][balle->y] = 10;
 
-    tab[2][2] = 11;
+    tab[2][2] = 11; // on asssigne les places des oiseaux
 
     tab[2][21] = 11;
 
@@ -137,7 +135,7 @@ void tableau(char tab[14][24], Balle *balle, Snoopy *snoopy) {
 
 
 
-void Color(int couleurDuTexte,int couleurDeFond)
+void Color(int couleurDuTexte,int couleurDeFond) // fonction qui permet de changer les couleurs
 {
 HANDLE H=GetStdHandle(STD_OUTPUT_HANDLE);
 SetConsoleTextAttribute(H,couleurDeFond*16+couleurDuTexte);
@@ -145,7 +143,7 @@ SetConsoleTextAttribute(H,couleurDeFond*16+couleurDuTexte);
 
 
 
-void BlocNiv1(char tab[14][24]) {
+void BlocNiv1(char tab[14][24]) { //ces fonctions lisent les fichiers txt et assignent chacunes des cases pour le niveau
     int xtempo, ytempo, bloctempo;
     FILE *BlocNiv1 = fopen("../LevelManagement/BlocNiv1.txt", "r");
     if (BlocNiv1 == NULL) {
@@ -157,7 +155,7 @@ void BlocNiv1(char tab[14][24]) {
     }
 }
 
-void BlocNiv2(char tab[14][24]) {
+void BlocNiv2(char tab[14][24]) { //PAREIL
     int xtempo, ytempo, bloctempo;
     FILE *BlocNiv2 = fopen("../LevelManagement/BlocNiv2.txt", "r");
     if (BlocNiv2 == NULL) {
@@ -169,7 +167,7 @@ void BlocNiv2(char tab[14][24]) {
     }
 }
 
-void BlocNiv3(char tab[14][24]) {
+void BlocNiv3(char tab[14][24]) { //PAREIL
     int xtempo, ytempo, bloctempo;
     FILE *BlocNiv3 = fopen("../LevelManagement/BlocNiv3.txt", "r");
     if (BlocNiv3 == NULL) {
@@ -181,7 +179,7 @@ void BlocNiv3(char tab[14][24]) {
     }
 }
 
-void BlocNiv4(char tab[14][24]) {
+void BlocNiv4(char tab[14][24]) { //PAREIL
     int xtempo, ytempo, bloctempo;
     FILE *BlocNiv4 = fopen("../LevelManagement/BlocNiv4.txt", "r");
     if (BlocNiv4 == NULL) {
