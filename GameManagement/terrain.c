@@ -175,7 +175,7 @@ void BlocNiv3(char tab[14][24]) { //PAREIL
     if (BlocNiv3 == NULL) {
         printf("Erreur d'ouverture de fichier.");
     }
-    for (int i=0;i<=54;i++) {
+    for (int i=0;i<=53;i++) {
         fscanf(BlocNiv3, "%d %d %d", &xtempo, &ytempo, &bloctempo);
         tab[xtempo][ytempo] = bloctempo;
     }
