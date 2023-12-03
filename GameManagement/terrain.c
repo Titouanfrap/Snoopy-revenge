@@ -163,7 +163,7 @@ void BlocNiv2(char tab[14][24]) { //PAREIL
     if (BlocNiv2 == NULL) {
         printf("Erreur d'ouverture de fichier.");
     }
-    for (int i=0;i<=66;i++) {
+    for (int i=0;i<=70;i++) {
         fscanf(BlocNiv2, "%d %d %d", &xtempo, &ytempo, &bloctempo);
         tab[xtempo][ytempo] = bloctempo;
     }
@@ -175,7 +175,7 @@ void BlocNiv3(char tab[14][24]) { //PAREIL
     if (BlocNiv3 == NULL) {
         printf("Erreur d'ouverture de fichier.");
     }
-    for (int i=0;i<=51;i++) {
+    for (int i=0;i<=54;i++) {
         fscanf(BlocNiv3, "%d %d %d", &xtempo, &ytempo, &bloctempo);
         tab[xtempo][ytempo] = bloctempo;
     }
@@ -187,7 +187,7 @@ void BlocNiv4(char tab[14][24]) { //PAREIL
     if (BlocNiv4 == NULL) {
         printf("Erreur d'ouverture de fichier.");
     }
-    for (int i=0;i<=82;i++) {
+    for (int i=0;i<=84;i++) {
         fscanf(BlocNiv4, "%d %d %d", &xtempo, &ytempo, &bloctempo);
         tab[xtempo][ytempo] = bloctempo;
     }

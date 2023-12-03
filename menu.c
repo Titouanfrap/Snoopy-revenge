@@ -12,7 +12,7 @@ void regles() { // cette fonction print un texte avec les regles lorqu'on l'appe
     printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
            "\t\t\t-------==========REGLES DU JEU==========-------"
            "\n\n\nVous vous appretez a jouer a notre jeu : 'La revande de Snoopy' mais vous ne connaissez pas les regles ?\n\n"
-           " Bien, une piqure de rappel s'impose donc.\nLa revanche de Snoopy est jeu Gameboy sorti en 1990 qui met en"
+           " Bien, une piqure de rappel s'impose...\nLa revanche de Snoopy est un jeu Gameboy sorti en 1990 qui met en"
            "scene Snoopy. Le fameux personnage de bande-dessine. \nC'est un jeu de reflexion de type \"puzzle game\" ou le "
            "but est de recuperer 4 oiseaux pour passer au niveau suivant, \nmais le chemin le long des niveaux est seme d'embuches...\n\n"
            "-------------------------------------------------------------------------------------------------------------------\n\n"
@@ -20,9 +20,10 @@ void regles() { // cette fonction print un texte avec les regles lorqu'on l'appe
            "Le probleme est que ces 4 oiseaux ne sont pas si faciles a recuperer. Une balle rebondit constamment dans le niveau\n"
            "afin de freiner Snoopy dans sa quete. Mais ce n'est pas tout, d'autres pieges sont presents comme des\n"
            "teleporteurs que la balle peut emprunter ou des cases piegees, voir meme des blocs a pousser ou a\n"
-           "casser... Ce jeu comporte 4 niveau en difficulte croissante. Pour chaque niveau vous possedez 3 vies\n"
-           "afin de mener a bien votre mission. De plus, chaque niveau doit etre resolu en moin de 120 secondes.\n"
-           "Si vous n'arrivez reussir votre objectif dans le temps imparti vous perdez une vie et le temps repart.\n"
+           "casser... Ce jeu comporte 4 niveau de difficulte croissante. Pour chaque niveau vous possedez 3 vies\n"
+           "afin de mener a bien votre mission. De plus, chaque niveau doit etre resolu en moin de 2 minutes.\n"
+           "Si vous n'arrivez pas a reussir votre objectif dans le temps imparti vous perdez une vie et le temps repart.\n"
+           "Vous recommencez bien evidemment a zero.\n"
            "Bien, je pense vous avoir tout dit, il ne me reste plus qu'a vous souhaiter bonne chance...");
 }
 void leave() { // cette fonction permet de print un une image de déconnexion lorsque le joueur quitte
