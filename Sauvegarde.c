@@ -12,11 +12,13 @@ void saveGame(Snoopy *snoopy, Balle *balle, Time *t, int *oiseaux, int *vies, in
         fwrite(t, sizeof(Time), 1, file);
         fwrite(vies, sizeof(int), 1, file);
         fwrite(scoretempo, sizeof(int), 1, file);
+        fwrite(level, sizeof(int), 1, file);
+
         for (int i=0; i<14; i++){
             for (int j=0; j<24; j++){
                 fwrite(&tab[i][j], sizeof(int), 1, file);
             }}
-        fwrite(level, sizeof(int), 1, file);
+
         fclose(file);
     } else {
         printf("Erreur lors de la sauvegarde du jeu.\n");
@@ -33,25 +35,15 @@ void loadGame(Snoopy *snoopy, Balle *balle, Time *t, int *oiseaux, int *vies, in
         fread(t, sizeof(Time), 1, file);
         fread(vies, sizeof(int), 1, file);
         fread(scoretempo, sizeof(int), 1, file);
+        fread(level, sizeof(int), 1, file);
         for (int i=0; i<14; i++){
             for (int j=0; j<24; j++){
-                fwrite(&tab[i][j], sizeof(int), 1, file);
+                fread(&tab[i][j], sizeof(int), 1, file);
             }}
-        fwrite(level, sizeof(int), 1, file);
-        switch (*level) {
-            case 1:
-                sleep(1);
-                Lvl1(vies, tempo, tempos, scoretempo,scorefinal, oiseaux, level);
-            case 2:
-                sleep(1);
-                Lvl2(tempo, tempos,vies, scoretempo,scorefinal, oiseaux, level);
-            case 3:
-                sleep(1);
-                Lvl3(tempo, tempos, vies,scoretempo,scorefinal, oiseaux, level);
-            case 4:
-                sleep(1);
-                Lvl4(tempo, tempos, vies, scoretempo,scorefinal, oiseaux, level);
-        }
+
+
+        sleep(1);
+        terrain(tab);
 
         fclose(file);
     } else {

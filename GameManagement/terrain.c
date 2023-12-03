@@ -19,6 +19,7 @@
 #define tapisd 0x850AF  //16
 #define tapisg 0x850AE  //17
 #define vie 0x85003 //18
+#define piege 0x850AD//19
 
 
 
@@ -90,6 +91,9 @@ void terrain(char tab[14][24]){
                     break;
                 case 18:
                     printf("%c",vie);
+                    break;
+                case 19:
+                    printf("%c",piege);
                     break;
             }  //Pour chaque case on cherche le cas correspondant puis on le print, en revenant a la ligne a chaque itération de i pour l'aspect tableau
         }
@@ -165,14 +169,13 @@ void BlocNiv2(char tab[14][24]) {
     }
 }
 
-
 void BlocNiv3(char tab[14][24]) {
     int xtempo, ytempo, bloctempo;
     FILE *BlocNiv3 = fopen("../LevelManagement/BlocNiv3.txt", "r");
     if (BlocNiv3 == NULL) {
         printf("Erreur d'ouverture de fichier.");
     }
-    for (int i=0;i<=50;i++) {
+    for (int i=0;i<=51;i++) {
         fscanf(BlocNiv3, "%d %d %d", &xtempo, &ytempo, &bloctempo);
         tab[xtempo][ytempo] = bloctempo;
     }

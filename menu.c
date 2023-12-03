@@ -176,7 +176,7 @@ void handleDir(char *key, char *tempo, char *tempos,int *scoretempo,int *scorefi
             break;
         case '3':
             printf("\n\n\n\n Voulez vous charger une partie ?"
-                   "\n\t       Oui : y               Non : n");
+                   "\n\t       Oui : y               Non : n\n\n\n\n");
             char confirmKey1 = getch();
             if (confirmKey1 == 'y') {
                 loadGame(&snoopy, &balle, &t, oiseaux, &vies, scoretempo, tab, level, tempo, tempos, scorefinal);

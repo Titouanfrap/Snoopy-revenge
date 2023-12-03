@@ -180,6 +180,13 @@ void deplacement(char tab[14][24], char *key, Snoopy *snoopy, int *oiseaux, char
     if (tab[snoopy->x][snoopy->y] == 11) {
         (*oiseaux)++;
     }
+
+    if (tab[snoopy->x][snoopy->y]==19) {
+        sleep(2);
+        GameOver();
+        sleep(4);
+        system("cls");
+    }
     tab[snoopy->x][snoopy->y] = 9;
 }
 
