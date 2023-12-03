@@ -1,5 +1,4 @@
 #include "snoopy.h"
-#include <stdio.h>
 #include <unistd.h>
 #include "../LevelManagement/FinNiveaux.h"
 

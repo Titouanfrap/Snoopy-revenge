@@ -38,13 +38,13 @@ void Lvl1(int *vies, char *tempo, char *tempos,int *scoretempo,int *scorefinal, 
             time(&maintenant);    // On appel en boule le programme time
 
             if (*vies==0){         // Si vies est égal a 0 on printf
-                printf("\nnombre de vie restante:3");
+                printf("\nnombre de vie restante: 3\n");
             }
             if (*vies==1){
-                printf("\nnombre de vie restante:2");
+                printf("\nnombre de vie restante: 2\n");
             }
             if (*vies==2){
-                printf("\nnombre de vie restante:1");
+                printf("\nnombre de vie restante: 1\n");
             }
 
 
@@ -154,13 +154,13 @@ void Lvl2(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefinal, 
             terrain(tab);
             time(&maintenant);
             if (*vies==0){
-                printf("\nnombre de vie restante:3");
+                printf("\nnombre de vie restante: 3\n");
             }
             if (*vies==1){
-                printf("\nnombre de vie restante:2");
+                printf("\nnombre de vie restante: 2\n");
             }
             if (*vies==2){
-                printf("\nnombre de vie restante:1");
+                printf("\nnombre de vie restante: 1\n");
             }
 
 
@@ -275,13 +275,13 @@ void Lvl3(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefinal, 
             terrain(tab);
             time(&maintenant);
             if (*vies==0){
-                printf("\nnombre de vie restante:3");
+                printf("\nnombre de vie restante: 3\n");
             }
             if (*vies==1){
-                printf("\nnombre de vie restante:2");
+                printf("\nnombre de vie restante: 2\n");
             }
             if (*vies==2){
-                printf("\nnombre de vie restante:1");
+                printf("\nnombre de vie restante: 1\n");
             }
 
 
@@ -396,13 +396,13 @@ void Lvl4(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefinal, 
             time(&maintenant);
 
             if (*vies==0){
-                printf("\nnombre de vie restante:3");
+                printf("\nnombre de vie restante: 3\n");
             }
             if (*vies==1){
-                printf("\nnombre de vie restante:2");
+                printf("\nnombre de vie restante: 2\n");
             }
             if (*vies==2){
-                printf("\nnombre de vie restante:1");
+                printf("\nnombre de vie restante: 1\n");
             }
 
 

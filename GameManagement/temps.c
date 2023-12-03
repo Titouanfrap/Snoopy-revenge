@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
 
 typedef struct Time{ // on crée une structure de temps qui contient :
     int valeur;

@@ -1,5 +1,4 @@
 #include "menu.h"
-#include <conio.h>
 
 int main() { // c'est la fonction principale
    int scoretempo = 0;
