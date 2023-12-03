@@ -7,7 +7,7 @@
 #include "LevelManagement/FinNiveaux.h"
 
 
-void regles() {
+void regles() { // cette fonction print un texte avec les regles lorqu'on l'appelle
     system("cls");
     printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
            "\t\t\t-------==========REGLES DU JEU==========-------"
@@ -25,7 +25,7 @@ void regles() {
            "Si vous n'arrivez reussir votre objectif dans le temps imparti vous perdez une vie et le temps repart.\n"
            "Bien, je pense vous avoir tout dit, il ne me reste plus qu'a vous souhaiter bonne chance...");
 }
-void leave() {
+void leave() { // cette fonction permet de print un une image de déconnexion lorsque le joueur quitte
     printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
            "          ---------============THE REVENGE OF SNOOPY============---------\n\n\n\n"
            "\t\t\t********** DECONNEXION **********\n"
@@ -37,7 +37,7 @@ void leave() {
     sleep(5);
     system("cls");
 }
-void password(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefinal, int *oiseaux, int *level) {
+void password(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefinal, int *oiseaux, int *level) { // fonciton pour le mot de passe
     printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  "
            "           ---------============THE REVENGE OF SNOOPY============---------\n\n\n\n"
            "Pour rappel, les differents mots de passe s'obtiennent en reussissant\n"
@@ -48,23 +48,23 @@ void password(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefin
            "\n\n----------------------------------------------------------------------------------"
            "\n\n\n Veuillez entrer le mot de passe correspondant au niveau que vous voulez rejoindre :");
 
-    char mot[100];
-    int tentatives = 0;
+    char mot[100]; // on déclare un char de 100 de long pour stocker le mot de passe saisi par le joueur
+    int tentatives = 0; // le joueur peut tester le mot de passe un nombre de fois limitées
 
     while (1) {
-        scanf("%s", mot);
+        scanf("%s", mot); // on scan le mot de passe du joueur et on le stocke dans mot
 
 
-        if (strcmp(mot, "ecemaths") == 0) {
+        if (strcmp(mot, "ecemaths") == 0) { //on compare le mot du joueur avec les différents mots de passe
             printf("Lancement du niveau 2...");
             system("cls");
             sleep(1);
-            information();
+            information(); // cette fonction affiche les touches avant le début du niveau
             sleep(7);
             printf("c'est parti !");
-            Lvl2(tempo,tempos,vies,scoretempo,scorefinal, oiseaux, level);
+            Lvl2(tempo,tempos,vies,scoretempo,scorefinal, oiseaux, level);//le jeu se lance
         }
-       else if (strcmp(mot, "ecejbtv") == 0) {
+       else if (strcmp(mot, "ecejbtv") == 0) {//PAREIL
             printf("Lancement du niveau 3...\n");
             system("cls");
             sleep(1);
@@ -73,7 +73,7 @@ void password(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefin
             printf("c'est parti !");
             Lvl3(tempo, tempos, vies,scoretempo,scorefinal, oiseaux, level);
         }
-        else if (strcmp(mot, "champions") == 0) {
+        else if (strcmp(mot, "champions") == 0) { //PAREIL
             printf("Lancement du niveau 4...\n");
             system("cls");
             sleep(1);
@@ -81,21 +81,21 @@ void password(char *tempo, char *tempos, int *vies,int *scoretempo,int *scorefin
             sleep(7);
             printf("c'est parti !");
             Lvl4(tempo,tempos,vies,scoretempo,scorefinal,oiseaux, level);
-        } else {
-            printf("Mot invalide\n");
-            tentatives++;
+        } else { // si le mot de passe ne correspond a aucuns mot de passe on lance cette boucle
+            printf("Mot invalide\n"); // on affiche que le mot de passe est invalide
+            tentatives++; // on incrément le nobre de tentatives
 
-            if (tentatives == 5) {
+            if (tentatives == 5) { // si il atteint 5 tentatives ont le fait quitter le jeu
                 printf("Trop de tentatives. Deconnexion force..\n");
                 sleep(3);
                 system("cls");
-                break;
+                break;// un break fait quitter la boucle en cours d'execution de force
             }
         }
     }
 }
 
-int menu() {
+int menu() { // fonction menu qui permet au joueur de choisir ce qu'il veut faire au début du jeu
 
     system("cls");
     printf("\n\n\n"
@@ -124,7 +124,7 @@ int menu() {
 
 void handleDir(char *key, char *tempo, char *tempos,int *scoretempo,int *scorefinal, int *oiseaux, int *level);
 
-void choix(int *scoretempo,int *scorefinal,int *oiseaux, int *level)
+void choix(int *scoretempo,int *scorefinal,int *oiseaux, int *level)// la fonction enregistre son choix
 {
     char tempo;
     char tempos;
@@ -133,9 +133,9 @@ void choix(int *scoretempo,int *scorefinal,int *oiseaux, int *level)
     while (1)
     {
         if (kbhit()) {
-            key = getch();
+            key = getch(); // key est la touche pressée par le joueur
         }
-        handleDir(&key, &tempo, &tempos,scoretempo,scorefinal, oiseaux, level);
+        handleDir(&key, &tempo, &tempos,scoretempo,scorefinal, oiseaux, level); // on lance Handldir pour utiliser la touche saisie
     }
 }
 
@@ -146,8 +146,8 @@ void handleDir(char *key, char *tempo, char *tempos,int *scoretempo,int *scorefi
     Balle *balle;
     Time *t;
 
-    switch (*key) {
-        case '1':
+    switch (*key) { // on fait un switch case de la touche saisie
+        case '1': // s'il vaut un on affiche les regles
             printf("\n\n\n\n Voulez vous lire les regles du jeu ?"
                    "\n\t       Oui : y               Non : n");
             char confirmKey = getch();
@@ -161,20 +161,20 @@ void handleDir(char *key, char *tempo, char *tempos,int *scoretempo,int *scorefi
                 menu();
             }
             break;
-        case '2':
+        case '2':// s'il vaut 2 on lance la nouvelle partie
             printf("\n\n\n\n Voulez vous commencer une nouvelle partie ?"
                    "\n\t       Oui : y               Non : n");
             char confirmKey3 = getch();
-            if (confirmKey3 == 'y') {
+            if (confirmKey3 == 'y') { //on demande toujours confiramtion, qu'on valide par un y
                 system("cls");
                 information();
                 sleep(7);
-                Lvl1(&vies, tempo, tempos,scoretempo,scorefinal, oiseaux, level);
+                Lvl1(&vies, tempo, tempos,scoretempo,scorefinal, oiseaux, level); // le joueur commence donc par le niveau 1
             } else if (confirmKey3 == 'n') {
-                menu();
+                menu();// s'il ne confirme pas il retourne au menu
             }
             break;
-        case '3':
+        case '3'://PAREIL
             printf("\n\n\n\n Voulez vous charger une partie ?"
                    "\n\t       Oui : y               Non : n\n\n\n\n");
             char confirmKey1 = getch();
@@ -184,21 +184,21 @@ void handleDir(char *key, char *tempo, char *tempos,int *scoretempo,int *scorefi
                 menu();
             }
             break;
-        case '4':
+        case '4'://PAREIL
             printf("\n\n\n\n Voulez vous rejoindre un niveau a l'aide d'un mot de passe ?"
                    "\n\t       Oui : y               Non : n");
             char confirmKey2 = getch();
             if (confirmKey2 == 'y') {
-                password(tempo,tempos, &vies,scoretempo,scorefinal, oiseaux, level);
+                password(tempo,tempos, &vies,scoretempo,scorefinal, oiseaux, level);// on appele la fonction password por vérifier les mdp
             } else if (confirmKey2 == 'n') {
                 menu();
             }
             break;
-        case '5':
+        case '5'://PAREIL
             printf("\n\n\n\n SCORE : %d",*scorefinal);
 
             break;
-        case '6':
+        case '6'://PAREIL
             printf("\n\n\n\n Voulez vous vraiment quitter le jeu ?"
                    "\n\t       Oui : y               Non : n");
             char confirmKey5 = getch();
@@ -208,7 +208,7 @@ void handleDir(char *key, char *tempo, char *tempos,int *scoretempo,int *scorefi
                 menu();
             }
         default:
-            break;
+            break; //si jamais il ne presse aucune de ces touches on break
     }
 
     *key = ' '; // Reset direction
